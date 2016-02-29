@@ -10,7 +10,7 @@ echo "Print the full filename of the current working directory."
 echo "------------"
 
 # the command's syntax
-echo "Syntax:"
+echo "Syntax modified:"
 echo "test argument1 argument2"
 echo -e "\targument1: description of argument 1"
 echo -e "\targument2: description of argument 2"
