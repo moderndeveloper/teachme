@@ -21,11 +21,11 @@ echo "------------"
 # the command's usage examples
 # example 1
 echo "$ pwd"
-echo "If you type the above input into a terminal, the computer will print out the directory the user is currently in, such as /Users/Myusername/Desktop."
+echo "Display the directory the user is currently in, such as /Users/Myusername/Desktop."
 
 # example 2
-echo "test something"
-echo description here
+echo "$ pwd -P"
+echo "Display the physical current working directory (all symbolic links resolved). For example, /test is symbolic link to /home/user/bin, this command will display /home/user/bin."
 
 
 exit 0
