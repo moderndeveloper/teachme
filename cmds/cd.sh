@@ -10,10 +10,15 @@ echo 'The cd command, change directory, is used to change the current working di
 echo "------------"
 
 # the command's syntax
-echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "Syntax: cd [option] [directory]"
+echo "The items in the square brackets, [option] and [directory] are option fields. When the optional fields are omitted, 'cd' command will return to the previous root directory."
+echo "[option] The cd command has two options and neither of them are commonly used. -P tells cd to use physical directory structure instead of following symbolic links"
+echo "[directory] The cd command can accept absolute or local pathname. However, it's more convenient to use local pathname when accessing a subdirectory of the current directory"
+
+echo "Return to root directory: cd"
+echo "Return to previous directory (one level up): cd .. or two level up: cd ../.."
+echo "Return to a subdirectory in a different directory: cd DIRECTORY_NAME/SUBDIRECTORY_NAME"
+echo "Or to access subdirectory in the same working directory: cd SUBDIRECTORY_NAME"
 #   ...      etc
 
 echo "------------"
