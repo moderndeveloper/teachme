@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 
-# pls ignore - testing - jc
+# Description: pwd
+echo "pwd stands for 'print working directory', which prints out the entire pathname of the directory you are currently working on, starting from the root direction (/)."
 
 
 echo "This is a pwd command."
