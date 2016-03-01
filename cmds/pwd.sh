@@ -1,4 +1,8 @@
 #!/usr/bin/bash
+
+# pls ignore - testing - jc
+
+
 echo "This is a pwd command."
 
 # The command's name
