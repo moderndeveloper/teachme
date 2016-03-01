@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a test command."
+echo "This is cd command."
 
 # The command's name
-echo -e 'test'
+echo -e 'cd'
 
 # the command's description
-echo "description here"
+echo 'The cd command, change directory, is used to change the current working directory to other directory. This command accepts both absolute paths and relative paths. ".." is the parent directory shortcut. Typing this shortcut to change to one directory up in the path.'
 
 echo "------------"
 
