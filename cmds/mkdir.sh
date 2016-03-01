@@ -11,10 +11,10 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
-#   ...      etc
+echo "mkdir [-pv] [-m mode] directory name ..."
+echo -e "\t-p: Create sub-directories and lower sub-directories for a new directory that do not exist already"
+echo -e "\t-v: Print each directory that midir creates"
+echo -e "\t-m mode: Set permissions of new directories"
 
 echo "------------"
 
