@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a test command."
+echo "This is a clear command."
 
 # The command's name
-echo -e 'test'
+echo -e 'clear'
 
 # the command's description
-echo "description here"
+echo "This command clears the display screen"
 
 echo "------------"
 
