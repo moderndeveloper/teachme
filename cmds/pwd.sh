@@ -1,16 +1,13 @@
 #!/usr/bin/bash
 
-# Description: pwd
-echo "pwd stands for 'print working directory', which prints out the entire pathname of the directory you are currently working on, starting from the root direction (/)."
-
-
 echo "This is a pwd command."
 
 # The command's name
 echo -e 'pwd'
 
 # the command's description
-echo "Print the full filename of the current working directory."
+echo "pwd stands for 'print working directory', which prints out the entire pathname of the directory you are currently working on, starting from the root direction (/)."
+
 
 echo "------------"
 
