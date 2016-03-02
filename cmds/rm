@@ -1,0 +1,45 @@
+#!/usr/bin/bash
+
+# The command's name
+echo -e 'rm'
+
+# the command's description
+echo "description here"
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "git test argument1 argument2"
+echo -e "\targument1: description of argument 1"
+echo -e "\targument2: description of argument 2"
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "rm computer.log"
+echo "Will remove the specified file."
+
+# example 2
+echo "rm file1.txt file2.txt file3.txt"
+echo "Will remove all specified files."
+
+# example 3
+echo "rm -d documents/"
+echo "Will remove a directory if it is empty"
+
+#example 4
+echo "rm -r movie/"
+echo "Will remove a directory recursively, meaning it will remove all files and folders within /movie before removing /movie."
+
+#example 5
+echo "rm -ri movie/"
+echo "-i will make the removal process interactive, meaning it will prompt you yes or no will moving throught the deletion process."
+
+#example 6
+echo "rm -f computer.log "
+echo "-f means it will force delete the file. So if even if a file as 'access read-only` it will delete the file without a confirmation."
+
+exit 0
