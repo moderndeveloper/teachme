@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a test command."
+echo "This is a command-line command."
 
 # The command's name
-echo -e 'test'
+echo -e 'ping'
 
 # the command's description
-echo "description here"
+echo "It is short for Packet InterNet Groper and is commonly used to check network connection errors by providing two major pieces of information: how many responses are returned and how long it takes."
 
 echo "------------"
 
