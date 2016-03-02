@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-echo "This is a remove directory command."
+echo "This is a command-line command."
 
 # The command's name
 echo -e 'rmdir'
