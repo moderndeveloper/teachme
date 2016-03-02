@@ -1,8 +1,8 @@
 #!/usr/bin/bash
-echo "This is a git test command."
+echo "This is a grep command."
 
 # The command's name
-echo -e 'git test'
+echo -e 'grep'
 
 # the command's description
 echo "description here"
@@ -20,12 +20,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "$ grep James names.txt"
+echo 'This example displays all lines with "James" in the names.txt file. The grep command follows by the content to search, then the path of where to search. The search is case sensitive.'
 
 # example 2
-echo "git test something"
-echo description here
+echo "$ grep -lrv red /mydir/"
+echo "The command displays the names of files under /mydir/ and its entire directory tree whose contents do not contain the word red."
 
 
 exit 0
