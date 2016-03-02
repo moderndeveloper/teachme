@@ -10,10 +10,12 @@ echo "The curl command transfers data from or to a server, using of the protocol
 echo "------------"
 
 # the command's syntax
-echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "Syntax: curl [options] [URL]"
+echo "curl --limit-rate 1000B -O http://www.google.com/index.htm"
+echo -e "\--limit-rate to 1000B/second while transferring from http://www.google.com/index.htm and save the output (-O) to the current directory under the same name"
+
+echo "curl -u username:password URL"
+echo -e "\-u is user and the above code will pass HTTP authentication"
 #   ...      etc
 
 echo "------------"
