@@ -1,0 +1,65 @@
+#!/usr/bin/bash
+
+# The command's name
+echo -e 'find'
+
+# the command's description
+echo "description here"
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "git test argument1 argument2"
+echo -e "\targument1: description of argument 1"
+echo -e "\targument2: description of argument 2"
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "find . -name "README.md"
+echo "This example finds all files with name README.md in the current directory and all its sub-directories."
+
+# example 2
+echo "find . -iname "MyFile.txt""
+echo "This command will find all files that match myfile.txt, ingnoring the case, in the current directory and all its sub-directories."
+
+# example 3
+echo "find / -name passwd"
+echo "Will find all the passwd files under all subdirectories starting from the root. You can replace the '/' with the name of any directory to select where the search begins."
+
+#example 4
+echo "find . -maxdepth 2 -name passwd"
+echo "Start search at root directory(level 1) and one subdirectory below (level 2). The higher the number the deeper it will look for the file name."
+
+#example 5
+echo "find . -mindepth 3 -maxdepth 5 -name passwd"
+echo "Will find the passwd file between subdirectory 2 and 4."
+
+#example 6
+echo "find . -exec grep chrome {} \;"
+echo "Will execute "grep chrome" on all files in the current directory and all of its sub-directories."
+
+#example 7
+echo "find -name -not "myfile.txt""
+echo "Will invert the match and find every program that is not myfile.txt."
+
+#example 8
+echo "find . -perm g=r -type f -exec ls -l {} \;"
+echo "Find files which have read permission only to group and execute 'ls -l' on them."
+
+#example 9
+echo "find ~ -empty"
+echo "Find all empty files (zero byte file) in your home directory and its subdirectory."
+
+#example 10
+echo "find ~ -size +100M"
+echo "Find files larger than 100 Megabytes. You can exchange the '+' for a '-' to search for less than. You can also switch the 'M' for a 'k' to search by kilobytes."
+
+#example 11
+echo "find . -type d"
+echo "Find all directories. 'f' to find all normal files."
+
+exit 0
