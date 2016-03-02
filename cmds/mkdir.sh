@@ -11,9 +11,9 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "mkdir [-pv] [-m mode] directory name ..."
+echo "mkdir -pv -m mode mydir/"
 echo -e "\t-p: Create sub-directories and lower sub-directories for a new directory that do not exist already"
-echo -e "\t-v: Print each directory that midir creates"
+echo -e "\t-v: Print each directory that mkdir creates"
 echo -e "\t-m mode: Set permissions of new directories"
 
 echo "------------"
