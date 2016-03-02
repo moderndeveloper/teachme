@@ -21,11 +21,11 @@ echo "------------"
 # the command's usage examples
 # example 1
 echo "$ touch my_file.txt"
-echo "If my_file.txt doesn't exit, the touch command creates a my_file.txt with zero lenght. If the file exits, the command changes both modification and access times but doesn't modify the file content."
+echo "If my_file.txt doesn't exit, the touch command creates a my_file.txt with zero length. If the file exits, the command changes both modification and access times but doesn't modify the file content."
 
 # example 2
 echo "$ touch -r file1 -B 10 file2"
-echo "If file2 doesn't exit, the above command creates a file2 based on file1's timestamp. Otherwise, the command modifies the timestamp of file2. The -r option tells touch to use the file1's timestamp instead of current time for creating/modifying file2. The -B option modifiesthe time of file2 by going back 10 seconds. So the above command creates/modifies file2 10 seconds older than file1."
+echo "If file2 doesn't exit, the above command creates a file2 based on file1's timestamp. Otherwise, the command modifies the timestamp of file2."
 
 
 exit 0
