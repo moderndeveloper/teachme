@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a test command."
+echo "This is a touch command."
 
 # The command's name
-echo -e 'test'
+echo -e 'touch'
 
 # the command's description
-echo "description here"
+echo "It creates a new file if the specify one does not exist. If one does exist, then it changes file timestamp."
 
 echo "------------"
 
