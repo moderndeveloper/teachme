@@ -10,10 +10,9 @@ echo "Echo command prints messages and operands to terminal."
 echo "------------"
 
 # the command's syntax
-echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "Syntax: echo [OPTION] [STRING]"
+echo "[OPTION]: -n, -e"
+echo -e "-n: Do not print the trailing newline \n-e: Enable backlash escapes"
 #   ...      etc
 
 echo "------------"
