@@ -12,8 +12,8 @@ echo "------------"
 # the command's syntax
 echo "Syntax modified:"
 echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo -e "\t--help: display help and exit"
+echo -e "\t--version: output version information and exit"
 #   ...      etc
 
 echo "------------"
