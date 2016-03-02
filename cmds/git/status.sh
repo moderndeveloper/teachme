@@ -10,10 +10,10 @@ echo "The git status command displays the status of the working directory. It sh
 echo "------------"
 
 # the command's syntax
-echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "Syntax: git status [option]"
+echo "git status -sb"
+echo "Show status for current status of the working directory and its branch in short format (-sb)"
+
 #   ...      etc
 
 echo "------------"
