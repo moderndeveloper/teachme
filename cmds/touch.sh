@@ -10,10 +10,10 @@ echo "It creates a new file if the specify one does not exist. If one does exist
 echo "------------"
 
 # the command's syntax
-echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "Syntax:touch [option] file"
+echo "touch argument1 argument2"
+echo -e "\targument1: options"
+echo -e "\targument2: name of the file to be created or updated"
 #   ...      etc
 
 echo "------------"
