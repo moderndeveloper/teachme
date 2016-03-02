@@ -12,8 +12,7 @@ echo "pwd stands for 'print working directory', which prints out the entire path
 echo "------------"
 
 # the command's syntax
-echo "Syntax modified:"
-echo "test argument1 argument2"
+echo "pwd argument1"
 echo -e "\t--help: display help and exit"
 echo -e "\t--version: output version information and exit"
 #   ...      etc
