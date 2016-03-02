@@ -20,12 +20,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "git init"
+echo "Initalize current working directory"
 
 # example 2
-echo "git test something"
-echo description here
+echo "git init --bare MYDIRECTORY"
+echo "Initalize an empty Git repository called MYDIRECTORY and store it in MYDIRECTORY.git"
 
 
 exit 0
