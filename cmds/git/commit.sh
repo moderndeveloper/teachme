@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a test command."
+echo "This is a git commit command."
 
 # The command's name
-echo -e 'test'
+echo -e 'commit'
 
 # the command's description
-echo "description here"
+echo "Records changes to the repository"
 
 echo "------------"
 
