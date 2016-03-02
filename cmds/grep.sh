@@ -5,7 +5,7 @@ echo "This is a grep command."
 echo -e 'grep'
 
 # the command's description
-echo "description here"
+echo "It stands for 'global regular expression print'. It matches a regular expression against a text file and prints tbe output when match is found"
 
 echo "------------"
 
