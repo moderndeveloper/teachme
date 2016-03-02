@@ -25,12 +25,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "cd /var/tmp"
+echo change into "/var/tmp" directory
 
 # example 2
-echo "test something"
-echo description here
+echo "cd"
+echo change to current user home directory
 
 
 exit 0
