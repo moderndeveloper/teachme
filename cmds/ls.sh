@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a test command."
+echo "This is a ls command."
 
 # The command's name
-echo -e 'test'
+echo -e 'ls'
 
 # the command's description
-echo "description here"
+echo "list directory contents"
 
 echo "------------"
 
