@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-echo "This is a touch command."
+echo "This is a command-line command."
 
 # The command's name
 echo -e 'touch'
