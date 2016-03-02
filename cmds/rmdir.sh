@@ -25,7 +25,7 @@ echo "The input removes the empty directory my_dir/."
 
 # example 2
 echo "$ rmdir -p dir1/dir2/dir3"
-echo "The command removes the entire diretory tree by first removing dir3/, then dir2/ and finally dir1/."
+echo "The command removes the entire directory tree by first removing dir3/, then dir2/ and finally dir1/."
 
 
 exit 0
