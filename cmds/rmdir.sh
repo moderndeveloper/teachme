@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a test command."
+echo "This is a remove directory command."
 
 # The command's name
-echo -e 'test'
+echo -e 'rmdir'
 
 # the command's description
-echo "description here"
+echo "Removes an empty directory. To remove non-empty directory, see 'rm' recursive removal."
 
 echo "------------"
 
