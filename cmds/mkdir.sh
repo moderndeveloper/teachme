@@ -2,10 +2,10 @@
 echo "This is a test command."
 
 # The command's name
-echo -e 'test'
+echo -e 'mkdir'
 
 # the command's description
-echo "description here"
+echo "mkdir is used to create directories on a file system"
 
 echo "------------"
 
