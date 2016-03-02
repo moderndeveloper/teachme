@@ -17,12 +17,11 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "rm -dv MYDIRECTORY"
+echo "Remove directory named 'MYDIRECTORY' and all its contents. When complete, print what has been done"
 
 # example 2
-echo "test something"
-echo description here
-
+echo "rm -rf MYDIRECTORY"
+echo "Remove the directory named 'MYDIRECTORY' and all its files contain within 'MYDIRECTORY'. If a file is write-protected, prompt for permission to remove file."
 
 exit 0
