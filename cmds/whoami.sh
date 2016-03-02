@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a test command."
+echo "This is a command-line command."
 
 # The command's name
-echo -e 'test'
+echo -e 'whoami'
 
 # the command's description
-echo "description here"
+echo "It prints user name / login name of the current user"
 
 echo "------------"
 
