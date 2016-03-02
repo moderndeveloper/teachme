@@ -21,12 +21,19 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "find ./MYDIR -name 'acb.txt'"
+echo "In directory named './MYDIR' and find the file named matching exactly as 'abc.txt'"
 
 # example 2
-echo "git test something"
-echo description here
+echo "find ./MYDIR -iname 'acb.txt'"
+echo "Same as above except the search pattern is not case sensitive so it will return 'Abc.txt' or 'ABC.txt'...etc"
 
+# example 3
+echo "find ./MYDIR -not -iname 'abc.txt'"
+echo "In ./MYDIR  find all files that is NOT named 'abc.txt' and case is not sensitive"
+
+#example 4
+echo "find ./MYDIR -name '*.txt' -o -name '*.jpg'"
+echo "In ./MYDIR find all files with extension '.txt' OR '.jpg'"
 
 exit 0
