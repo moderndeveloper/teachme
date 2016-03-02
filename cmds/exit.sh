@@ -19,12 +19,9 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "exit"
+echo "terminates the shell"
 
-# example 2
-echo "test something"
-echo description here
 
 
 exit 0
