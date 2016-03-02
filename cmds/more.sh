@@ -31,12 +31,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "more +5 file.txt"
+echo Display the contents of file file.txt, beginning at line 5.
 
 # example 2
-echo "test something"
-echo description here
+echo "more +/"javascript" file.txt
+echo Display the contents of file file.txt, beginning at the first line containing the string "javascript".
 
 
 exit 0
