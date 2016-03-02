@@ -5,7 +5,7 @@ echo "This is a more command."
 echo -e 'more'
 
 # the command's description
-echo "The more command displays the contents of a text file one screen at a time. If the contents of the file doesn't fits in the display, the command will display part of the content that does fit. Then, you can press down arrow key or the space bar to scroll down one page at a time. To exit, press q key or esc."
+echo "The more command displays the contents of a text file one screen at a time. If the contents of the file do not fit in the display, the command will display part of the content that does fit. Then, press down arrow key or the space bar to scroll down one page at a time. To exit, press q key or esc."
 
 echo "------------"
 
