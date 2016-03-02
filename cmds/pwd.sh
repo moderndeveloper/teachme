@@ -1,11 +1,13 @@
 #!/usr/bin/bash
-echo "This is a pwd command."
+
+echo "This is a command-line command."
 
 # The command's name
 echo -e 'pwd'
 
 # the command's description
-echo "Print the full filename of the current working directory."
+echo "pwd stands for 'print working directory', which prints out the entire pathname of the directory you are currently working on, starting from the root direction (/)."
+
 
 echo "------------"
 
@@ -21,11 +23,11 @@ echo "------------"
 # the command's usage examples
 # example 1
 echo "$ pwd"
-echo "If you type the above input into a terminal, the computer will print out the directory the user is currently in, such as /Users/Myusername/Desktop."
+echo "Displays the directory the user is currently in, such as /Users/Myusername/Desktop."
 
 # example 2
-echo "test something"
-echo description here
+echo "$ pwd -P"
+echo "Displays the physical current working directory (all symbolic links resolved). For example, /test is symbolic link to /home/user/bin, this command will display /home/user/bin."
 
 
 exit 0
