@@ -1,0 +1,57 @@
+#!/usr/bin/bash
+
+# The command's name
+echo -e 'mv'
+
+# the command's description
+echo "description here"
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "git test argument1 argument2"
+echo -e "\targument1: description of argument 1"
+echo -e "\targument2: description of argument 2"
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "mv myfile.txt ../"
+echo "Moves myfile.txt to the parent directory."
+
+# example 2
+echo "mv file1.txt file2.txt"
+echo "Renames file1.txt to file2.txt in the same directory."
+
+# example 3
+echo "mv * /home/jackson"
+echo "Move all file in the current directory to the specified destination."
+
+#example 4
+echo "mv -i file1.txt directory"
+echo "If there is a copy of a file it will print 'overwrite directory/file1.txt? (y/n [n])'. -i makes it interactive, prompting you if a file of the same name already exists."
+
+#example 5
+echo "mv -f file.txt destination/"
+echo "mv will move the file(s) without prompting even if it is writing over an existing target."
+
+#example 6
+echo "mv -b filte.txt "
+echo "Modifies the timestamp by going forwards a specified amount, in this case forward 30 seconds."
+
+#example 7
+echo "mv -v * /home/jackson"
+echo "-v, tells it to be verbose and display the name of each file and it's destination before moving it."
+
+#example 8
+echo "mv -u * /home/jackson"
+echo "This will only perform an update if the source is newer than the destination."
+
+#example 9
+echo "$ mv -n *.txt /home/pungki/office"
+echo "-n will prevent any files from being overwritten."
+
+exit 0
