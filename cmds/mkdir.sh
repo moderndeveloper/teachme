@@ -20,12 +20,16 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "mkdir MYFILE"
+echo "Create a new directory called MYFILE in the current working directory"
 
 # example 2
-echo "test something"
-echo description here
+echo "mkdir -m a=rwx MYFILE"
+echo "Create a new diretory called MYFILE and set its permission to read, write and execute for all users"
+
+# example 3
+echo "mkdir -p /Desktop/directoryA/MYDIRECTORY"
+echo "Create a new directory called MYDIRECTORY in directoryA. If directoryA does not exist, mkdir to create one"
 
 
 exit 0
