@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-echo "This is a pwd command."
+echo "This is a command-line command."
 
 # The command's name
 echo -e 'pwd'
