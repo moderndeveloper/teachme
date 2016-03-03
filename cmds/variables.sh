@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a test command."
+echo "This is a variables command."
 
 # The command's name
-echo -e 'test'
+echo -e 'variables'
 
 # the command's description
-echo "description here"
+echo "Variables are used to store values. The value stored could be a number, text, filename, device, or any other type of data."
 
 echo "------------"
 
