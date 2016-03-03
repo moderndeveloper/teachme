@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 # The command's name
 echo -e 'git reset'
@@ -19,12 +19,24 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "git reset file.txt"
+echo "Remove the specified file from the staging area, but leave the working directory unchanged. This unstages a file without overwriting any changes."
 
 # example 2
-echo "git test something"
-echo description here
+echo "git reset"
+echo "Reset the staging area to match the most recent commit, but leave the working directory unchanged. This unstages all files without overwriting any changes, giving you the opportunity to re-build the staged snapshot from scratch."
+
+# example 3
+echo "git reset --hard"
+echo "Reset the staging area and the working directory to match the most recent commit. This will delete any changes you have made in your working directory, so be careful when calling this command."
+
+# example 4
+echo "git reset <commit>"
+echo "This will have the branch point back to the specified commit. The staging area will reset to match the state of the repository at this point. The working directory will still maintain all the changes you have made after this commit."
+
+# example 5
+echo "git reset --hard <commit>"
+echo "This will have the branch point back to the specified commit. The staging area and working directory will reset to match the state of the repository at this point. Everything passed the point of the specified commit will be deleted, including any commits made after this point. Do not take this command lightly."
 
 
 exit 0
