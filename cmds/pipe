@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'pipe'
+
+# the command's description
+echo "description here"
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "command1 | command2"
+echo -e "\tcommand1: The output of the command to pipe into command2"
+echo -e "\tcommand2: command2 will use the output of command1 as input"
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "test"
+echo description here
+
+# example 2
+echo "test something"
+echo description here
+
+
+exit 0
