@@ -7,7 +7,7 @@ echo -e 'git commit'
 # the command's description
 echo "git commit adds the latest version of your staged files to the project's version control. 
 
-Commits are made to the local repository, not the remote repository (which would require to perform a git push)."
+Commits are made to the local repository, not the remote repository (which would require a git push)."
 
 echo "------------"
 
