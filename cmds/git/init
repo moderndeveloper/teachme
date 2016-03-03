@@ -7,7 +7,7 @@ echo -e 'git init'
 # the command's description
 echo "git init initializes a new Git repository or reinitializes an existing one. If no argument is specifified, git init will perform on your present working directory.
 
-git init converts your directory into a Git repository. It creates a .git folder and allows version control to start. When you reinitialize an existing repository, its commit history will be resetted."
+git init converts your directory into a Git repository. It creates a .git folder and allows version control to start. When you reinitialize an existing repository, its commit history will be reset."
 
 echo "------------"
 
