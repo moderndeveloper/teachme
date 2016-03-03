@@ -11,9 +11,12 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "git push --all origin"
+echo -e "\t--all: Push all branches out. Cannot be used when a branch is specified in the command."
+echo "git push -n -f -u origin master"
+echo -e "\t-n or --dry-run: Display what will be pushed without actually pushing the changes."
+echo -e "\t-f or --force: Force push changes to a remote repo without being rejected even when the remote contains work that the local copy does not have."
+echo -e "\t-u or --set-upstream: Set up the tracking information during push. If there is an existing tracking branch and all commits will be pushed to the same branch under the same repo, the flag can remember the tracking information and the repo and branch can be omitted in later pushes."
 #   ...      etc
 
 echo "------------"
