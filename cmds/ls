@@ -2,10 +2,10 @@
 echo "This is a test command."
 
 # The command's name
-echo -e 'test'
+echo -e 'ls'
 
 # the command's description
-echo "description here"
+echo "The ls command lists the contents of the specified argument, either a folder or file. If no argument is given the contents of the present working directory are shown."
 
 echo "------------"
 
