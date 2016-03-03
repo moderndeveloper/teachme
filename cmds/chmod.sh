@@ -20,12 +20,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "$chmod u+x, g+rw my_script"
+echo "This input addes execute permission on my_script for the owner and read and write permissions for users in the group which my_script belongs to."
 
 # example 2
-echo "test something"
-echo description here
+echo "chmod --reference=file1 file2"
+echo "The command sets the file2's permission same as file1."
 
 
 exit 0
