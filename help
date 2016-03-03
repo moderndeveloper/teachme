@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
   echo -e '\n\tTEACHME PROGRAM'
   echo -e '\n\tThe purpose of teachme is to provide beginner-friendly explanations\n\tto command-line and git topics and commands'

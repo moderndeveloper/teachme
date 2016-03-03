@@ -1,5 +1,5 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 echo -e "\nteachme commands available:\n"
-find ./cmds/ -maxdepth 1 -type f -printf '%f\n'
-find ./cmds/git/ -maxdepth 1 -type f -printf 'git %f\n'
+find ./cmds/ -maxdepth 1 -type f -exec sh -c 'echo "${0##*/}"' {} \;
+find ./cmds/git -maxdepth 1 -type f -exec sh -c 'echo "git ${0##*/}"' {} \;

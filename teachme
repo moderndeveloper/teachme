@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 cmdpath='/cmds/'
 cmdname="$1"
 # flags are read first
