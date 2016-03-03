@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a git test command."
+echo "This is a git fetch command."
 
 # The command's name
-echo -e 'git test'
+echo -e 'git fetch'
 
 # the command's description
-echo "description here"
+echo "The git fetch synchronizes a repo with other ones. It downloads any data that the local repo does not have. But the differences will not merge into the local repo automatically."
 
 echo "------------"
 
