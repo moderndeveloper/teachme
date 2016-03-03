@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+# The concepts's name
+echo -e 'for'
+
+# the concept's description
+echo "description here"
+
+echo "------------"
+
+# the concept's syntax
+echo -e "Syntax:\n"
+echo -e "for i in \$( ls ); 
+do
+  echo item: \$i
+done"
+echo -e "\n\ti: Iteration item"
+
+echo "------------"
+
+# the concept's usage examples
+# example 1
+echo "test"
+echo description here
+
+# example 2
+echo "test something"
+echo description here
+
+
+exit 0
