@@ -10,11 +10,9 @@ echo "description here"
 echo "------------"
 
 # the command's syntax
-echo "Syntax: git fetch [options] [repository [refspec]]"
-echo "git fetch -utp origin"
-echo -e "\-u: Override default by updating the head to current branch"
-echo -e "\-t: Fetch all tags from remote"
-echo -e "\-p: After fetching, remove any remote-tracking references that no longer exist on the remote"
+echo "Syntax:"
+echo 'git config --edit'
+echo -e "\t--edit: Open an editor to modify the specified config file; either --system, --global, or repository (default)."
 #   ...      etc
 
 echo "------------"
