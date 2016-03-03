@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'cp'
+
+# the command's description
+echo "description here"
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "cp path/to/source.txt /path/to/destination.txt"
+echo -e "\targument1: Source file to be copied."
+echo -e "\targument2: Destination of where source file should be copied to."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "test"
+echo description here
+
+# example 2
+echo "test something"
+echo description here
+
+
+exit 0
