@@ -2,10 +2,10 @@
 echo "This is a test command."
 
 # The command's name
-echo -e 'test'
+echo -e 'alias'
 
 # the command's description
-echo "description here"
+echo "The alias command allows you to create aliases, or shorthand commands, of any other long, complex, commonly used commands."
 
 echo "------------"
 
