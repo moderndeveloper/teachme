@@ -11,9 +11,11 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "while [ some_condition ]"
+echo "do"
+echo -e "\tcommands to execute"
+echo "done"
+echo "After the while keyword, put some condition. The commands inside while will keep executing as long as some_condition is true. Exit the while loop if the conditon is false."
 #   ...      etc
 
 echo "------------"
