@@ -20,12 +20,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "$ git log master"
+echo "This command will display the commit history of the master branch in full details."
 
 # example 2
-echo "git test something"
-echo description here
+echo "$ git log --oneline branch-a ^master"
+echo "Compare commits in the master branch and branch-a. Putting a ^ character in front of the master branch only shows the commits that are unique to branch-a."
 
 
 exit 0
