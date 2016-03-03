@@ -19,12 +19,14 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "ssh jhawkins@collie.stanford.edu"
+echo "Login to a remote host on which you have an account under the same user name as the host you're currently logged into"
 
 # example 2
-echo "git test something"
-echo description here
+echo "ssh jhawkins@collie.stanford.ed"
+echo "Login to a remote host on which you have an account under a different user name than the host you're current logged into:"
 
-
+# example 3 
+echo "ssh -V"
+echo "Identify ssh client version."
 exit 0
