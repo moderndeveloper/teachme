@@ -11,9 +11,9 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "git diff --stat --cached"
+echo -e "\t--stat: Display the summary of a diff output instead of a full diff status"
+echo -e "\t--cached: Display the changes that have been staged."
 #   ...      etc
 
 echo "------------"
