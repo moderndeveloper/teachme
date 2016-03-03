@@ -11,7 +11,7 @@ It makes notice of the following:
   
 -Files that were added to the working tree after the git repository was initialized, also known as untracked files
 -Files that were already tracked, but not staged, and have changed since
--Files that were already tracked and staged, but have changed since the last git commit
+-Files that were already tracked and staged, and have changed since the last git commit
 "
 
 echo "------------"
