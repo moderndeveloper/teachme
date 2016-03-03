@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'exit'
+
+# the command's description
+echo "description here"
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "exit 1"
+echo -e "\t1: User specified exit code. 
+		However some exit codes has special meaning. 
+		Please refer to \033[4mhttp://www.tldp.org/LDP/abs/html/exitcodes.html\033[0m 
+		for more information."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "test"
+echo description here
+
+# example 2
+echo "test something"
+echo description here
+
+
+exit 0
