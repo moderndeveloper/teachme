@@ -20,12 +20,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git config --global alias.co checkout"
-echo "Set the shortcut for checkout to 'co'"
+echo "alias astart='cd ~/GNUstep/Library/AfterStart/start'"
+echo "Set the shortcut to change to this directory '~/GNUstep/Library/AfterStart/start' as 'astart'"
 
 # example 2
-echo "git config --global alias.cm '!git add -A && git commit -m'"
-echo "Set shortcut 'cm' to add all changes to staging area and commit them"
+echo "alias rm='rm -i'"
+echo "Set shortcut 'rm' to stand for interactive mode when removing file. This will prompt user to confirm the removing of file"
 
 
 exit 0
