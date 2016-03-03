@@ -2,10 +2,12 @@
 echo "This is a test command."
 
 # The command's name
-echo -e 'test'
+echo -e 'tar'
 
 # the command's description
-echo "description here"
+echo "The tar command is used to bundle a group of files/folders into an archive. An archive is a single file that keeps its contents intact, including file permissions such as read and write access and other filesystem information. 
+
+tar does not perform file compression."
 
 echo "------------"
 
