@@ -19,12 +19,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "git rm file.txt"
+echo "This will remove the file from the repository and directory while simultaneously staging the deletion, making the change ready to be committed in one command."
 
 # example 2
-echo "git test something"
-echo description here
+echo "git rm -f sample.txt"
+echo "-f will allow you to remove a file that has unstaged changes to it."
 
 
 exit 0
