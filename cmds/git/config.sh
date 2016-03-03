@@ -21,12 +21,15 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "git config --global user.name 'John Doe'"
+echo "Set the global user name to John Doe"
 
 # example 2
-echo "git test something"
-echo description here
+echo "git config --global color.status.added 'green blink'"
+echo "Change the git status of added file to blinking green"
 
+# example 3
+echo "git config --global alias.co checkout"
+echo "Set the short for checkout to 'co'"
 
 exit 0
