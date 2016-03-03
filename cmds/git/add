@@ -19,12 +19,15 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "git add README.md file.txt"
+echo "Will add all the specified files to the staging area."
 
 # example 2
-echo "git test something"
-echo description here
+echo "git add ."
+echo "This will recursively add all the file in the current directory and all subdirectories to the staging area."
+
+echo "git add -A"
+echo "Will add all files and paths in the repository to the staging area."
 
 
 exit 0
