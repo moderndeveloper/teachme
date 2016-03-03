@@ -2,10 +2,12 @@
 echo "This is a test command."
 
 # The command's name
-echo -e 'test'
+echo -e 'more'
 
 # the command's description
-echo "description here"
+echo "The more command displays the specified file in the terminal screen. 
+
+Pressing the [Return] key will display the next line. Pressing the [Space] bar will display as much of the remainder of the file as the window allows."
 
 echo "------------"
 
