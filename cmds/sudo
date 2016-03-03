@@ -19,12 +19,31 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "sudo ls /usr/local/protected"
+echo "Well get the file listing of an unreadable directory. Using the sudo command will override the directories permissions."
 
 # example 2
-echo "git test something"
-echo description here
+echo "sudo -v"
+echo "This will extend sudo's automatic authentication timeout, allowing you to continue issuing sudo commands without entering a password."
 
+# example 3
+echo "sudo -k"
+echo "This will 'kill' sudo authentication for the current user. The next sudo command will require a password."
+
+# example 4
+echo "sudo -u john vi ~john/webdocs/index.html"
+echo "Allow you to edit the index.html file with vi as the user john"
+
+# example 5
+echo "sudo apt-get install {package-name}"
+echo "This command will install packages with the root privileges."
+
+# example 6
+echo "sudo apt-get remove {package-name}"
+echo "This command will remove packages with the root privileges."
+
+# example 7
+echo "sudo apt-get update {package-name}"
+echo "This command will update packages with the root privileges."
 
 exit 0
