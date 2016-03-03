@@ -11,9 +11,8 @@ echo "------------"
 # the command's syntax
 echo "Syntax:"
 echo "grep \"string\" filename"
-echo -e "\tstring: Search Pattern"
+echo -e "\t\"string\": Search Pattern"
 echo -e "\tfilename: The matched file where grep will be performed."
-#   ...      etc
 
 echo "------------"
 
