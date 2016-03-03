@@ -20,12 +20,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "$ git rebase master"
+echo "This command will revert all commits from the starting point where current branch branched from master, and re-apply all those commits one by one on top of HEAD of master."
 
 # example 2
-echo "git test something"
-echo description here
+echo "$ git rebase -i master"
+echo "This command will open up a text editor populated with all of the commits introduced in current branch, listed from oldest to newest. User can change how Git will transfer the commits to the new base, leaving it as is will do a normal git rebase."
 
 
 exit 0
