@@ -20,12 +20,20 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo 'name_list=("Bob", "John", "Amy", "David", "Rachel")'
+echo 'for name in "${name_list[@]}"'
+echo "do"
+echo -e "-techo $name"
+echo "done"
+echo "Iterates the array name_list, then displays each element in the array to the terminal."
 
 # example 2
-echo "test something"
-echo description here
+echo "for i in {1..10}"
+echo "do"
+echo -e "\tlet double=i*2"
+echo -e "-techo $double"
+echo "done"
+echo "Iterates a list of numbers from 1 to 10, doubles each number, then displays the result to the terminal."
 
 
 exit 0
