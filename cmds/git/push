@@ -19,12 +19,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "git push origin master"
+echo "This pushes the selected branch 'master' to the remote alias 'origin'. If the master branch exists on the remote it will be updated, otherwise it will be created."
 
 # example 2
-echo "git test something"
-echo description here
+echo "git push origin"
+echo "If no branch is specified it will default to pushing to the upstream branch, this may vary depending on you version of git. You can set the push.default in git config."
 
 
 exit 0
