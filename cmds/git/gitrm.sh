@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a git test command."
+echo "This is a git rm command."
 
 # The command's name
-echo -e 'git test'
+echo -e 'git rm'
 
 # the command's description
-echo "description here"
+echo "The git rm command removes files from the staging area, or from the working directory and the staging area. If using git rm, there is no need to add the change (deletion) to the staging area by using git add."
 
 echo "------------"
 
