@@ -11,9 +11,9 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "ssh -v -l login_name remotehost.com"
+echo -e "\t-v: Verbose mode. It is used for debugging purpose and will displays debugging messages to the terminal."
+echo -e "\t-l: Followed with login name to specify the user to log in as on the remote machine."
 #   ...      etc
 
 echo "------------"
