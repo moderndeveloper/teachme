@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a git test command."
+echo "This is a git reset command."
 
 # The command's name
-echo -e 'git test'
+echo -e 'git reset'
 
 # the command's description
-echo "description here"
+echo "The git reset command resets current branch to a specified state. It can be used to undo changes and unstage files."
 
 echo "------------"
 
