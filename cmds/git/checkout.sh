@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a git test command."
+echo "This is a git checkout command."
 
 # The command's name
-echo -e 'git test'
+echo -e 'git checkout'
 
 # the command's description
-echo "description here"
+echo "The command can change between branches, and check out files or commits. Typing the command followed by a branch name will navigate user to that branch. To view a commit, simply add the commit hash after the command. Adding a filename after the commit hash will check out the file."
 
 echo "------------"
 
