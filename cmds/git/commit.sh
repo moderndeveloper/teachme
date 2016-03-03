@@ -20,12 +20,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "$ git commit"
+echo "Commit the staged changes. This command will launch a default text editor for adding a commit message."
 
 # example 2
-echo "test something"
-echo description here
+echo "$ git commit -a"
+echo "This command will commit any file in your last commit which has been modified or deleted. It is equvalent to running the git add command first, then the commit command. To place new files to the staging area, git add is still needed."
 
 
 exit 0
