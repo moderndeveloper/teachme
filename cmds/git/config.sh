@@ -30,6 +30,6 @@ echo "Change the git status of added file to blinking green"
 
 # example 3
 echo "git config --global alias.co checkout"
-echo "Set the short for checkout to 'co'"
+echo "Set the shortcut for checkout to 'co'"
 
 exit 0
