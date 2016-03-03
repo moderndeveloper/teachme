@@ -20,12 +20,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "$ git add -A \*.txt"
+echo "This command adds all new, modified and deleted text files to the staging area and make them ready to be committed."
 
 # example 2
-echo "git test something"
-echo description here
+echo "$ git add -p"
+echo "This input will begin an interactive staging session. Users can review all changes and decide which part to add to the staging area and which to ignore."
 
 
 exit 0
