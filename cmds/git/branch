@@ -19,12 +19,24 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "git branch"
+echo "List all the current branches in your repository"
 
 # example 2
-echo "git test something"
-echo description here
+echo "git branch testing"
+echo "Will create a branch named 'testing'"
+
+# example 3
+echo "git branch -d testing"
+echo "Will delete the branch named 'testing'. If the branch has unmerged changes it will not be deleted."
+
+# example 4
+echo "git branch -D testing"
+echo "-D executes a force delete on branch 'testing'. This means the branch will be deleted even if it has unmerged changes. This command will permanently throw away all of the commits associated with that line of development."
+
+# example 5
+echo "git branch -m awesome"
+echo "This will rename the current branch to 'awesome'"
 
 
 exit 0
