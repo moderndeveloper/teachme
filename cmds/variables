@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+# The concepts's name
+echo -e 'variables'
+
+# the concept's description
+echo "description here"
+
+echo "------------"
+
+# the concept's syntax
+echo -e "Syntax:"
+echo -e " 
+STR=\"HELLO WORLD!\"
+echo \$STR
+"
+
+# the concept's usage examples
+# example 1
+echo "test"
+echo description here
+
+# example 2
+echo "test something"
+echo description here
+
+
+exit 0
