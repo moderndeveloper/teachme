@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'wc'
+
+# the command's description
+echo "description here"
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "wc -l filename"
+echo -e "\t-l: Print the number of newlines."
+echo -e "\tfilename: The file where wc will be performed."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "test"
+echo description here
+
+# example 2
+echo "test something"
+echo description here
+
+
+exit 0
