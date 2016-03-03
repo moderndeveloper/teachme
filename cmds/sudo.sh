@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a test command."
+echo "This is a sudo command."
 
 # The command's name
-echo -e 'test'
+echo -e 'sudo'
 
 # the command's description
-echo "description here"
+echo "Sudo command, substitute user do, allows a user to execute commands as another user, by default the superuser."
 
 echo "------------"
 
