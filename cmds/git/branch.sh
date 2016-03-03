@@ -11,9 +11,13 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "git branch -d branch-name"
+echo -e "\t-d or --delete: Delete a branch. The branch to be deleted must not contains unmerged changes. Otherwise, it will not be deleted."
+echo "git branch -m old-branch new-branch"
+echo -e "\t-m or --move: Move or remame a branch"
+echo "git branch -a"
+echo -e "\t-a or --all: List all branches including remote-tracking branches and local ones."
+
 #   ...      etc
 
 echo "------------"
