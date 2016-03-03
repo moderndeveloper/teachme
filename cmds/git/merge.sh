@@ -20,12 +20,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "$ git merge branch-a"
+echo "The git merge command updates the current branch with the commits of branch-a."
 
 # example 2
-echo "git test something"
-echo description here
+echo "$ git merge --edit"
+echo "This input will open an editor for user to edit the auto-generated message before committing."
 
 
 exit 0
