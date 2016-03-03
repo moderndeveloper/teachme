@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a git test command."
+echo "This is a git pull command."
 
 # The command's name
-echo -e 'git test'
+echo -e 'git pull'
 
 # the command's description
-echo "description here"
+echo "This git command fetches new data from a remote repo to the local repo and immediately merges changes into the current branch. This is the same as running the git fetch command followed by the git merge command."
 
 echo "------------"
 
