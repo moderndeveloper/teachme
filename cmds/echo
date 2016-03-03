@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'echo'
+
+# the command's description
+echo "description here"
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "echo -e \"string\""
+echo -e "\t-e: Enabling echo to interpret backslash as escaped characters."
+echo -e "\t\"string\": The string where echo outputs."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "test"
+echo description here
+
+# example 2
+echo "test something"
+echo description here
+
+
+exit 0
+
+
+```bash
+
+
+```
