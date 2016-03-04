@@ -1,7 +1,7 @@
-echo -e 'test'
+echo -e 'rm'
 
 # the command's description
-echo "description here"
+echo "rm - remove files or directories"
 
 echo "------------"
 
