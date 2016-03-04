@@ -10,10 +10,10 @@ echo "Removes an empty directory. To remove non-empty directory, see 'rm' recurs
 echo "------------"
 
 # the command's syntax
-echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "Syntax: rmdir [options] directory"
+echo "[options] -p -v "
+echo -e "\t-p: Each directory argument is treated as a pathname of which all components will be removed, if they are empty, starting with the lastmost component. "
+echo -e "\tdirectory: name of the directory to be removed"
 #   ...      etc
 
 echo "------------"
