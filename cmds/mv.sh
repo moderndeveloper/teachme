@@ -26,12 +26,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "mv file.txt destination-directory"
+echo Moves the file file.txt to the directory destination-directory.
 
 # example 2
-echo "test something"
-echo description here
+echo "mv file.txt ../"
+echo Attempts to move the file file.txt into the parent directory.
 
 
 exit 0
