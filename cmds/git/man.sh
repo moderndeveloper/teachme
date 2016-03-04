@@ -23,10 +23,10 @@ echo "------------"
 # the command's usage examples
 # example 1
 echo "man man"
-echo View the manual page for the man command.
+echo View the manual page for the man command
 
 # example 2
 echo "man --nh --nj man"
-echo View the manual page for man, with no hyphenated words or justified lines.
+echo View the manual page for man, with no hyphenated words or justified lines
 
 
