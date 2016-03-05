@@ -11,9 +11,10 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "git add [OPTIONS]"
+echo -e "\tadd: description of argument 1"
+echo -e "\t[OPTIONS]: -A Update the index not only where the working tree has a file matching <pathspec> but also where the index already has an entry."
+echo -e "\t[OPTIONS]: pathspecs Files to add content from"
 #   ...      etc
 
 echo "------------"
