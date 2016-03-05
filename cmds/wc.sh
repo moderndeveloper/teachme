@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a test command."
+echo "This is a wc command."
 
 # The command's name
-echo -e 'test'
+echo -e 'wc'
 
 # the command's description
-echo "description here"
+echo "wc - print the number of bytes, words, and lines in files"
 
 echo "------------"
 
