@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a git test command."
+echo "This is a git init command."
 
 # The command's name
-echo -e 'git test'
+echo -e 'git init'
 
 # the command's description
-echo "description here"
+echo "Create an empty Git repository or reinitialize an existing one"
 
 echo "------------"
 
