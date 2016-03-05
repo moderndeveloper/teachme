@@ -11,9 +11,9 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "git commit [OPTIONS]"
+echo -e "\tcommit: Record changes to files whose contents are tracked"
+echo -e "\t[OPTIONS]: -a Tell the command to automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected."
 #   ...      etc
 
 echo "------------"
