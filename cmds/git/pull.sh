@@ -22,12 +22,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "git pull, git pull origin"
+echo Update the remote-tracking branches for the repository you cloned from, then merge one of them into your current branch
 
 # example 2
-echo "git test something"
-echo description here
+echo "git pull origin next"
+echo Merge into the current branch the remote branch next
 
 
 exit 0
