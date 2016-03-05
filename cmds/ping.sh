@@ -11,9 +11,9 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "ping [ -LRUbdfnqrvVaAB] [ -c count] [ -i interval] [ -l preload] [ -p pattern] [ -s packetsize] [ -t ttl] [ -w deadline] [ -F flowlabel] [ -I interface] [ -M hint] [ -Q tos] [ -S sndbuf] [ -T timestamp option] [ -W timeout] [ hop ...] destination"
+echo -e "\t[ -c count]: Stop after sending count ECHO_REQUEST packets"
+echo -e "\t[ -i interval]: Wait interval seconds between sending each packet"
 #   ...      etc
 
 echo "------------"
