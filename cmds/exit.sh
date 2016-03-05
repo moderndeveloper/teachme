@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a test command."
+echo "This is a exit command."
 
 # The command's name
-echo -e 'test'
+echo -e 'exit'
 
 # the command's description
-echo "description here"
+echo "exit - cause normal process termination"
 
 echo "------------"
 
