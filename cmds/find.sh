@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a git command."
+echo "This is a find command."
 
 # The command's name
-echo -e 'git'
+echo -e 'find'
 
 # the command's description
-echo "description here"
+echo "find - search for files in a directory hierarchy"
 
 echo "------------"
 
