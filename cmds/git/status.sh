@@ -20,12 +20,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "git status"
+echo Displays the repository status before and after staging and committing
 
 # example 2
-echo "git test something"
-echo description here
+echo "git status -s"
+echo same as above in short format
 
 
 exit 0
