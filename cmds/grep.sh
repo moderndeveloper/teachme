@@ -11,9 +11,12 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "grep [OPTIONS] PATTERN [FILE]"
+echo -e "\t[OPTIONS]: --color Surround the matching string with the marker find in GREP_COLOR environment variable. "
+echo -e "\t[OPTIONS]: -n Prefix each line of output with the line number within its input file."
+echo -e "\t[OPTIONS]: -i Ignore case distinctions in both the PATTERN and the input files."
+echo -e "\tPATTERN: pattern of text to search for"
+echo -e "\t[FILE] a file or multiple files to search against"
 #   ...      etc
 
 echo "------------"
