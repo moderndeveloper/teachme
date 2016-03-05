@@ -11,9 +11,11 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "tar [-] A --catenate --concatenate | c --create | d --diff --compare |
+    --delete | r --append | t --list | --test-label | u --update |
+    x --extract --get [options] [pathname ...]"
+echo -e "\tThe first argument to tar should be a function specification: either one of the letters A, c, d, r, t, u, or x, or one of the long function names."
+echo -e "\tA, --catenate, --concatenate: Append tar files to an archive."
 #   ...      etc
 
 echo "------------"
