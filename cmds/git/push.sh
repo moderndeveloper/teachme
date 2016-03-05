@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a git test command."
+echo "This is a git push command."
 
 # The command's name
-echo -e 'git test'
+echo -e 'git push'
 
 # the command's description
-echo "description here"
+echo "git-push - Update remote refs along with associated objects"
 
 echo "------------"
 
