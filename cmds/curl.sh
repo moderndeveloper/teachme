@@ -22,12 +22,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "curl http://www.google.com"
+echo Fetch the file index.htm from www.google.com using the HTTP protocol, and display it to standard output.
 
 # example 2
-echo "test something"
-echo description here
+echo "curl --limit-rate 1234B -O http://www.google.com/index.htm"
+echo limit the download speed to (an average speed of) 1,234 bytes/second.
 
 
 exit 0
