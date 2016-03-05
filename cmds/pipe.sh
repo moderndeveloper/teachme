@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a test command."
+echo "This is a pipe command."
 
 # The command's name
-echo -e 'test'
+echo -e 'pipe'
 
 # the command's description
-echo "description here"
+echo "pipe - create pipe"
 
 echo "------------"
 
