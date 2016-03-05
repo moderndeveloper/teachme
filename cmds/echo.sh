@@ -19,12 +19,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "echo Tecmint is a community of Linux Nerds"
+echo  Input a line of text and display on standard output
 
 # example 2
-echo "test something"
-echo description here
+echo "echo -e "Tecmint \nis \na \ncommunity \nof \nLinux \nNerds"
+echo Using option ‘\n‘ – New line with backspace interpretor ‘-e‘ treats new line from where it is used
 
 
 exit 0
