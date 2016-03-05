@@ -21,12 +21,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "cp ~/pictures/.jpg ~/picture-backup"
+echo copies all files with extension jpg from directory pictures to pictures-backup
 
 # example 2
-echo "test something"
-echo description here
+echo "cp -R ~/files ~/files-backup"
+echo Copying Files Recursively
 
 
 exit 0
