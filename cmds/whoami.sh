@@ -11,9 +11,9 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "whoami [OPTION]"
+echo -e "\t--help: Display a help message, and exit."
+echo -e "\t--version: Display version information, and exit."
 #   ...      etc
 
 echo "------------"
