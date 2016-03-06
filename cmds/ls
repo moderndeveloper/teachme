@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-echo "This is a test command."
 
 # The command's name
 echo -e 'ls'
@@ -20,12 +19,34 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "ls ~"
+echo "Lists the content of the HOME directory."
 
 # example 2
-echo "test something"
-echo description here
+echo "ls -1"
+echo "Lists everything in the current working directory in a vertical list."
 
+# example 3
+echo "ls -l"
+echo "Lists everything in the current working directory in the long format. i.e. showing read/write permissions of a file, last modified time of a file, file size of a file and more."
 
+# example 4
+echo "ls -lt"
+echo "Lists everything in the current working directory in the long format and also sort the output according to the last modification time."
+
+# example 5
+echo "ls -a"
+echo "List all hidden files in the current working directory. Hidden files are usually suffix with a dot (.) in Unix systems."
+
+# example 5
+echo "ls -R"
+echo "Recursively lists all files in the current working directory."
+
+# example 6
+echo "ls -d */"
+echo "Lists directory entires only in the current working directory."
+
+# example 7
+echo "ls ../../"
+echo "Lists everything two levels above the current working directory."
 exit 0
