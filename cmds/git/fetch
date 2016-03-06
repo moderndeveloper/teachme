@@ -1,5 +1,4 @@
-#!/usr/bin/bash
-echo "This is a test command."
+#!/usr/bin/env bash
 
 # The command's name
 echo -e 'git fetch'
@@ -20,12 +19,23 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "git fetch origin"
+echo "Synchronize the local repository with the remote repository. This means that git will download any data that is not available locally into the local repository."
 
 # example 2
-echo "test something"
-echo description here
+echo "git fetch --all"
+echo "Synchronize the local repository with all remote repository. This means that git will download any data that is not available locally from all remote repositories into the local repository."
 
+# example 3
+echo "git fetch --multiple remoteone remotetwo"
+echo "Synchronize the local repository with multiple remote repository that are specified. This means that git will download any data that is not available locally from the specified remote repositories into the local repository."
+
+# example 4
+echo "git fetch --force origin"
+echo "Synchronize the local repository with the remote repository while disregarding any conflicts between the file in the local repository and remote repository. This means that git will download any data that from the remote repository into the local repository."
+
+# example 5
+echo "git fetch --tags origin"
+echo "Fetches all tags from the remote repository into the local repository's tag with the same name."
 
 exit 0
