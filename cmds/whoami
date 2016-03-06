@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo -e whoami
+echo whoami is a command which will prints the effective username of the current login user to the standard out,which usually is display screen
+echo ------
