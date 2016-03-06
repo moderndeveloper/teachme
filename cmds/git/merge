@@ -10,7 +10,20 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
+echo
 echo "git merge branch_name"
+echo -e "\tbranch_name: The specified branch to merge into the current branch."
+echo
+echo "git merge --no-edit branch_name"
+echo -e "\t--no-edit: Use git merge with the auto-generated merge commit message."
+echo -e "\tbranch_name: The specified branch to merge into the current branch."
+echo
+echo "git merge -e branch_name"
+echo -e "\t-e: Enable git merge to open an editor before committing to edit the auto-generated merge commit message."
+echo -e "\tbranch_name: The specified branch to merge into the current branch."
+echo
+echo "git merge --no-commit branch_name"
+echo -e "\t--no-commit: Enable git merge to merge only and not make a new commit automatically."
 echo -e "\tbranch_name: The specified branch to merge into the current branch."
 
 echo "------------"
