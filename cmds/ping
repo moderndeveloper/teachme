@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo -e ping
+echo ping is a simple way to send network data to, and receive data from, another computer on a network. It is usually used to test whether another system is reachable over a network and how much time it takes. Ping sends Internet Control Message Protool echo request packets to the target host and waiting for an ICMP echo reply. ICMP is one of the main internet protocols. It is used by network devices, such as routers,to send error message to indicate the requested services is not available or that a host could not be reached. Packet means a formated data unit carried by network.
+echo -------
