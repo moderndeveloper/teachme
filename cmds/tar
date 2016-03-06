@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+echo -e tar
+echo tar stands for tape archive. Originally, it was used to backup files to taped-based storage devices.Nowadays, it is used to collect,distribute and archive files together with keeping file system attributes such as user name, acess and modification dates, and directory structures. In short, tar is to combine a few files into a single file, for easy storage and distribution.
