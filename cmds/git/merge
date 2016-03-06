@@ -4,7 +4,9 @@
 echo -e 'git merge'
 
 # the command's description
-echo "description here"
+echo "Merging takes the changes from one branch (in the same repository or from a fork), and applies them into another. This often happens as a Pull Request (which can be thought of as a request to merge), or via the command line, but can also be done by using the merge command.
+
+Merge is a non-destrucitve operation that ties together the histories of both branches. It's non destructive in that the existing branches are not changed in any way, allowing you to go back to previous commits on either of the branches if neccesary."
 
 echo "------------"
 
