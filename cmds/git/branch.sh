@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a git test command."
+echo "This is a git branch command."
 
 # The command's name
-echo -e 'git test'
+echo -e 'git branch'
 
 # the command's description
-echo "description here"
+echo "git-branch - List, create, or delete branches"
 
 echo "------------"
 
