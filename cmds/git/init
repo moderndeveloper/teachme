@@ -1,5 +1,4 @@
-#!/usr/bin/bash
-echo "This is a test command."
+#!/usr/bin/env bash
 
 # The command's name
 echo -e 'git init'
@@ -22,12 +21,15 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "git init"
+echo "Initializes a new git repository or reinitializes an existing one."
 
 # example 2
-echo "test something"
-echo description here
+echo "git init -q"
+echo "Initializes a new git repository or reinitializes an existing one quietly. It will only print out error and warning messages."
 
+# example 3
+echo "git init --bare"
+echo "Initializes a bare git repository. A bare git repository has no working directory and has no .git directory created. Instead the files normally in the .git repository is placed in the top-level directory where the working directory would normally be."
 
 exit 0
