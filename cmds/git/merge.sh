@@ -11,9 +11,9 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "git merge [OPTIONS] repo"
+echo -e "\trepo: name of the repository, current branch if omitted"
+echo -e "\t[OPTIONS]: i.e. --edit Invoke an editor before committing successful mechanical merge to further edit the auto-generated merge message, so that the user can explain and justify the merge"
 #   ...      etc
 
 echo "------------"
