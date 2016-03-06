@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+echo -e 'for'
+echo 'for loop is a programming statement which allows a code block to be repeatly executed.
+This loop allows for a specification of a list of values and a list of commands is executed for 
+each value in the list. At the end of loop, there gonna have a return status. Return status is
+the exit status of the last command executes. If no commands are executed, the return status is 0'
