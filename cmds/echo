@@ -4,7 +4,7 @@
 echo -e 'echo'
 
 # the command's description
-echo "description here"
+echo "Echo is used to repeat entered type (arguments) back to the screen(standar output). It is a command typically used in shell scripts and bash files to output status text to the screen or a file."
 
 echo "------------"
 
