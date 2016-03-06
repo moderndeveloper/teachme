@@ -4,7 +4,9 @@
 echo -e 'cp'
 
 # the command's description
-echo "description here"
+echo "The cp command is used to make a copy of files and directories. The copies that are made are considered indepent from the originals, meaning that any changes made in the original will not affect the copy.
+
+When a copy is made of a file or directory, the copy must have a different name than the original if it is to be placed in the same directory as the original. However, the copy can have the same name if it is made in a different directory."
 
 echo "------------"
 
