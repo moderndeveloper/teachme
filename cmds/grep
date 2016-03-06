@@ -4,7 +4,8 @@
 echo -e 'grep'
 
 # the command's description
-echo "description here"
+echo -e "Grep stands for "global regular expression print," it processes text line by line and prints any lines which match a specified pattern. It is one of the most useful and powerful commands on Linux and other Unix-like operating systems because of its utilization of regular expressions.\n\n
+A Regular expression is a sequence of characters that define a search pattern, mainly for use in pattern matching with strings. Grep is a powerful tool for matching a regular expression against text in a file, multiple files, or a stream of input. It searches for the pattern of text that you specify on the command line, and outputs the results for you."
 
 echo "------------"
 
