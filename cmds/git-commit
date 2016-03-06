@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-echo -e git commit
-echo git commit command commits the staged snapshot to the project history. Commited snapshots are safe versions of a project because Git will not change them unless the user ask it to.Every project has 3 places:working directory, staging area and repository.The working are is the place where user change the files from repository. The staging are is a buffer area between the working directory and the project history. This area let user group related changes into a snapshot before committing it to the project history. git commit is moving a grouped snapshot of the modified files into repository. 

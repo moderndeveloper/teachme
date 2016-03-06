@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-echo -e git log
-echo git log command shows all the commit logs.If it does not have any argument or flag, it will list all commits, the latest one on the top, together with username,email, time and comment about the commit.
-echo -------
