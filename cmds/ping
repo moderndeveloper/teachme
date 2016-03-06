@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
-echo "This is a test command."
 
 # The command's name
 echo -e 'ping'
 
 # the command's description
-echo "The ping command is used to test the connection between a local computer/server and a remote server or host. 
+echo "The ping command is used to test the connection between a local computer/server and a remote server or host.
 
 Aside from checking connectivity, ping also tests the speed and reliability of a connection."
 
@@ -22,12 +21,23 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "ping study.moderndeveloper.com"
+echo "ping the host study.moderndeveloper.com to check whether it is alive."
 
 # example 2
-echo "test something"
-echo description here
+echo "ping -c 5 study.moderndeveloper.com"
+echo "Sends 5 packets to the host study.moderndeveloper.com then stop. The command automatically exits after sending the 5 packets."
 
+# example 3
+echo "ping -a study.moderndeveloper.com"
+echo "Audible ping, the terminal will beep if the host study.moderndeveloper.com is reachable."
+
+# example 3
+echo "ping -s 88 study.moderndeveloper.com"
+echo "Change the ping packet size from the default of 56 to 88."
+
+# example 5
+echo "ping -w 5 stsudy.moderndeveloper.com"
+echo "Change the ping packet size from the default of 56 to 88."
 
 exit 0
