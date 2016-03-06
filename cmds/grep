@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo -e grep
+echo grep ,which stands for global regular expression print, searches certain file globally and prints lines which match a specified regular expression.
+echo -----
