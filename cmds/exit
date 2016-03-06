@@ -10,10 +10,11 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
+echo
 echo "exit 1"
-echo -e "\t1: User specified exit code. 
-		However some exit codes has special meaning. 
-		Please refer to \033[4mhttp://www.tldp.org/LDP/abs/html/exitcodes.html\033[0m 
+echo -e "\t1: User specified exit code.
+		However some exit codes has special meaning, so refrain from using them.
+		Please refer to \033[4mhttp://www.tldp.org/LDP/abs/html/exitcodes.html\033[0m
 		for more information."
 
 echo "------------"
