@@ -2,13 +2,16 @@
 
 # The command's name
 echo -e "\nCOMMAND NAME:"
-echo -e "\n\ttest - command used for testing"
+echo -e "\n\tcd - (c)hange (d)irectory"
 
 echo -e "\n------------"
 
 # the command's description
 echo -e "\nCOMMAND DESCRIPTION:"
-echo -e "\n\tThe 'test' command is used for testing...."
+echo -e "\n\tThe 'cd' command changes the current working directory in the command line."
+echo -e "\tAs argument it uses a path to the desired directory, either a relative path (e.g. 'cd path/to/the/directory')\n\tor an absolute path (e.g. 'cd ~/projects')."
+echo -e "\tIf 'cd' command is used without an argument it will try to use \$HOME environment variable as its argument."
+echo -e "\tIf you use a dash as the argument ('cd -') you can go back to the previous active directory and the command \n\twill output its path to the console."
 
 echo -e "\n------------"
 

@@ -1,31 +1,38 @@
 #!/usr/bin/env bash
-echo "This is a git test command."
 
 # The command's name
-echo -e 'git test'
+echo -e "\nCOMMAND NAME:"
+echo -e "\n\tgit test - command used for git testing"
+
+echo -e "\n------------"
 
 # the command's description
-echo "description here"
+echo -e "\nCOMMAND DESCRIPTION:"
+echo -e "\n\tThe 'git test' command is used for git testing...."
 
-echo "------------"
+echo -e "\n------------"
 
 # the command's syntax
-echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo -e "\nCOMMAND SYNTAX:"
+echo -e "\n\tgit test argument1 argument2"
+echo -e "\t\targument1: description of argument 1"
+echo -e "\t\targument2: description of argument 2"
 #   ...      etc
 
-echo "------------"
+echo -e "\n------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo -e "\nCOMMAND EXAMPLES:"
+echo -e "\n\tExample 1"
+echo -e "\t\tgit test"
+echo -e "\t\tdescription here"
 
 # example 2
-echo "git test something"
-echo description here
+echo -e "\n\tExample 2"
+echo -e "\t\tgit test something"
+echo -e "\t\tdescription here\n"
 
+#   ...      etc
 
 exit 0
