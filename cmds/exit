@@ -4,7 +4,10 @@
 echo -e 'exit'
 
 # the command's description
-echo "description here"
+echo "Exit is a command or option used to close a program or file.
+
+The exit command is used to terminate a shell script upon an error and indicate to the user whether or not the script termination was successful. On termination programs will pass a value to their parent process. This value is referred to as an exit code or exit status. The standard convention is for the program to pass 0 for successful executions and 1 or higher for failed executions. Providing exit codes are important when scripts are used in other scripts. This is because it allows scripts to verify if other scripts they are using are running successfully or not, allowing them to operate appropriately.
+"
 
 echo "------------"
 
