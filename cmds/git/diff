@@ -4,7 +4,7 @@
 echo -e 'git diff'
 
 # the command's description
-echo "description here"
+echo "The command git diff lets you compare different versions of your files. It is most commonly used to see what changes you made since your last commit. You can also compare files between two different commits. Every commit in Git has a commit id, which you can get when you use the command 'git log'. You can use these ids to compare the differences bewteen the current state of the repository as well as other commits."
 
 echo "------------"
 
@@ -20,8 +20,10 @@ echo "git diff new-feature master"
 echo -e "\tnew-feature: The name of the branch to be compared to the master branch."
 echo -e "\tmaster: The name of the branch to be compared to the new-feature branch."
 echo
-echo "git diff <commit-SHA> <commit-SHA>"
-echo -e "\t<commit-SHA>: Enable git diff to show the difference between the two commits."
+echo "git diff <commit-id-1> <commit-id-2>"
+echo -e "diff: Enable git diff to show the difference between the two commits."
+echo -e "\t<commit-id>: the id for the specified commit, can be found using git log."
+
 echo
 echo "git diff upstream/master"
 echo -e "\tupstream/master: The name of the branch to be compared to the current branch."
