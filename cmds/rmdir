@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo -e rmdir
+echo rmdir is a command which will remove an empty directory. If the directory is not empty, this command will not work. If together with -p flag, rmdir command can remove the parent directory if it is empty.
+echo --------
