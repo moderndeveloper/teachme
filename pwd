@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-echo -e pwd
-pwd means print working directory, it writes full pathname of current working directory to the prompt
-echo ---------
