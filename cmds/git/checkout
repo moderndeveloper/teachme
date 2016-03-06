@@ -4,7 +4,9 @@
 echo -e 'git checkout'
 
 # the command's description
-echo "description here"
+echo "The git checkout command lets you navigate between the branches created by git branch. Checking out a branch updates the files in the working directory to match the version stored in that branch, and it tells Git to record all new commits on that branch.
+
+git checkout works hand-in-hand with git branch. When you want to start a new feature, you create a branch with git branch, then check it out with git checkout. You can work on multiple features in a single repository by switching between them with git checkout."
 
 echo "------------"
 
