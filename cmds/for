@@ -4,7 +4,7 @@
 echo -e 'for'
 
 # the concept's description
-echo "description here"
+echo "The for command is used to execute a for loop. A for loop operates on an arrary or a list of items repeating a set of commands for every item in the list. A for command can also be used to interate through a numeric range."
 
 echo "------------"
 
