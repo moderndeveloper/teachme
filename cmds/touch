@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-echo -e touch
-echo touch is a command which is used to change the modification or access date of a file. If that file does not exist,it equals to create that file with current time and 0 length. If that file exists, it will update the modification or access date of this file based on specific option requirement called flag.
-echo --------
-#!/usr/bin/env bash
-echo -e touch is a command which is used to change the modification or access date of a file. If that file does not exist,it equals to create that file with current time and 0 length. If that file exists, it will update the modification or access date of this file based on specific option requirement called flag.
-echo ------
+echo -e 'touch'
+echo 'touch is a command which is used to change the modification or access date of a file. If that file does not exist,it equals to create that file with current time and 0 length. If that file exists, it will update the modification or access date of this file based on specific option requirement called flag.'
+echo '--------''
