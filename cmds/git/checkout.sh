@@ -20,12 +20,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "git checkout master"
+echo Check out the master branch
 
 # example 2
-echo "git test something"
-echo description here
+echo "git checkout master~2 Makefile"
+echo Revert the Makefile to two revisions back
 
 
 exit 0
