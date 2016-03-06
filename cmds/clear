@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
-echo "This is a test command."
 
 # The command's name
 echo -e 'clear'
 
 # the command's description
-echo "The clear command clears previous input/output from the terminal window. 
+echo "The clear command clears previous input/output from the terminal window.
 
 Note that clear does not undo any actions, nor deletes input/output. Cleared input/output can be viewed by scrolling back up or using certain keyboard combinations, depending on the system being used."
 
@@ -22,12 +21,7 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
-
-# example 2
-echo "test something"
-echo description here
-
+echo "clear"
+echo "Clears all previous input/output from the terminal window."
 
 exit 0
