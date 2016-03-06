@@ -1,5 +1,4 @@
-#!/usr/bin/bash
-echo "This is a test command."
+#!/usr/bin/env bash
 
 # The command's name
 echo -e 'git pull'
@@ -22,12 +21,23 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "git pull origin feature"
+echo "Fetch the specified branch (feature) from the remote repository (origin) and merge it into the current branch."
 
 # example 2
-echo "test something"
-echo description here
+echo "git pull --rebase origin feature"
+echo "Fetch the specified branch (feature) from the remote repository (origin) and instead of using git merge to merge it into the current branch, it uses git rebase."
 
+# example 3
+echo "git pull --no-edit origin feature"
+echo "Fetch the specified branch (feature) from the remote repository (origin) and merge it into the current branch while using the auto-generated merge commit message."
+
+# example 4
+echo "git pull --no-commit origin feature"
+echo "Fetch the specified branch (feature) from the remote repository (origin) and merge it into the current branch but pretending the merge has failed so that it does not autocmmit. This gives the user a chance to inspect and tweak the merge result before committing."
+
+# example 5
+echo "git pull --force origin feature"
+echo "Fetch the specified branch (feature) from the remote repository (origin) and merge it into the current branch while disregarding any merge conflicts. Use this with caution."
 
 exit 0
