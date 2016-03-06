@@ -23,12 +23,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "git rm mydir/\*.txt"
+echo Removes all *.txt files from the index that are under the mydir directory and any of its subdirectories
 
 # example 2
-echo "git test something"
-echo description here
+echo "git rm -f git-*.sh"
+echo Lets the shell expand the asterisk, does not remove subdir/git-foo.sh.
 
 
 exit 0
