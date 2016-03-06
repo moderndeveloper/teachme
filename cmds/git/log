@@ -4,7 +4,7 @@
 echo -e 'git log'
 
 # the command's description
-echo "description here"
+echo "git log allows you to look back at a repository's commit history. It lists all the commits made in that repository in reverse chronological order – meaning the most recent commits show up first. By default the command lists each commit with its SHA-1 checksum(the cyrptographic hash used to identify the commit, simply the commit id number), the author’s name and email, the date written, and the commit message. There are a large variety of options for presenting commit information through the use of flags."
 
 echo "------------"
 
