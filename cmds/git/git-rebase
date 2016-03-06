@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+echo -e 'git rebase'
+echo 'git rebase is a another command for two branches to merge.For instance,
+user is on the new branch, git rebase will get the diff introduced by each commit of
+this branch and save those diffs to temporary files, then reset the current branch
+ to the same commit as the branch user is rebashing on. git rebase command actually takes the
+ change from new branch and reapply it on the branch user want to merge. '
+ echo '---------'
