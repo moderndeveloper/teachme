@@ -11,9 +11,9 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "git log [<options>] [<revision range>] [[\--] <path>…​]"
+echo -e "\t[<options>]: --pretty=oneline  the commit message is prefixed with this information on the same line"
+echo -e "\t<revision range>: Show only commits in the specified revision range "
 #   ...      etc
 
 echo "------------"
