@@ -10,6 +10,19 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
+echo
+echo "git diff"
+echo
+echo "git diff --stat"
+echo -e "\t--stat: Enable git diff to show only the stats of the file changes since the last commit."
+echo
+echo "git diff new-feature master"
+echo -e "\tnew-feature: The name of the branch to be compared to the master branch."
+echo -e "\tmaster: The name of the branch to be compared to the new-feature branch."
+echo
+echo "git diff <commit-SHA> <commit-SHA>"
+echo -e "\t<commit-SHA>: Enable git diff to show the difference between the two commits."
+echo
 echo "git diff upstream/master"
 echo -e "\tupstream/master: The name of the branch to be compared to the current branch."
 
