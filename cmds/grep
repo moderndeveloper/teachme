@@ -10,9 +10,22 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
+echo
 echo "grep \"string\" filename"
-echo -e "\t\"string\": Search Pattern"
+echo -e "\t\"string\": The case sensitive search pattern."
 echo -e "\tfilename: The matched file where grep will be performed."
+echo
+echo "grep -i \"string\" filename"
+echo -e "\t-i: Enable grep to perform case insensitive matching. By default, grep is case sensitive."
+echo -e "\t\"string\": The case insensitive search pattern."
+echo -e "\tfilename: The matched file where grep will be performed."
+echo
+echo "grep -n \"string\" filename"
+echo -e "\t-n: Enable grep to show the line number of the matched string in the file."
+echo -e "\t\"string\": The case sensitive search pattern."
+echo -e "\tfilename: The matched file where grep will be performed."
+
+
 
 echo "------------"
 
