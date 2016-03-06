@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-echo "This is a test command."
 
 # The command's name
 echo -e 'mkdir'
@@ -20,12 +19,19 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "mkdir dir1"
+echo "Creates a new directory called mydir1."
 
 # example 2
-echo "test something"
-echo description here
+echo "mkdir dir1 dir2 dir3"
+echo "Creates multiple directories at once, namely dir1, dir2 and dir3."
 
+# example 3
+echo "mkdir -p /a/b/c"
+echo "Recursively creates a directory called c. If the parent directory of a and b does not already exists, mkdir will create those directory first."
+
+# example 4
+echo "mkdir -m a=rwx dir1"
+echo "Creates a directory called dir1 and set its permission so that all users may read, write and execute the contents."
 
 exit 0
