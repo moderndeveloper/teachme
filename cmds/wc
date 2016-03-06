@@ -10,8 +10,17 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
+echo ""
 echo "wc -l filename"
-echo -e "\t-l: Print the number of newlines."
+echo -e "\t-l: Enable wc to print the number of newlines."
+echo -e "\tfilename: The file where wc will be performed."
+echo
+echo "wc -w filename"
+echo -e "\t-w: Enable wc to print the word count of a file."
+echo -e "\tfilename: The file where wc will be performed."
+echo
+echo "wc -c filename"
+echo -e "\t-w: Enable wc to print the total number of bytes in a file."
 echo -e "\tfilename: The file where wc will be performed."
 
 echo "------------"
