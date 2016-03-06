@@ -4,7 +4,9 @@
 echo -e 'git rebase'
 
 # the command's description
-echo "description here"
+echo "Rebasing is the process of moving a branch to a new base commit. Rebasing involves moving a branch from one commit to another. Internally, Git accomplishes this by creating new commits(replacing the commits from the branch being moved) and applying them to the specified base— literally rewriting the project history.
+
+The primary reason for rebasing is to maintain a linear project history and is a common way to integrate upstream changes into your local repository."
 
 echo "------------"
 
