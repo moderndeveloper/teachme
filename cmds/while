@@ -4,7 +4,7 @@
 echo -e 'while'
 
 # the concept's description
-echo "description here"
+echo "The while command allows you to execute a 'While' loop, which executes one or many commands until the supplied condition no longer holds true. It is usually used when you need to manipulate the value of a variable repeatedly."
 
 echo "------------"
 
