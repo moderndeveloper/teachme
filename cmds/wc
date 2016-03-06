@@ -4,7 +4,9 @@
 echo -e 'wc'
 
 # the command's description
-echo "description here"
+echo "The wc command, also now as word count, by default counts the number of lines, words, and characters in a given set of text. wc prints newline, word, and byte counts for each file provided, and a total if more than one file is specified.
+
+wc defines a word as ay set of letters, numbers and/or symbols which are separated from other characters by one or more spaces, tabs and/or newline characters (which are generated when the RETURN key is pressed). When counting the number of characters, all characters are counted, not only letters, numbers and symbols, but also spaces, tabs and newline characters. A line is only counted if it ends with a newline character."
 
 echo "------------"
 
