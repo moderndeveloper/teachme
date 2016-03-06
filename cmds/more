@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
-echo "This is a test command."
 
 # The command's name
 echo -e 'more'
 
 # the command's description
-echo "The more command displays the first screen of the specified file in the terminal screen, which is as much of the file that fits in the terminal window. 
+echo "The more command displays the first screen of the specified file in the terminal screen, which is as much of the file that fits in the terminal window.
 
 Pressing the [Return] key will display the next line of the file. Pressing the [Space] bar will display as much of the remainder of the file as the window allows."
 
@@ -22,12 +21,15 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "more file.txt"
+echo "Displays the content of the specified file in the terminal screen."
 
 # example 2
-echo "test something"
-echo description here
+echo "more +10 file.txt"
+echo "Displays the content of the specified file in terminal screen beginning at line 10."
 
+# example 3
+echo "more +/"pattern" file.txt"
+echo -e "Displays the content of the specified file in terminal screen containing the string \"pattern\"."
 
 exit 0
