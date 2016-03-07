@@ -2,3 +2,11 @@
 echo -e "git add"
 echo git add command adds a change from working area to staging area.Every project has 3 places:working directory, staging area and repository.The working are is the place where user change the files from repository. The staging are is a buffer area between the working directory and the project history. This area let user group related changes into a snapshot before committing it to the project history.git add does not really change the repository-git commit will update the repository with new snapshots of the files.
 echo ------
+
+# the command's syntax
+echo -e "\nCOMMAND SYNTAX:"
+echo -e "\n\tgit add [options]"
+echo -e "\t\t-A: Stages all files (new, modified, deleted)."
+echo -e "\t\t-u, Stages modified and deleted files only."
+
+echo -e "\n------------"
