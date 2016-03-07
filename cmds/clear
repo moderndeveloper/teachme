@@ -1,7 +1,17 @@
 #!/usr/bin/env bash
-echo -e clear
-echo clear command will clear current terminal screen.But the former commands and results are still there, they are just moved upwards.
-echo -------
+
+bold=$(tput bold)
+underline="\033[4m"
+normal=$(tput sgr0)
+
+#command name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}clear${normal}"
+echo -e "\n------"
+
+#command des
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo "\nclear command will clear current terminal screen.But the former commands and results are still there, they are just moved upwards."
 
 # the command's syntax
 echo -e "\nCOMMAND SYNTAX:"
