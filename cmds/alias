@@ -9,11 +9,11 @@ echo "The alias command allows you to create aliases, or shorthand commands, of 
 echo "------------"
 
 # the command's syntax
-echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
-#   ...      etc
+echo "alias [name]=[command]"
+
+echo -e "\t[name] - The name of the alias you would like to use for your given command."
+
+echo -e "\t[command] - The command for which you would like to create an alias."
 
 echo "------------"
 
