@@ -8,9 +8,14 @@ echo -e "\n------------"
 
 # the command's description
 echo -e "\nCOMMAND DESCRIPTION:"
-echo -e "\n\tThe 'more' command is used as a filter for displaying text one screen at a time,\n\tor paging the text. For navigating through text you can use spacebar - navigation\n\tis done one page at a time. When the end of text is reached the command will exit\n\tto the command line. For exiting earlier you can press 'q' key."
-echo -e "\n\t'more' command can get text for paging from a file (e.g. 'more myfile.txt') or\n\tit can be piped to it from another command (e.g. 'cat file1 file2 file3 | more')."
-echo -e "\n\t'more' command can accept various options to adjust how the paging is done.\n\tFor example to display 30 lines in every page you can use 'more -30 myfile.txt'"
+echo -e "\n\tThe 'more' command is used as a filter for displaying text one screen at a time,"
+echo -e "\tor paging the text. For navigating through text you can use spacebar - navigation"
+echo -e "\tis done one page at a time. When the end of text is reached the command will exit"
+echo -e "\tto the command line. For exiting earlier you can press 'q' key."
+echo -e "\n\t'more' command can get text for paging from a file (e.g. 'more myfile.txt') or"
+echo -e "\tit can be piped to it from another command (e.g. 'cat file1 file2 file3 | more')."
+echo -e "\n\t'more' command can accept various options to adjust how the paging is done."
+echo -e "\tFor example to display 30 lines in every page you can use 'more -30 myfile.txt'"
 
 echo -e "\n------------"
 
