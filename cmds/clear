@@ -2,3 +2,10 @@
 echo -e clear
 echo clear command will clear current terminal screen.But the former commands and results are still there, they are just moved upwards.
 echo -------
+
+# the command's syntax
+echo -e "\nCOMMAND SYNTAX:"
+echo -e "\n\tclear"
+echo -e "\t\tclear command accepts neither options nor arguments, and if specified ignores them"
+
+echo -e "\n------------"
