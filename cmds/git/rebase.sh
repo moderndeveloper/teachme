@@ -11,9 +11,10 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "git rebase [-i | --interactive] [options] [--exec <cmd>] [--onto <newbase>]
+	[<upstream> [<branch>]]"
+echo -e "\t[-i | --interactive]: Make a list of the commits which are about to be rebased. Let the user edit that list before rebasing."
+echo -e "\t--exec <cmd>: Append "exec <cmd>" after each"
 #   ...      etc
 
 echo "------------"
