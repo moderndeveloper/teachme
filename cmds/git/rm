@@ -4,7 +4,9 @@
 echo -e 'git rm'
 
 # the command's description
-echo "description here"
+echo "The git rm command removes files from the staging area and the working directory so that they will no longer be tracked by git.
+
+This command differs from the command rm, where rm only deletes the file in the working directory, but git still keeps it in the staging area. Do take note."
 
 echo "------------"
 
