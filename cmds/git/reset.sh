@@ -19,12 +19,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "git reset --hard HEAD~3"
+echo Rewind the master branch to get rid of three commits
 
 # example 2
-echo "git test something"
-echo description here
+echo "git reset --merge ORIG_HEAD"
+echo Discard local changes. "git reset --merge" keeps local changes
 
 
 exit 0
