@@ -6,3 +6,11 @@ this branch and save those diffs to temporary files, then reset the current bran
  to the same commit as the branch user is rebashing on. git rebase command actually takes the
  change from new branch and reapply it on the branch user want to merge. '
  echo '---------'
+
+ # the command's syntax
+echo -e "\nCOMMAND SYNTAX:"
+echo -e "\n\tgit rebase [options]"
+echo -e "\t\t-i: Interactive rebasing, with which you have an ability to alter commits \n\t\t as they are moved to the new branch, mostly used for cleaning a messy history \n\t\t before merging a feature branch into master."
+echo -e "\t\t--abort: Will leave you where you were before attempting the rebase."
+
+echo -e "\n------------"
