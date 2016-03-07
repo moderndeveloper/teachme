@@ -18,10 +18,6 @@ echo -e "\t[option: -r]: - Use the timestamp of the file that follows this flag.
 echo -e "\t[option: -d]: - Set the last access time to a specified timestamp."
 echo -e "\t[filename(s)]: - Path(s) of file(s) to be modified or created if the file(s) doesn't exist yet."
 
-
-
-#   ...      etc
-
 echo "------------"
 
 # the command's usage examples
