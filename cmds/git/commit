@@ -11,11 +11,13 @@ Commits are made to the local repository, not the remote repository (which would
 echo "------------"
 
 # the command's syntax
-echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
-#   ...      etc
+echo "git commit [option] [filename(s)]"
+
+echo -e "\t[option] - A command option or command flag specifiying how the staged filechanges will be committed."
+echo -e "\t[option: -m] - Allows the user to provide a committ message on the command line."
+echo -e "\t[option: -a] - Only commits files that have previously been committed."
+
+echo -e "\t[filename(s)] - Files are given on the command line, the command commits the contents of the named files, without recording the changes that are already staged. By default all staged files will be committed."
 
 echo "------------"
 
