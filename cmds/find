@@ -4,7 +4,11 @@
 echo -e 'find'
 
 # the command's description
-echo "description here"
+echo "The find command is used to search and locate files in a directory and prints various information about the files it found based on the expression given to the find command.
+
+The find command accepts a path to a directory as its argument and it will recursively search and locate files within that directory that matches the given expression.
+
+find also has a rather obnoxious syntax to use, so it is important to understand the fundamentals well."
 
 echo "------------"
 
@@ -19,11 +23,11 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "find . -name "README.md"
+echo "find . -name \"README.md\""
 echo "This example finds all files with name README.md in the current directory and all its sub-directories."
 
 # example 2
-echo "find . -iname "MyFile.txt""
+echo "find . -iname \"MyFile.txt\""
 echo "This command will find all files that match myfile.txt, ingnoring the case, in the current directory and all its sub-directories."
 
 # example 3
@@ -40,10 +44,10 @@ echo "Will find the passwd file between subdirectory 2 and 4."
 
 #example 6
 echo "find . -exec grep chrome {} \;"
-echo "Will execute "grep chrome" on all files in the current directory and all of its sub-directories."
+echo "Will execute \"grep chrome\" on all files in the current directory and all of its sub-directories."
 
 #example 7
-echo "find -name -not "myfile.txt""
+echo "find -name -not \"myfile.txt\""
 echo "Will invert the match and find every program that is not myfile.txt."
 
 #example 8
