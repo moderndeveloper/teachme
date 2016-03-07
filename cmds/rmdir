@@ -4,7 +4,7 @@
 echo -e 'rmdir'
 
 # the command's description
-echo "The rmdir command is used to remove empty directories only. The ability to delete only empty directories using the rmdir command is a safeguard feature that helps prevent accidental data loss since the command cannot be undone.
+echo "The rmdir command is used to remove empty directories (more commonly named 'folders')  only. The ability to delete only empty directories using the rmdir command is a safeguard feature that helps prevent accidental data loss since the command cannot be undone.
 
 If you need to delete both files and directories, the rmdir command has a sibling called rm, use that instead."
 
@@ -12,9 +12,11 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "rmdir [options] [directory]"
+echo -e "\t[options]: A command option or command flag."
+echo -e "\t[options: -v]: Will run rm 'verbosely'. Extended information will be provided while the command is run."
+echo -e "\t[options: -p]: Deletes all folders in the specified [directory] path if they are empty, starting with the lastmost folder."
+echo -e "\t[directory]: Directory/folder to be deleted."
 #   ...      etc
 
 echo "------------"
@@ -22,10 +24,10 @@ echo "------------"
 # the command's usage examples
 # example 1
 echo "rmdir dir1 dir2"
-echo "Will remove all specified empty directorys. This command will not delete directories that have files inside of them."
+echo "Will remove all specified empty directories. This command will not delete directories that have files inside of them."
 
 # example 2
-echo "mdir -p dir3/dir4/dir5"
+echo "rmdir -p dir3/dir4/dir5"
 echo "This will remove the selected directory and all subsequent parent directories if they become empty upon the removal of the child directory."
 
 exit 0
