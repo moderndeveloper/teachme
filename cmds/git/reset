@@ -4,7 +4,7 @@
 echo -e 'git reset'
 
 # the command's description
-echo "description here"
+echo "git reset provides a way to reset a file or repository to a previous commit. It is a dangerous tool as it is one of the git command that has the potential to make you lose your work."
 
 echo "------------"
 
