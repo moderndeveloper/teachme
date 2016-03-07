@@ -4,39 +4,41 @@
 echo -e 'find'
 
 # the command's description
-echo "The find command is used to search and locate files in a directory and prints various information about the files it found based on the expression given to the find command.
+echo "The find command is used to search and locate files in a directory. Additionally find prints various information about files it found based on the expression given to it.
 
-The find command accepts a path to a directory as its argument and it will recursively search and locate files within that directory that matches the given expression.
-
-find also has a rather obnoxious syntax to use, so it is important to understand the fundamentals well."
+The find command accepts a path to a directory as its argument and will recursively search and locate files within that directory that match the given expression as well."
 
 echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
-#   ...      etc
+echo "find [location to search] [search option] [search criteria]"
+echo -e "\t[location to search]: Location in the filesystem where the find command should be performed."
+echo -e "\t[search option]: Option(s) to specify your search. Multiple options can be specified, like file type and keywords."
+echo -e "\t[search option: -name]: find will search for a specified name, which could be one or more letters, a file extension, letter pattern, etc."
+echo -e "\t[search option: -type]: find will search for folders or files, depending on the specified [search criteria]."
+echo -e "\t[search option: -mindepth/-maxdepth]: find will search only as 'deep' in the filesystem as specified in the [search criteria] for this option."
+
+echo -e "\t[search criteria]: The exact criteria for the earlier specified options."
 
 echo "------------"
 
 # the command's usage examples
 # example 1
 echo "find . -name \"README.md\""
-echo "This example finds all files with name README.md in the current directory and all its sub-directories."
+echo "This example finds all files with name README.md in the current directory and all its subdirectories."
 
 # example 2
 echo "find . -iname \"MyFile.txt\""
-echo "This command will find all files that match myfile.txt, ingnoring the case, in the current directory and all its sub-directories."
+echo "This command will find all files that match myfile.txt, ingnoring the uppercase, in the current directory and all its subdirectories."
 
 # example 3
 echo "find / -name passwd"
-echo "Will find all the passwd files under all subdirectories starting from the root. You can replace the '/' with the name of any directory to select where the search begins."
+echo "Will find all the passwd files under all subdirectories starting from the root. You can replace the '/' with the name of any directory to select where the search will start."
 
 #example 4
 echo "find . -maxdepth 2 -name passwd"
-echo "Start search at root directory(level 1) and one subdirectory below (level 2). The higher the number the deeper it will look for the file name."
+echo "Start search at root directory (level 1) and one subdirectory below (level 2). The higher the number, the deeper it will look for the file name."
 
 #example 5
 echo "find . -mindepth 3 -maxdepth 5 -name passwd"
@@ -56,7 +58,7 @@ echo "Find files which have read permission only to group and execute 'ls -l' on
 
 #example 9
 echo "find ~ -empty"
-echo "Find all empty files (zero byte file) in your home directory and its subdirectory."
+echo "Find all empty files (zero byte file) in your home directory and its subdirectories."
 
 #example 10
 echo "find ~ -size +100M"
@@ -64,6 +66,6 @@ echo "Find files larger than 100 Megabytes. You can exchange the '+' for a '-' t
 
 #example 11
 echo "find . -type d"
-echo "Find all directories. 'f' to find all normal files."
+echo "Find all directories. Change the type to 'f' to find files instead of directories."
 
 exit 0
