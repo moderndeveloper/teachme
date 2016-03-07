@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-bold=$(tput bold)
+bold="\033[1m"
 underline="\033[4m"
-normal=$(tput sgr0)
+normal="\033[0m"
 #the command name
 echo -e "\n${bold}COMMAND NAME:${normal}"
 echo -e "\n\t${bold}pwd{normal}"
