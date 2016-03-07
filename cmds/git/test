@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 # some formatting variables
-bold=$(tput bold)
+bold="\033[1m"
 underline="\033[4m"
-normal=$(tput sgr0)
+normal="\033[0m"
 # to use this formatting use 'echo -e'
 # start formatting sequence with ${bold} or ${underline}
 # and end it with ${normal}
