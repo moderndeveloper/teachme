@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e "\nCOMMAND NAME:"
+echo -e "\n\tmv - rename/move"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\nCOMMAND DESCRIPTION:"
+echo -e "\n\tThe 'mv' command is used for renaming or moving files in the filesystem.\n\tIt accepts two or more arguments. If 'mv' command is passed two arguments,\n\tand if second argument is not a directory, then the first file will be\n\trenamed so its name will match the second argument:\n\t(e.g. 'mv file_old.txt file_new.csv') - the 'file_old.txt' becomes 'file_new.csv'."
+echo -e "\n\tIf the second argument is a directory then the file will be moved to that\n\tdirectory: (e.g. 'mv my_file.pdf ~/pdf_files/')"
+echo -e "\n\tWhen 'mv' command gets more than two arguments, the last argument must be a\n\tdirectory name and all preceeding files and directories that are passed to\n\t'mv' will be moved into that last passed directory:\n\t(e.g. 'mv file1 file2 dir1 dir2 target_dir/')"
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\nCOMMAND SYNTAX:"
+echo -e "\n\ttest argument1 argument2"
+echo -e "\t\targument1: description of argument 1"
+echo -e "\t\targument2: description of argument 2"
+#   ...      etc
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\nCOMMAND EXAMPLES:"
+echo -e "\n\tExample 1"
+echo -e "\t\ttest"
+echo -e "\t\tdescription here"
+
+# example 2
+echo -e "\n\tExample 2"
+echo -e "\t\ttest something"
+echo -e "\t\tdescription here\n"
+
+#   ...      etc
+
+exit 0
