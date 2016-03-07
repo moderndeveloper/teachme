@@ -4,7 +4,7 @@
 echo -e 'git push'
 
 # the command's description
-echo "description here"
+echo "Pushing is a mechanism provided by git to transfer commits from a local repository to a remote repository. It is the counterpart to git fetch. The git push command is a crucial command to learn if you want to collaborate through git as it syncs everything from the local repository to the remote repository where other developers can git fetch (download) from."
 
 echo "------------"
 
