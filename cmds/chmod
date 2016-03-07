@@ -1,9 +1,21 @@
 #!/usr/bin/env bash
 echo -e 'chmod'
 echo 'chmod stands for change mode, it is used to change the permissions of files or directories.
-In the system,there are three kinds of permissions:read, write and executable. Also, there are 
+In the system,there are three kinds of permissions:read, write and executable. Also, there are
 four kinds of user groups: user who owns the files,users in the group to which the file belong,
 users are not in the file group, and all the other non-owner users. In the Unix-like system,
 there is a set of rules for each files which defines who can access that file, and how they can access it.
 So chmode command is used to define the way a file can be accessed. '
 echo '---------'
+
+# the command's syntax
+echo -e "\nCOMMAND SYNTAX:"
+echo -e "\n\tchmod [ugoa...][+-=][rwx...] file"
+echo -e "\t\tu: User who owns the file."
+echo -e "\t\tg: Users in the group to which the file belongs."
+echo -e "\t\to: Users not in the file’s group."
+echo -e "\t\ta: All other (non-owner) users."
+echo -e "\t\t[+-=]: Add, remove, set permissions"
+echo -e "\t\t[rwx]: r - read permission, w - write permission, x - execution permission."
+
+echo -e "\n------------"
