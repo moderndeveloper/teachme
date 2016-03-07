@@ -1,12 +1,29 @@
 #!/usr/bin/env bash
-echo -e 'chmod'
-echo 'chmod stands for change mode, it is used to change the permissions of files or directories.
-In the system,there are three kinds of permissions:read, write and executable. Also, there are
-four kinds of user groups: user who owns the files,users in the group to which the file belong,
-users are not in the file group, and all the other non-owner users. In the Unix-like system,
-there is a set of rules for each files which defines who can access that file, and how they can access it.
-So chmode command is used to define the way a file can be accessed. '
-echo '---------'
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}chmod${normal}"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+
+echo -e "\n\tchmod stands for change mode, it is used to change the permissions of files or directories."
+echo -e "\tIn the system,there are three kinds of permissions:read, write and executable. Also, there are"
+echo -e "\tfour kinds of user groups: user who owns the files,users in the group to which the file belong,"
+echo -e "\tusers are not in the file group, and all the other non-owner users. In the Unix-like system,"
+echo -e "\tthere is a set of rules for each files which defines who can access that file, and how they can access it."
+echo -e "\tSo chmode command is used to define the way a file can be accessed. "
+echo -e "\n------------"
 
 # the command's syntax
 echo -e "\nCOMMAND SYNTAX:"
