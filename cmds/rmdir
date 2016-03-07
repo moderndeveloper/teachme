@@ -4,7 +4,9 @@
 echo -e 'rmdir'
 
 # the command's description
-echo "description here"
+echo "The rmdir command is used to remove empty directories only. The ability to delete only empty directories using the rmdir command is a safeguard feature that helps prevent accidental data loss since the command cannot be undone.
+
+If you need to delete both files and directories, the rmdir command has a sibling called rm, use that instead."
 
 echo "------------"
 
