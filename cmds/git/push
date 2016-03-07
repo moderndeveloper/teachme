@@ -10,10 +10,9 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
-#   ...      etc
+echo "git push [remote] [branch]"
+echo -e "\t[remote]: The destination of the push operation. Can be either a URL or the name of a remote. When not specified [remote] is equal to 'origin', which is the default name of the repository you originally cloned from."
+echo -e "\t[branch]: The specified [branch] will be pushed to [remote]. When no branch is specified, it will  push changes from all local branches to matching branches in the origin remote. Branches are forks within your own repository that allow you to work on different features at once."
 
 echo "------------"
 
