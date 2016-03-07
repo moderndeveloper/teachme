@@ -10,9 +10,10 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "cd [option] [directory]"
+echo -e "[option] - a command option or command flag."
+echo -e "[option: -P] - Only change into the specified directory if it actually exists as named."
+echo -e "[directory] - the directory filepath you wish to change to."
 #   ...      etc
 
 echo "------------"
