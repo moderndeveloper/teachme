@@ -10,9 +10,12 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "rm [options] [file/folder name]"
+echo -e "\t[options]: A command option or command flag."
+echo -e "\t[options: -r]: Delete the specified folder recursively, which means that all folders within the folder will be deleted as well as the folder itself."
+echo -e "\t[options: -f]: Force deletion. No warnings will be shown before a file or folder is removed."
+echo -e "\t[options: -i]: The -i flag will ask for confirmation every time it wants to remove a file or folder."
+echo -e "\t[file/folder name]: File or folder to be removed."
 #   ...      etc
 
 echo "------------"
@@ -28,18 +31,18 @@ echo "Will remove all specified files."
 
 # example 3
 echo "rm -d documents/"
-echo "Will remove a directory if it is empty"
+echo "Will remove specified documents folder if it is empty."
 
 #example 4
 echo "rm -r movie/"
-echo "Will remove a directory recursively, meaning it will remove all files and folders within /movie before removing /movie."
+echo "Will remove movie/ recursively, which means that all files and folders within /movie will be removed before removing /movie."
 
 #example 5
 echo "rm -ri movie/"
-echo "-i will make the removal process interactive, meaning it will prompt you yes or no will moving throught the deletion process."
+echo "-i will make the removal process interactive, meaning it will ask for confirmation every time rm wants to delte a file or folder."
 
 #example 6
 echo "rm -f computer.log "
-echo "-f means it will force delete the file. So if even if a file as 'access read-only` it will delete the file without a confirmation."
+echo "-f means it will force delete the file. Even if a file as 'access read-only`, rm will delete the file without a warning."
 
 exit 0
