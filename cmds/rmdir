@@ -17,7 +17,6 @@ echo -e "\t[options]: A command option or command flag."
 echo -e "\t[options: -v]: Will run rm 'verbosely'. Extended information will be provided while the command is run."
 echo -e "\t[options: -p]: Deletes all folders in the specified [directory] path if they are empty, starting with the lastmost folder."
 echo -e "\t[directory]: Directory/folder to be deleted."
-#   ...      etc
 
 echo "------------"
 
