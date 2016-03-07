@@ -13,19 +13,12 @@ echo "------------"
 # the command's syntax
 echo "Syntax:"
 echo
-echo "cp /path/to/source.txt /path/to/destination.txt"
-echo -e "\t/path/to/source.txt: Source file to be copied."
-echo -e "\t/path/to/destination.txt: Destination of where source file should be copied to."
-echo
-echo "cp -R /path/to/source-directory /path/to/destination-directory"
-echo -e "\t-e: Enable cp to copy the entire directory from one place to another recursively."
-echo -e "\t/path/to/source.txt: Source file to be copied."
-echo -e "\t/path/to/destination.txt: Destination of where source file should be copied to."
-echo
-echo "cp -s /path/to/source.txt /path/to/destination.txt"
-echo -e "\t-s: Enable cp to create a symbolic link, where \033[4mdestination.txt\033[0m points to \033[4msource.txt\033[0m."
-echo -e "\t/path/to/source.txt: Source file to be copied."
-echo -e "\t/path/to/destination.txt: Destination of where source file should be copied to."
+echo "cp [option] [source] [destination]"
+echo -e "\t[option] - a command option or command flag."
+echo -e "\t[option: -R] - Enable cp to copy the entire directory from one place to another recursively."
+echo -e "\t[option: -s] - Enable cp to create a symbolic link, where \033[4mdestination.txt\033[0m points to \033[4msource.txt\033[0m."
+echo -e "\t[source] - Path of source file to be copied or symbolic linked."
+echo -e "\t[destination] - Path of destination to where source file should be copied or symbolic linked to."
 
 echo "------------"
 

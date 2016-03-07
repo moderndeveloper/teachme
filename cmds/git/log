@@ -11,23 +11,12 @@ echo "------------"
 # the command's syntax
 echo "Syntax:"
 echo
-echo "git log"
-echo
-echo "git log --graph"
-echo -e "\t--graph: Enable git log to show the commit history in a graph."
-echo
-echo "git log --after=\"yesterday\""
-echo -e "\t--after: Enable git log to show only the commits after a specific date."
-echo
-echo "git log --before=\"yesterday\""
-echo -e "\t--after: Enable git log to show only the commits before a specific date."
-echo
-echo "git log --after=\"2016-3-2\"  --before=\"2016-3-5\""
-echo -e "\t--before: Enable git log to show only the commits after a specific date."
-echo -e "\t--after: Enable git log to show only the commits before a specific date."
-echo
-echo "git log -3"
-echo -e "\t-3: The number of outputs git log will display."
+echo "git log [options] [time frame]"
+echo -e "\t[option] - a command option or command flag."
+echo -e "\t[option: -3] - The number of outputs git log will display."
+echo -e "\t[option: --graph] - Enable git log to show the commit history in a graph."
+echo -e "\t[time frame: --after=<date>] - Enable git log to show only the commits after a specific date."
+echo -e "\t[time frame: --before=<date>] - Enable git log to show only the commits before a specific date."
 
 echo "------------"
 

@@ -11,13 +11,11 @@ echo "------------"
 # the command's syntax
 echo "Syntax:"
 echo
-echo "echo -e \"string\""
-echo -e "\t-e: Enabling echo to interpret backslash as escaped characters."
-echo -e "\t\"string\": The string where echo outputs."
-echo
-echo "echo -n \"string\""
-echo -e "\t-n: Disable echo from echoing trailing new line."
-echo -e "\t\"string\": The string where echo outputs."
+echo "echo [option] [\"string\"]"
+echo -e "\t[option] - a command option or command flag."
+echo -e "\t[option: -e] - Enable echo to interpret backslash as escaped characters."
+echo -e "\t[option: -n] - Disable echo from echoing trailing new line."
+echo -e "\t[\"string\"] - The string where echo outputs."
 
 echo "------------"
 

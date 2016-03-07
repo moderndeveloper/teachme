@@ -13,17 +13,11 @@ echo "------------"
 # the command's syntax
 echo "Syntax:"
 echo
-echo "git checkout new_branch"
-echo -e "\tnew_branch: The specified branch for git to checkout."
-echo
-echo "git checkout -b new_branch"
-echo -e "\t-b: Tells git to run \033[4mgit branch new_branch\033[0m before checkout."
-echo -e "\tnew_branch: The specified branch for git to checkout."
-echo
-echo "git checkout master~2 file.txt"
-echo -e "\tmaster~2: Tells git checkout to use the master branch two revisions back."
-echo -e "\tfile.txt: The specified file for git to revert or checkout to two revisions back."
-
+echo "git checkout [option] [branch] [file]"
+echo -e "\t[option] - a command option or command flag."
+echo -e "\t[option: -b] - Tells git to run \033[4mgit branch branch\033[0m before checkout."
+echo -e "\t[branch] - The specified branch for git to checkout."
+echo -e "\t[file] - The specified file for git to revert or checkout to."
 
 echo "------------"
 

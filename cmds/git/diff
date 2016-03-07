@@ -11,22 +11,11 @@ echo "------------"
 # the command's syntax
 echo "Syntax:"
 echo
-echo "git diff"
-echo
-echo "git diff --stat"
-echo -e "\t--stat: Enable git diff to show only the stats of the file changes since the last commit."
-echo
-echo "git diff new-feature master"
-echo -e "\tnew-feature: The name of the branch to be compared to the master branch."
-echo -e "\tmaster: The name of the branch to be compared to the new-feature branch."
-echo
-echo "git diff <commit-id-1> <commit-id-2>"
-echo -e "diff: Enable git diff to show the difference between the two commits."
-echo -e "\t<commit-id>: the id for the specified commit, can be found using git log."
-
-echo
-echo "git diff upstream/master"
-echo -e "\tupstream/master: The name of the branch to be compared to the current branch."
+echo "git diff [option] [branch1/commit1] [branch2/commit2]"
+echo -e "\t[option] - a command option or command flag."
+echo -e "\t[option: --stat] - Enable git diff to show only the stats of the file changes since the last commit."
+echo -e "\t[branch1/commit1] - The name of a branch or SHA of a commit to be compared to branch2 and commit2 respectively."
+echo -e "\t[branch2/commit2] - The name of a branch or SHA of a commit to be compared to branch1 and commit1 respectively."
 
 echo "------------"
 

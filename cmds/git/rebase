@@ -13,15 +13,12 @@ echo "------------"
 # the command's syntax
 echo "Syntax:"
 echo
-echo "git rebase -i master"
-echo -e "\t-i: Sets up git for an interactive rebase."
-echo -e "\tmaster: The specified branch where the current branch will be re-written to."
-echo
-echo "git rebase --continue"
-echo -e "\t--continue: Restarts the rebasing process after a merge conflict has been resolved."
-echo
-echo "git rebase --abort"
-echo -e "\t--abort: Abandon the current rebasing process and return the repository to it's prior state."
+echo "git rebase [-i] [option] [branch]"
+echo -e "\t[-i] - Sets up git for an interactive rebase."
+echo -e "\t[option] - a command option or command flag."
+echo -e "\t[option: --continue] - Restarts the rebasing process after a merge conflict has been resolved."
+echo -e "\t[option: --abort] - Abandon the current rebasing process and return the repository to it's prior state."
+echo -e "\t[branch]: The specified branch where the current branch will be re-written to."
 
 echo "------------"
 
