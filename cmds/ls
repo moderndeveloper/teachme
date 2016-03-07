@@ -10,9 +10,12 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "ls [option] [directory]"
+echo -e "\t[option] - a command option or command flag."
+echo -e "\t[option: -l] - Lists files in a long listing format, displaying permissions along with other information."
+echo -e "\t[option: -a] - Lists all hidden files in the specified directory."
+echo -e "\t[option: -t] - Sorts listing by modification time."
+echo -e "\t[directory] - the directory filepath you wish to list, by default it is the current directory."
 #   ...      etc
 
 echo "------------"
@@ -44,7 +47,7 @@ echo "Recursively lists all files in the current working directory."
 
 # example 6
 echo "ls -d */"
-echo "Lists directory entires only in the current working directory."
+echo "Lists directory entries only in the current working directory."
 
 # example 7
 echo "ls ../../"
