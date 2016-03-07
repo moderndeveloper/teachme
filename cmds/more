@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e "\nCOMMAND NAME:"
+echo -e "\n\tmore"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\nCOMMAND DESCRIPTION:"
+echo -e "\n\tThe 'more' command is used as a filter for displaying text one screen at a time,\n\tor paging the text. For navigating through text you can use spacebar - navigation\n\tis done one page at a time. When the end of text is reached the command will exit\n\tto the command line. For exiting earlier you can press 'q' key."
+echo -e "\n\t'more' command can get text for paging from a file (e.g. 'more myfile.txt') or\n\tit can be piped to it from another command (e.g. 'cat file1 file2 file3 | more')."
+echo -e "\n\t'more' command can accept various options to adjust how the paging is done.\n\tFor example to display 30 lines in every page you can use 'more -30 myfile.txt'"
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\nCOMMAND SYNTAX:"
+echo -e "\n\ttest argument1 argument2"
+echo -e "\t\targument1: description of argument 1"
+echo -e "\t\targument2: description of argument 2"
+#   ...      etc
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\nCOMMAND EXAMPLES:"
+echo -e "\n\tExample 1"
+echo -e "\t\ttest"
+echo -e "\t\tdescription here"
+
+# example 2
+echo -e "\n\tExample 2"
+echo -e "\t\ttest something"
+echo -e "\t\tdescription here\n"
+
+#   ...      etc
+
+exit 0
