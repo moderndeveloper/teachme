@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e "\nCOMMAND NAME:"
+echo -e "\n\tman - (man)ual"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\nCOMMAND DESCRIPTION:"
+echo -e "\n\tThe 'man' command is used for displaying online manual pages for programs,\n\tutilities or functions. 'man' program will search manual pages for the entry\n\tthat is provided to the 'man' command. The manual is diveded into sections and\n\tby default 'man' will search all the sections of the manual and if a page exists\n\tin more than one section it will display only the first page that is found.\n\t(e.g. 'man command_name')"
+echo -e "\n\tYou can also look at the manual page for 'man' command with 'man man'."
+echo -e "\n\t'man' can accept the section number to search only in the specified section of the\n\tmanual. (e.g. 'man 8 sudo' - look for sudo in section 8 of the manual)"
+echo -e "\n\tSections of the manual are:"
+
+echo -e "\n\t1   Executable programs or shell commands"
+echo -e "\t2   System calls (functions provided by the kernel)"
+echo -e "\t3   Library calls (functions within program libraries)"
+echo -e "\t4   Special files (usually found in /dev)"
+echo -e "\t5   File formats and conventions eg /etc/passwd"
+echo -e "\t6   Games"
+echo -e "\t7   Miscellaneous (including macro packages and conventions), e.g. man(7), groff(7)"
+echo -e "\t8   System administration commands (usually only for root)"
+echo -e "\t9   Kernel routines [Non standard]"
+
+echo -e "\n\tEach manual page consists of several sections. Conventional  section names include:\n\tNAME, SYNOPSIS, CONFIGURATION, DESCRIPTION, OPTIONS, EXIT STATUS, RETURN VALUE,\n\tERRORS, ENVIRONMENT, FILES, VERSIONS, CONFORMING TO, NOTES, BUGS, EXAMPLE, AUTHORS, and SEE ALSO."
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\nCOMMAND SYNTAX:"
+echo -e "\n\ttest argument1 argument2"
+echo -e "\t\targument1: description of argument 1"
+echo -e "\t\targument2: description of argument 2"
+#   ...      etc
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\nCOMMAND EXAMPLES:"
+echo -e "\n\tExample 1"
+echo -e "\t\ttest"
+echo -e "\t\tdescription here"
+
+# example 2
+echo -e "\n\tExample 2"
+echo -e "\t\ttest something"
+echo -e "\t\tdescription here\n"
+
+#   ...      etc
+
+exit 0
