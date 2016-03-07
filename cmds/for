@@ -1,6 +1,15 @@
 #!/usr/bin/env bash
 echo -e 'for'
 echo 'for loop is a programming statement which allows a code block to be repeatly executed.
-This loop allows for a specification of a list of values and a list of commands is executed for 
+This loop allows for a specification of a list of values and a list of commands is executed for
 each value in the list. At the end of loop, there gonna have a return status. Return status is
 the exit status of the last command executes. If no commands are executed, the return status is 0'
+
+# the command's syntax
+echo -e "\nCOMMAND SYNTAX:"
+echo -e "\n\tfor ITEM in LIST ; do ACTIONS ; done"
+echo -e "\t\tITEM: Each item in a list."
+echo -e "\t\tLIST: List of items you iterate through."
+echo -e "\t\tACTIONS: Some commands you execute each iteration."
+
+echo -e "\n------------"
