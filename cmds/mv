@@ -4,7 +4,7 @@
 echo -e 'mv'
 
 # the command's description
-echo "description here"
+echo "The mv command is used to rename and move files or directories. The mv command is very similar to the cp command, but it DOES NOT create a copy of files or directories, it simply moves and renames them. This distinction is important to take note of."
 
 echo "------------"
 
