@@ -10,10 +10,15 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
-#   ...      etc
+echo "git fetch [remote] [branch]"
+
+echo -e "\t[option(s)] - The command options or command flags you wish to execute to specify what repositories are fetched."
+echo -e "\t[option(s) --all] - Fetches from all existing remote repositories."
+echo -e "\t[option(s) --force] - Synchronizes with the remote ignoring any conflicts, be careful when executing this command."
+
+echo -e "\t[remote] - The remote repository from you wish to fetch all the branches, commits, and files the from and apply to the local copy."
+
+echo -e "\t[branch] - If indicated will only fetch the specified branch from the remote repository."
 
 echo "------------"
 
@@ -24,11 +29,11 @@ echo "Synchronize the local repository with the remote repository. This means th
 
 # example 2
 echo "git fetch --all"
-echo "Synchronize the local repository with all remote repository. This means that git will download any data that is not available locally from all remote repositories into the local repository."
+echo "Synchronize the local repository with all remote repositories. This means that git will download any data that is not available locally from all remote repositories into the local repository."
 
 # example 3
 echo "git fetch --multiple remoteone remotetwo"
-echo "Synchronize the local repository with multiple remote repository that are specified. This means that git will download any data that is not available locally from the specified remote repositories into the local repository."
+echo "Synchronize the local repository with all the remote repositories specified. This means that git will download any data that is not available locally from the specified remote repositories into the local repository."
 
 # example 4
 echo "git fetch --force origin"
