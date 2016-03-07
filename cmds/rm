@@ -16,7 +16,6 @@ echo -e "\t[options: -r]: Delete the specified folder recursively, which means t
 echo -e "\t[options: -f]: Force deletion. No warnings will be shown before a file or folder is removed."
 echo -e "\t[options: -i]: The -i flag will ask for confirmation every time it wants to remove a file or folder."
 echo -e "\t[file/folder name]: File or folder to be removed."
-#   ...      etc
 
 echo "------------"
 
