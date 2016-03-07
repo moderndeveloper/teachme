@@ -2,3 +2,12 @@
 echo -e pwd
 echo -e pwd means print working directory, it writes full pathname of current working directory to the prompt,prompt means the flashing cursor.
 echo ------
+
+# the command's syntax
+echo -e "\nCOMMAND SYNTAX:"
+echo -e "\n\tpwd [options]"
+echo -e "\t\t-L: Use pwd from environment, even if it contains symbolic links\n\t\t (symbolic link is a link pointing to the original copy)"
+echo -e "\t\t-P: Avoid all symbolic links"
+#   ...      etc
+
+echo -e "\n------------"
