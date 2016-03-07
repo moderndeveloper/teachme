@@ -4,7 +4,9 @@
 echo -e 'man'
 
 # the command's description
-echo "description here"
+echo "The man command provides an interface or way to view and format man pages. A man page is simply a user manual that provides extensive documentation about the operating system and various commands that are available on the system.
+
+man is an extremely useful command for all kinds of user from different technical background, so use it often !"
 
 echo "------------"
 
