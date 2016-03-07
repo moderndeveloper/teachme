@@ -4,7 +4,9 @@
 echo -e 'curl'
 
 # the command's description
-echo "description here"
+echo "The curl command is actually a tool used to transfer to a server or from a server using one of the supported protocols (DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET and TFTP).
+
+curl will also display the a progress bar during its operation(upload or download) indicating various information such as average transferred speed, data transferred, a percentage indicating the progress, and the estimated time left."
 
 echo "------------"
 
