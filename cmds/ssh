@@ -4,7 +4,7 @@
 echo -e 'ssh'
 
 # the command's description
-echo "description here"
+echo "SSH stands for Secure Shell, which is a protocol for remote logins. The ssh command is a tool for connecting to remote systems using the SSH protocol. Once the user is logged into the remote system, they are free to execute commands on the remote machine."
 
 echo "------------"
 
@@ -26,7 +26,7 @@ echo "Login to a remote host on which you have an account under the same user na
 echo "ssh jhawkins@collie.stanford.ed"
 echo "Login to a remote host on which you have an account under a different user name than the host you're current logged into:"
 
-# example 3 
+# example 3
 echo "ssh -V"
 echo "Identify ssh client version."
 exit 0
