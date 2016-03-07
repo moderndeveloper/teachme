@@ -9,11 +9,20 @@ echo "The chmod command allows you to change the read/write/execute permissions 
 echo "------------"
 
 # the command's syntax
-echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
-#   ...      etc
+echo "chmod [option] [who]=[opcode][permission(s)] [file(s)]"
+
+echo -e "\t[option] - a command option or command flag specifying how the command will be executed."
+echo -e "\t[option: -R] - Changes the permissions recursively for all files inside any specified directories."
+
+echo -e "\t[who] - Who's permissions will be altered. User(u), Group(g), Other(o), or All (a)."
+
+echo -e "\t[opcode] - Specifies whether to add (+), remove (-), or assign and remove all other permissions (=)."
+
+echo -e "\t[permission(s)] - Specifies what permissions the command will be targeting: read(r), write (w), and execute(x)."
+
+
+echo -e "\t[file(s)] - The file(s) on which the permission changes will be applied to."
+
 
 echo "------------"
 
