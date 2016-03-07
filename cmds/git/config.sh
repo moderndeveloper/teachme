@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a git test command."
+echo "This is a git config command."
 
 # The command's name
-echo -e 'git test'
+echo -e 'git config'
 
 # the command's description
-echo "description here"
+echo "git-config - Get and set repository or global options"
 
 echo "------------"
 
