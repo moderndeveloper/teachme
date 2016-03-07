@@ -4,18 +4,20 @@
 echo -e 'curl'
 
 # the command's description
-echo "The curl command is actually a tool used to transfer to a server or from a server using one of the supported protocols (DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET and TFTP).
+echo "The curl command is a tool used to transfer data from a URL to or from a server using one of the supported protocols (DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET and TFTP).
 
-curl will also display the a progress bar during its operation(upload or download) indicating various information such as average transferred speed, data transferred, a percentage indicating the progress, and the estimated time left."
+curl will also display statistics during its operation (upload or download), indicating various information such as average transferred speed, data transferred, progress, and the estimated time left."
 
 echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
-#   ...      etc
+echo "curl [options] [URL]"
+echo -e "\t[options]: A command option or command flag."
+echo -e "\t[options: -o]: Used to specify a file name to save curl's output in."
+echo -e "\t[options: -O]: curl will saved its output in a file with the filename in the URL."
+echo -e "\t[options: -C -]: Will continue downloading after curl has been interrupted."
+echo -e "\t[URL]: URL to perform curl on. Multiple URLs can be specified if they are separated by the -O flag."
 
 echo "------------"
 
@@ -26,26 +28,26 @@ echo "The following command will get the content of the URL and display it in th
 
 # example 2
 echo "curl http://www.centos.org > centos-org.html"
-echo "Will redirect the output and store in a file. Will also display download statistics"
+echo "Will redirect the output to a file called centos-org.html."
 
 # example 3
 echo "$ curl -o getMyText.html http://www.gnu.org/software/gettext/manual/gettext.html"
-echo "Will save the output to the file in the commandline. If us '-O' will use the same file name as that of the output"
+echo "Will save the output of curl to the file specified after the -o flag. If we use the -O flag is used, the file name at the end of the URL will be used to store the output in."
 
-#example 4
+# example 4
 echo "curl URL1 URL2"
-echo "Fetch Multiplec files"
+echo "Fetch multiple files."
 
-#example 5
+# example 5
 echo "curl -C - -O http://www.gnu.org/software/gettext/manual/gettext.html"
-echo "If a download has stopped for whatever reason. You can use 'curl -C -' to continue the download."
+echo "If a download has stopped, you can use 'curl -C -' to continue the download."
 
-#example 6
+# example 6
 echo "curl --limit-rate 1000B -O http://www.gnu.org/software/gettext/manual/gettext.html"
 echo "Limit the rate of the download to 1000 Bytes/second."
 
-#example 7
+# example 7
 echo "curl -u username:password URL"
-echo "Pass HTTP authentication to the URL"
+echo "Pass HTTP authentication to the URL."
 
 exit 0
