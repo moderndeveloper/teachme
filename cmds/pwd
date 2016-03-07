@@ -1,7 +1,16 @@
 #!/usr/bin/env bash
-echo -e pwd
-echo -e pwd means print working directory, it writes full pathname of current working directory to the prompt,prompt means the flashing cursor.
-echo ------
+
+bold=$(tput bold)
+underline="\033[4m"
+normal=$(tput sgr0)
+#the command name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}pwd{normal}"
+echo -e "\n------"
+
+#command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo -e "\npwd means print working directory, it writes full pathname of current working directory to the prompt,prompt means the flashing cursor."
 
 # the command's syntax
 echo -e "\nCOMMAND SYNTAX:"
