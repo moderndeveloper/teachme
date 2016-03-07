@@ -11,11 +11,13 @@ git pull is shorthand for git fetch, followed by git merge."
 echo "------------"
 
 # the command's syntax
-echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
-#   ...      etc
+echo "git pull [option(s)] [repository]"
+
+echo -e "\t[option(s)] - The command options or command flags you wish to execute to specify how the selected repository will be pulled."
+echo -e "\t[option(s) --rebase] -Uses git rebase instead of git merge when pulling. Look up git rebase for more information"
+
+
+echo -e "\t[repository] -The remote repository you wish to pull from and merge to the local copy."
 
 echo "------------"
 
