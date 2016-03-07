@@ -17,10 +17,12 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
-#   ...      etc
+echo "git status [option(s)] [path]"
+
+echo -e "\t[option(s)] - The command options or command flags you wish to execute to alter the output of the repositories status."
+echo -e "\t[option(s): -s] - Displays the status of the repository in short format."
+
+echo -e "\t[path] - Display the status of the file(s) at the specified path. By default displays the status of the entire repository."
 
 echo "------------"
 

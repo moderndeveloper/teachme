@@ -11,8 +11,8 @@ echo "------------"
 # the command's syntax
 echo "Syntax:"
 echo "pwd [option]"
-echo -e "[option] - a command option or command flag"
-echo -e "[option: -P] - Print a fully resolved name for the current directory, in which all components of the name are actual directory names, and not symbolic links)"
+echo -e "\t[option] - a command option or command flag"
+echo -e "\t[option: -P] - Print a fully resolved name for the current directory, in which all components of the name are actual directory names, and not symbolic links)"
 
 echo "------------"
 
