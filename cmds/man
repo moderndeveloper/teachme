@@ -8,7 +8,12 @@ echo -e "\n------------"
 
 # the command's description
 echo -e "\nCOMMAND DESCRIPTION:"
-echo -e "\n\tThe 'man' command is used for displaying online manual pages for programs,\n\tutilities or functions. 'man' program will search manual pages for the entry\n\tthat is provided to the 'man' command. The manual is diveded into sections and\n\tby default 'man' will search all the sections of the manual and if a page exists\n\tin more than one section it will display only the first page that is found.\n\t(e.g. 'man command_name')"
+echo -e "\n\tThe 'man' command is used for displaying online manual pages for programs,"
+echo -e "\tutilities or functions. 'man' program will search manual pages for the entry"
+echo -e "\tthat is provided to the 'man' command. The manual is diveded into sections and"
+echo -e "\tby default 'man' will search all the sections of the manual and if a page exists"
+echo -e "\tin more than one section it will display only the first page that is found."
+echo -e "\t(e.g. 'man command_name')"
 echo -e "\n\tYou can also look at the manual page for 'man' command with 'man man'."
 echo -e "\n\t'man' can accept the section number to search only in the specified section of the\n\tmanual. (e.g. 'man 8 sudo' - look for sudo in section 8 of the manual)"
 echo -e "\n\tSections of the manual are:"
@@ -23,7 +28,9 @@ echo -e "\t7   Miscellaneous (including macro packages and conventions), e.g. ma
 echo -e "\t8   System administration commands (usually only for root)"
 echo -e "\t9   Kernel routines [Non standard]"
 
-echo -e "\n\tEach manual page consists of several sections. Conventional  section names include:\n\tNAME, SYNOPSIS, CONFIGURATION, DESCRIPTION, OPTIONS, EXIT STATUS, RETURN VALUE,\n\tERRORS, ENVIRONMENT, FILES, VERSIONS, CONFORMING TO, NOTES, BUGS, EXAMPLE, AUTHORS, and SEE ALSO."
+echo -e "\n\tEach manual page consists of several sections. Conventional  section names include:"
+echo -e "\tNAME, SYNOPSIS, CONFIGURATION, DESCRIPTION, OPTIONS, EXIT STATUS, RETURN VALUE,"
+echo -e "\tERRORS, ENVIRONMENT, FILES, VERSIONS, CONFORMING TO, NOTES, BUGS, EXAMPLE, AUTHORS, and SEE ALSO."
 
 echo -e "\n------------"
 
