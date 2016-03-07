@@ -4,7 +4,7 @@
 echo -e 'rm'
 
 # the command's description
-echo "description here"
+echo "The rm command is used to remove files or directories from the file system. This means that files or directories are removed from the storage device, i.e. hard disk drive, which subsequently increases the amount of available disk space on your hard disk drive. An important thing to take note is that the effects of the command rm CANNOT be undone."
 
 echo "------------"
 
