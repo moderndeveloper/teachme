@@ -11,9 +11,9 @@ echo "------------"
 # the command's syntax
 echo "Syntax:"
 echo "cd [option] [directory]"
-echo -e "[option] - a command option or command flag."
-echo -e "[option: -P] - Only change into the specified directory if it actually exists as named."
-echo -e "[directory] - the directory filepath you wish to change to."
+echo -e "\t[option] - a command option or command flag."
+echo -e "\t[option: -P] - Only change into the specified directory if it actually exists as named."
+echo -e "\t[directory] - the directory filepath you wish to change to."
 #   ...      etc
 
 echo "------------"
