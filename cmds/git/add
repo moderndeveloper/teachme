@@ -4,7 +4,9 @@
 echo -e 'git add'
 
 # the command's description
-echo "description here"
+echo "The git add command is definitely one of the most used command in git as it adds changes made in the working directory to the staging area. What this means is that the command git add tells git that you want to include a file or update a file in the next commit.
+
+Files added to the staging area via git add are actually waiting to be snapshot or commited via the git commit command. Once the files are added to the staging area via git add, the command git status can be used to view the state of the working directory and staging area."
 
 echo "------------"
 
