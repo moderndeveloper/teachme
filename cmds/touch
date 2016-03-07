@@ -10,9 +10,16 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "touch [option] [filename(s)]"
+echo -e "\t[option]: a command option or command flag."
+echo -e "\t[option: -a]: - Only change the access time."
+echo -e "\t[option: -m]: - Only change the modification time."
+echo -e "\t[option: -r]: - Use the timestamp of the file that follows this flag."
+echo -e "\t[option: -d]: - Set the last access time to a specified timestamp."
+echo -e "\t[filename(s)]: - Path(s) of file(s) to be modified or created if the file(s) doesn't exist yet."
+
+
+
 #   ...      etc
 
 echo "------------"
