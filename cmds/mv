@@ -8,9 +8,16 @@ echo -e "\n------------"
 
 # the command's description
 echo -e "\nCOMMAND DESCRIPTION:"
-echo -e "\n\tThe 'mv' command is used for renaming or moving files in the filesystem.\n\tIt accepts two or more arguments. If 'mv' command is passed two arguments,\n\tand if second argument is not a directory, then the first file will be\n\trenamed so its name will match the second argument:\n\t(e.g. 'mv file_old.txt file_new.csv') - the 'file_old.txt' becomes 'file_new.csv'."
-echo -e "\n\tIf the second argument is a directory then the file will be moved to that\n\tdirectory: (e.g. 'mv my_file.pdf ~/pdf_files/')"
-echo -e "\n\tWhen 'mv' command gets more than two arguments, the last argument must be a\n\tdirectory name and all preceeding files and directories that are passed to\n\t'mv' will be moved into that last passed directory:\n\t(e.g. 'mv file1 file2 dir1 dir2 target_dir/')"
+echo -e "\n\tThe 'mv' command is used for renaming or moving files in the filesystem."
+echo -e "\tIt accepts two or more arguments. If 'mv' command is passed two arguments,"
+echo -e "\tand if second argument is not a directory, then the first file will be\n\trenamed so its name will match the second argument:"
+echo -e "\t(e.g. 'mv file_old.txt file_new.csv') - the 'file_old.txt' becomes 'file_new.csv'."
+echo -e "\n\tIf the second argument is a directory then the file will be moved to that"
+echo -e "\tdirectory: (e.g. 'mv my_file.pdf ~/pdf_files/')"
+echo -e "\n\tWhen 'mv' command gets more than two arguments, the last argument must be a"
+echo -e "\tdirectory name and all preceeding files and directories that are passed to"
+echo -e "\t'mv' will be moved into that last passed directory:"
+echo -e "\t(e.g. 'mv file1 file2 dir1 dir2 target_dir/')"
 
 echo -e "\n------------"
 
