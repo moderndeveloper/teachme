@@ -4,7 +4,9 @@
 echo -e 'git branch'
 
 # the command's description
-echo "description here"
+echo "In git, a branch represents an isolated line where development can take place. What this mean is that a branch provides a brand new working directory, staging area, and project history. The branch feature is useful for developers who wants to develop a new feature for their application but does not want to mess with the actual code that is running in their production server.
+
+git branch is a command that lets you create, delete, list and rename branches. It does not let you switch between branches however, use git checkout instead."
 
 echo "------------"
 
