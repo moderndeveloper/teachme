@@ -21,12 +21,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "git fetch origin"
+echo Copies all branches from the remote and stores them to the local
 
 # example 2
-echo "git test something"
-echo description here
+echo "git fetch git://github.com/me/repo.git mybranch"
+echo  Fetches the mybranch from the repository at git://github.com/me/repo.git
 
 
 exit 0
