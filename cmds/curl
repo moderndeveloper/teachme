@@ -15,7 +15,7 @@ echo "Syntax:"
 echo "curl [options] [URL]"
 echo -e "\t[options]: A command option or command flag."
 echo -e "\t[options: -o]: Used to specify a file name to save curl's output in."
-echo -e "\t[options: -O]: curl will saved its output in a file with the filename in the URL."
+echo -e "\t[options: -O]: curl will save its output in a file with the filename in the URL."
 echo -e "\t[options: -C -]: Will continue downloading after curl has been interrupted."
 echo -e "\t[URL]: URL to perform curl on. Multiple URLs can be specified if they are separated by the -O flag."
 
