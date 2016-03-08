@@ -11,11 +11,11 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax: man [options] keyword"
-echo "man pwd"
-echo "Display manual for 'pwd' command"
+echo -e "\tman pwd"
+echo -e "\tDisplay manual for 'pwd' command"
 
-echo "man -af 1 ls"
-echo "Display section 1, User Commands, of manual pages for all that matches 'ls' command in one-liner format for each file"
+echo -e "\tman -af 1 ls"
+echo -e "\tDisplay section 1, User Commands, of manual pages for all that matches 'ls' command in one-liner format for each file"
 #   ...      etc
 
 echo "------------"
