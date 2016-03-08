@@ -28,9 +28,12 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\tgit test argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\tgit checkout [-b] <new_branch> [<start point>]"
+echo -e "\n\tgit checkout <branch>"
+echo -e "\n\tgit checkout [-p|--patch] [<tree-ish>] [--]<pathspec>..."
+echo -e "\t\t-b: create new branch named <new_branch> and start it at <start point>"
+echo -e "\t\t-p: selectively discard edits(difference between <tree_ish> or the index,if unspecified and " 
+echo -e "\t\tthe working tree)from yourworking tree."
 #   ...      etc
 
 echo -e "\n------------"
