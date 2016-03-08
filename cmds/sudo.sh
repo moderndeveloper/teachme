@@ -20,12 +20,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "sudo -u irek ls /home/irek/README"
+echo List the contents of the /home/irek/README directory as the irek user.
 
 # example 2
-echo "test something"
-echo description here
+echo "sudo -v"
+echo Extend/reset sudo's automatic authentication timeout, allowing you to continue issuing sudo commands without entering a password
 
 
 exit 0
