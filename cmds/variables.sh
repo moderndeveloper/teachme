@@ -20,12 +20,14 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "#!/bin/bash; STR="Hello World!"; echo $STR "
+echo Line 2 creates a variable called STR and assigns the string "Hello World!" to it.
+echo Then the VALUE of this variable is retrieved by putting the '$' in at the beginning.
 
 # example 2
-echo "test something"
-echo description here
+echo "#!/bin/bash; OF=/var/my-backup-$(date +%Y%m%d).tgz; tar -cZf $OF /home/me/ "
+echo Notice the expression '$(date +%Y%m%d)'
+echo If you run the script you'll notice that it runs the command inside the parenthesis, capturing its output
 
 
 exit 0
