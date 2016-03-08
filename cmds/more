@@ -29,9 +29,9 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\ttest argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\tmore [-dlfpcsu] [-num] [+/ pattern] [+linenum] [files...]"
+echo -e "\t\t-num: sets the number of lines that makes up a screenful.It must be an Integer."
+echo -e "\t\t+linenum: start displaying text at line number num"
 #   ...      etc
 
 echo -e "\n------------"
