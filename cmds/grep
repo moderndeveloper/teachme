@@ -14,7 +14,7 @@ echo "------------"
 echo "Syntax:"
 echo
 echo "grep [option] [\"string\"] [file]"
-echo -e "\t[option] - a command option or command flag."
+echo -e "\t[option] - A command option or command flag."
 echo -e "\t[option: -i] - Enable grep to perform case-insensitive matching. By default, grep is case-sensitive."
 echo -e "\t[option: -n] - Enable grep to show the line number of the matched string in the file."
 echo -e "\t[\"string\"] - The case sensitive search pattern."
