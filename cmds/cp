@@ -14,7 +14,7 @@ echo "------------"
 echo "Syntax:"
 echo
 echo "cp [option] [source] [destination]"
-echo -e "\t[option] - a command option or command flag."
+echo -e "\t[option] - A command option or command flag."
 echo -e "\t[option: -R] - Enable cp to copy the entire directory from one place to another recursively."
 echo -e "\t[option: -s] - Enable cp to create a symbolic link, where \033[4mdestination.txt\033[0m points to \033[4msource.txt\033[0m."
 echo -e "\t[source] - Path of source file to be copied or symbolic linked."
