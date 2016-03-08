@@ -11,10 +11,10 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax: cp [OPTION] SOURCE DEST"
-echo "Common options are: -a, -f, -i, -l, -n, -R, -u"
-echo -e "-a: archive files \n-f: force copy \n-i: interactive - ask before overwrite \n-l: link files instead of copy \n-n: don't overwrite file \n-R: recursive copy \n-u: copy only when source file is newer than destination file"
-echo "cp -iRu SOURCE_FILE DESTINATION_FILE"
-echo "Copy all files from SOURCE_FILE to DESTINATION_FILE and ask before overwritting any files and only copy/update if the source file is newer"
+echo -e "\tCommon options are: -a, -f, -i, -l, -n, -R, -u"
+echo -e "\t-a: archive files \n-f: force copy \n-i: interactive - ask before overwrite \n-l: link files instead of copy \n-n: don't overwrite file \n-R: recursive copy \n-u: copy only when source file is newer than destination file"
+echo -e "\tcp -iRu SOURCE_FILE DESTINATION_FILE"
+echo -e "\tCopy all files from SOURCE_FILE to DESTINATION_FILE and ask before overwritting any files and only copy/update if the source file is newer"
 #   ...      etc
 
 echo "------------"
