@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a test command."
+echo "This is a while command."
 
 # The command's name
-echo -e 'test'
+echo -e 'while'
 
 # the command's description
-echo "description here"
+echo "The while construct allows for repetitive execution of a list of commands, as long as the command controlling the while loop executes successfully (exit status of zero)"
 
 echo "------------"
 
