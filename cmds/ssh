@@ -10,21 +10,20 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
-#   ...      etc
+echo "ssh [options] [remote host]"
+echo -e "\t[options]: A command option or command flag."
+echo -e "\t:[remote host] - IP address or domain name that you're trying to connect to."
 
 echo "------------"
 
 # the command's usage examples
 # example 1
 echo "ssh jhawkins@collie.stanford.edu"
-echo "Login to a remote host on which you have an account under the same user name as the host you're currently logged into"
+echo "Login to a remote host on which you have an account under the same user name as the host you're currently logged into."
 
 # example 2
-echo "ssh jhawkins@collie.stanford.ed"
-echo "Login to a remote host on which you have an account under a different user name than the host you're current logged into:"
+echo "ssh jhawkins@collie.stanford.edu"
+echo "Login to a remote host on which you have an account under a different user name than the host you're current logged into."
 
 # example 3
 echo "ssh -V"
