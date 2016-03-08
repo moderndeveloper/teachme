@@ -31,9 +31,12 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\ttest argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\tmv [options]... SOURCE ....DIRECTORY"
+echo -e "\n\tmv [options]... SOURCE ....DEST"
+echo -e "\t\t-t: move all SOURCE arguments into directory DIRECTORY"
+echo -e "\t\t-T:treate DEST as a normal file,not as a directory"
+echo -e "\t\t-u:perform the move only if the SOURCE file is newer then the destination file,"
+echo -e "\t\tor the destination file does not exist."
 #   ...      etc
 
 echo -e "\n------------"
