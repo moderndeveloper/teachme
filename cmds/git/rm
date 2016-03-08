@@ -29,9 +29,12 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\tgit test argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\tgit rm [-f] [-n] [-r] [--cached] [--ignore-unmatch] [--quite] [--] <file>"
+echo -e "\t\t-f /--force: override the up-to-date"
+echo -e "\t\t-n: not actually remove any file and just show them whether they are in the index."
+echo -e "\t\t-r: allow recursive removal when a leading directory name is given."
+echo -e "\t\t--cached: use this option to unstaged and remove paths only from the index. "
+echo -e "\t\t--ignore-unmatch: exit with 0 status even if no files matched."
 #   ...      etc
 
 echo -e "\n------------"
