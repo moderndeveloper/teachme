@@ -26,9 +26,11 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\tgit test argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\tgit pull [options] [<repository>[<refspec]>...]"
+echo -e "\t\t--edit: invoke an editor before committing successful merge to further edit the"
+echo -e "\t\tauto-generated message, so that the user can explain and justify the merge. "
+echo -e "\t\t<repository>:  the remote repository is the source of a fetch or pull operation."
+echo -e "\t\t<refspec>:  specify which refs to fetch and which local refs to update."
 #   ...      etc
 
 echo -e "\n------------"
