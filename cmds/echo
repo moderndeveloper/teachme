@@ -31,9 +31,18 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\ttest argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\techo [SHORT-OPTION] [STRING]"
+echo -e "\t\t-n: don\'t output a trailing new line"
+echo -e "\t\t-e: enable interpretation of backslash escape sequences"
+echo -e "\t\t-E: disable interpretation of backslash escape sequences(this is the default)"
+echo -e "\n"
+echo -e "\t\tfor -e option,the following escape sequence are recognized."
+echo -e "\t\t\\\\\:a literal backslash character"
+echo -e "\t\t\\\\n:a new line"
+echo -e "\t\t\\\\t:a horizontal tab"
+echo -e "\t\t\\\\v:a vertical tab"
+echo -e "\t\t\\\\b:a backspace"
+echo -e "\t\t\\\\a:an alert"
 #   ...      etc
 
 echo -e "\n------------"
