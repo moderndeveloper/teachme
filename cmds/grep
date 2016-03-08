@@ -6,7 +6,7 @@ echo -e 'grep'
 # the command's description
 echo "Grep stands for \"global regular expression print\", it processes text line by line and prints any lines which match a specified pattern. It is one of the most useful and powerful commands on Linux and other Unix-like operating systems because of its utilization of regular expressions.
 
-A Regular expression is a sequence of characters that define a search pattern, mainly for use in pattern matching with strings. Grep is a powerful tool for matching a regular expression against text in a file, multiple files, or a stream of input. It searches for the pattern of text that you specify on the command line, and outputs the results for you."
+A regular expression is a sequence of characters that define a search pattern, mainly for use in pattern matching with strings. Grep is a powerful tool for matching a regular expression against text in a file, multiple files, or a stream of input. It searches for the pattern of text that you specify on the command line, and outputs the results."
 
 echo "------------"
 
@@ -15,7 +15,7 @@ echo "Syntax:"
 echo
 echo "grep [option] [\"string\"] [file]"
 echo -e "\t[option] - a command option or command flag."
-echo -e "\t[option: -i] - Enable grep to perform case insensitive matching. By default, grep is case sensitive."
+echo -e "\t[option: -i] - Enable grep to perform case-insensitive matching. By default, grep is case-sensitive."
 echo -e "\t[option: -n] - Enable grep to show the line number of the matched string in the file."
 echo -e "\t[\"string\"] - The case sensitive search pattern."
 echo -e "\t[file] - The matched file where grep will be performed."
@@ -24,8 +24,8 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "grep -i \"Bla\" manual.txt"
+echo "Will search for all upper- and lowercase variations of \"Bla\" in manual.txt and return any matches."
 
 # example 2
 echo "test something"
