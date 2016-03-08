@@ -18,11 +18,11 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "ssh jhawkins@collie.stanford.edu"
+echo "ssh stanford.edu"
 echo "Login to a remote host on which you have an account under the same user name as the host you're currently logged into."
 
 # example 2
-echo "ssh jhawkins@collie.stanford.edu"
+echo "ssh username@stanford.edu"
 echo "Login to a remote host on which you have an account under a different user name than the host you're current logged into."
 
 # example 3
