@@ -4,16 +4,16 @@
 echo -e 'git reset'
 
 # the command's description
-echo "git reset provides a way to reset a file or repository to a previous commit. It is a dangerous tool as it is one of the git command that has the potential to make you lose your work."
+echo "git reset provides a way to reset a file or repository to a previous commit."
 
 echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
-#   ...      etc
+echo "git reset [options] [file/commit]"
+echo -e "\t[options] - A command option or command flag."
+echo -e "\t[options: --hard] - Will git reset both the staging area and working directory."
+echo -e "\t[file/commit] - File or specified commit to git reset."
 
 echo "------------"
 
@@ -36,7 +36,7 @@ echo "This will have the branch point back to the specified commit. The staging 
 
 # example 5
 echo "git reset --hard <commit>"
-echo "This will have the branch point back to the specified commit. The staging area and working directory will reset to match the state of the repository at this point. Everything passed the point of the specified commit will be deleted, including any commits made after this point. Do not take this command lightly."
+echo "This will have the branch point back to the specified commit. The staging area and working directory will reset to match the state of the repository at this point. Everything passed the point of the specified commit will be deleted, including any commits made after this point."
 
 
 exit 0
