@@ -28,8 +28,8 @@ echo "grep -i \"Bla\" manual.txt"
 echo "Will search for all upper- and lowercase variations of \"Bla\" in manual.txt and return any matches."
 
 # example 2
-echo "test something"
-echo description here
+echo "grep -l \"Chapter 2\" *"
+echo "Will list all the files that contain \"Chapter 2\"."
 
 
 exit 0
