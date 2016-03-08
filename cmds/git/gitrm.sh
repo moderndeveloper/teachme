@@ -11,12 +11,12 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git rm [option] [FILE]"
-echo -e "git rm -nrq --cached myfile"
-echo -e "\-n: Do not remove files, only show if they exist"
-echo -e "\-r: Allow recursive removal when [FILE] is a directory"
-echo -e "\-q: Do not print output for each file removed"
-echo -e "\--cached:  Unstage files from staging area but do not delete it"
+echo -e "\tgit rm [option] [FILE]"
+echo -e "\tgit rm -nrq --cached myfile"
+echo -e "\t-n: Do not remove files, only show if they exist"
+echo -e "\t-r: Allow recursive removal when [FILE] is a directory"
+echo -e "\t-q: Do not print output for each file removed"
+echo -e "\t--cached:  Unstage files from staging area but do not delete it"
 #   ...      etc
 
 echo "------------"
