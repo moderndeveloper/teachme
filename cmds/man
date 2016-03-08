@@ -44,9 +44,13 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\ttest argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\tman [options] [[section] subjects]"
+echo -e "\t\t-d: printing debug info"
+echo -e "\t\t-f: searches the manual page names and displays the manual page descriptions of any name "
+echo -e "\t\tmatched."
+echo -e "\t\t-k keywords:search the short manual page descriptions for keywords and display any matches"
+echo -e "\t\t-M path:searches in the specified path instead of the MANPATH directories."
+echo -e "\t\tsection(1-9):the number represent the section of the command located."
 #   ...      etc
 
 echo -e "\n------------"
