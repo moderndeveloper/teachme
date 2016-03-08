@@ -25,19 +25,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "cd /var/tmp"
-echo change into "/var/tmp" directory
-
-# example 2
-echo "cd"
-echo change to current user home directory
-=======
 echo "man man"
-echo View the manual page for the man command
+echo "View the manual page for the man command"
 
 # example 2
 echo "man --nh --nj man"
-echo View the manual page for man, with no hyphenated words or justified lines
+echo "View the manual page for man, with no hyphenated words or justified lines"
 
 
 exit 0
