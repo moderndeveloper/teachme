@@ -4,29 +4,30 @@
 echo -e 'git branch'
 
 # the command's description
-echo "In git, a branch represents an isolated line where development can take place. What this mean is that a branch provides a brand new working directory, staging area, and project history. The branch feature is useful for developers who wants to develop a new feature for their application but does not want to mess with the actual code that is running in their production server.
+echo "In git, a branch represents an isolated line where development can take place. A branch provides a brand new working directory, staging area, and project history. It can be seen as a fork inside your repository. The branch feature is useful for developers who want to develop a new feature for their application but do not want to mess with the code that is running on their production server.
 
-git branch is a command that lets you create, delete, list and rename branches. It does not let you switch between branches however, use git checkout instead."
+git branch is a command that lets you create, delete, list and rename branches. However, it does not let you switch between branches. To switch between branches use git checkout instead."
 
 echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
-#   ...      etc
+echo "git branch [options] [branch]"
+echo -e "\t[options] - A command option or command flag."
+echo -e "\t[options: d] - Will delete the specified branch if it doesn't have unmerged changes."
+echo -e "\t[options: m] - Will rename the current branch to the specified [branch]."
+echo -e "\t[branch] - Name of branch to perform git branch or the specified option on."
 
 echo "------------"
 
 # the command's usage examples
 # example 1
 echo "git branch"
-echo "List all the current branches in your repository"
+echo "List all the current branches in your repository."
 
 # example 2
 echo "git branch testing"
-echo "Will create a branch named 'testing'"
+echo "Will create a branch named 'testing'."
 
 # example 3
 echo "git branch -d testing"
@@ -38,7 +39,7 @@ echo "-D executes a force delete on branch 'testing'. This means the branch will
 
 # example 5
 echo "git branch -m awesome"
-echo "This will rename the current branch to 'awesome'"
+echo "This will rename the current branch to 'awesome'."
 
 
 exit 0
