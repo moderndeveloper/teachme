@@ -11,8 +11,8 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax: variable=value"
-echo -e "myvar='This is a variable'"
-echo -e "$myvar \nThis will output the stored value of 'myvar'"
+echo -e "\tmyvar='This is a variable'"
+echo -e "\t$myvar \nThis will output the stored value of 'myvar'"
 
 #   ...      etc
 
