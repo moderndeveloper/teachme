@@ -11,8 +11,8 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax: echo [OPTION] [STRING]"
-echo "[OPTION]: -n, -e"
-echo -e "-n: Do not print the trailing newline \n-e: Enable backlash escapes"
+echo -e "\t[OPTION]: -n, -e"
+echo -e "\t-n: Do not print the trailing newline \n-e: Enable backlash escapes"
 #   ...      etc
 
 echo "------------"
