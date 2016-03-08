@@ -11,10 +11,10 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax: git fetch [options] [repository [refspec]]"
-echo "git fetch -utp origin"
-echo -e "\-u: Override default by updating the head to current branch"
-echo -e "\-t: Fetch all tags from remote"
-echo -e "\-p: After fetching, remove any remote-tracking references that no longer exist on the remote"
+echo -e "\tgit fetch -utp origin"
+echo -e "\t-u: Override default by updating the head to current branch"
+echo -e "\t-t: Fetch all tags from remote"
+echo -e "\t-p: After fetching, remove any remote-tracking references that no longer exist on the remote"
 #   ...      etc
 
 echo "------------"
