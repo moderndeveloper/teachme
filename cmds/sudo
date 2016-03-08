@@ -6,45 +6,39 @@ echo -e 'sudo'
 # the command's description
 echo "The sudo command is used to allow a permitted user to execute a command as another user, according to the specifications as detailed in the \033[1m/etc/sudoers\033[0m file.
 
-The sudo command requires user to authenticate themselves via password. Once the user has been authenticated, the user is free to execute the command."
+The sudo command requires users to authenticate themselves via password. Once a user has been authenticated, he/she is free to execute the command."
 
 echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
-#   ...      etc
+echo "sudo [options] [command]"
+echo -e "\t[options] - A command option or command flag."
+echo -e "\t[options: v] - Will extend sudo timeout for another 5 minutes by default. The user will be authenticated if necessary."
+echo -e "\t[options: k] - Makes the user's authentication credentials invalid. The next time sudo is run, a password will be required."
+echo -e "\t[options: b] - Will run the sudo command in the background. Note that most interactive commands will fail to run properly in the background."
+echo -e "\t[command] - Command to perform sudo on."
 
 echo "------------"
 
 # the command's usage examples
 # example 1
 echo "sudo ls /usr/local/protected"
-echo "Well get the file listing of an unreadable directory. Using the sudo command will override the directories permissions."
+echo "Will get the file listing of an unreadable directory. Using the sudo command will override the directories permissions."
 
 # example 2
-echo "sudo -v"
-echo "This will extend sudo's automatic authentication timeout, allowing you to continue issuing sudo commands without entering a password."
-
-# example 3
-echo "sudo -k"
-echo "This will 'kill' sudo authentication for the current user. The next sudo command will require a password."
-
-# example 4
 echo "sudo -u john vi ~john/webdocs/index.html"
 echo "Allow you to edit the index.html file with vi as the user john"
 
-# example 5
+# example 3
 echo "sudo apt-get install {package-name}"
 echo "This command will install packages with the root privileges."
 
-# example 6
+# example 4
 echo "sudo apt-get remove {package-name}"
 echo "This command will remove packages with the root privileges."
 
-# example 7
+# example 5
 echo "sudo apt-get update {package-name}"
 echo "This command will update packages with the root privileges."
 
