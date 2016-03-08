@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-echo "This is cd command."
+echo "This is a cd command."
 
 # The command's name
 echo -e 'cd'
