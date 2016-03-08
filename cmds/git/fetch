@@ -29,9 +29,13 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\tgit test argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\tgit fetch [<options>] [<repository>[<refspec>...]]"
+echo -e "\n\tgit fetch [<options>] <group>"
+echo -e "\n\tgit fetch --multiple [<options>] [(<repository> | <group>)...]"
+echo -e "\t\t--multiple: allow several <repository> and <group> arguments to be specified."
+echo -e "\t\t<repository>: the remote repository that is the source of a fetch or pull operation."
+echo -e "\t\t<group>: a name referring to a list of repositories as the value of remotes."
+echo -e "\t\t<refspec>: specifies which refs to fetch and which local refs to update."
 #   ...      etc
 
 echo -e "\n------------"
