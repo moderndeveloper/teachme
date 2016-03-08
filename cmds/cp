@@ -26,9 +26,12 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\ttest argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\tcp [OPTION] SOURCE DIRECTORY"
+echo -e "\n\tcp [OPTION] SOURCE DEST"
+echo -e "\t\t-r: copy directories recursively"
+echo -e "\t\t-t: copy all SOURCE arguments into DIRECTORY"
+echo -e "\t\t-u: copy only when the SOURCE file is newer than the destination file or the destination file"
+echo -e "\t\tis missing."
 #   ...      etc
 
 echo -e "\n------------"
