@@ -13,8 +13,8 @@ echo "------------"
 # the command's syntax
 echo "Syntax:"
 echo "[command1] | [command2]"
-echo -e "\t[command1] - The output of the command to pipe into command2."
-echo -e "\t[command2] - command2 will use the output of command1 as input."
+echo -e "\t[command1] - The command you wish to output to command2."
+echo -e "\t[command2] - The command that will accept command1's output as an input."
 
 echo "------------"
 
