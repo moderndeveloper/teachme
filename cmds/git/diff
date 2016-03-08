@@ -12,7 +12,7 @@ echo "------------"
 echo "Syntax:"
 echo
 echo "git diff [option] [branch1/commit1] [branch2/commit2]"
-echo -e "\t[option] - a command option or command flag."
+echo -e "\t[option] - A command option or command flag."
 echo -e "\t[option: --stat] - Enable git diff to show only the stats of the file changes since the last commit."
 echo -e "\t[branch1/commit1] - The name of a branch or SHA of a commit to be compared to branch2 and commit2 respectively."
 echo -e "\t[branch2/commit2] - The name of a branch or SHA of a commit to be compared to branch1 and commit1 respectively."
