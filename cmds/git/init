@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}git init${normal} - create an empty git repository"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo -e "\n\tThere are two ways to create a Git repository, to use a 'git clone' or 'git init', the latter "
+echo -e "\tcommand is used to create an empty git repository or reinitialize an existing one."
+echo -e "\n\tThis is a first command you'll be running while starting a new project. Running 'git init' will"
+echo -e "\tcreate a hidden subdirectory .git, in a projects root folder, which will have all "
+echo -e "\tnecessary metadata for the repository."
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}"
+echo -e "\n\tgit test argument1 argument2"
+echo -e "\t\targument1: description of argument 1"
+echo -e "\t\targument2: description of argument 2"
+#   ...      etc
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\t\tgit test"
+echo -e "\t\tdescription here"
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\t\tgit test something"
+echo -e "\t\tdescription here\n"
+
+#   ...      etc
+
+exit 0
