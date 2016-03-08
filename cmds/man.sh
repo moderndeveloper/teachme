@@ -10,15 +10,12 @@ echo "The man command formats and displays man pages of commands. A man page, ma
 echo "------------"
 
 # the command's syntax
-echo "Syntax: cd [option] [directory]" needs to be updated to man's syntax
-echo "The items in the square brackets, [option] and [directory] are option fields. When the optional fields are omitted, 'cd' command will return to the previous root directory."
-echo "[option] The cd command has two options and neither of them are commonly used. -P tells cd to use physical directory structure instead of following symbolic links"
-echo "[directory] The cd command can accept absolute or local pathname. However, it's more convenient to use local pathname when accessing a subdirectory of the current directory"
+echo "Syntax: man [options] keyword"
+echo "man pwd"
+echo "Display manual for 'pwd' command"
 
-echo "Return to root directory: cd"
-echo "Return to previous directory (one level up): cd .. or two level up: cd ../.."
-echo "Return to a subdirectory in a different directory: cd DIRECTORY_NAME/SUBDIRECTORY_NAME"
-echo "Or to access subdirectory in the same working directory: cd SUBDIRECTORY_NAME"
+echo "man -af 1 ls"
+echo "Display section 1, User Commands, of manual pages for all that matches 'ls' command in one-liner format for each file"
 #   ...      etc
 
 echo "------------"
