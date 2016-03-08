@@ -26,9 +26,14 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\tgit test argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\tgit reset [<mode>] [<commit>]"
+echo -e "\n\tgit reset [-q][<tree-ish>] [--] <paths>..."
+echo -e "\n\t\ttree-ish: this is a way to refer to particular commits in Git using either full or "
+echo -e "\t\tpartial hash of the commits, refs, branch and remotes."
+echo -e "\t\t<mode>: reset the current branch head to <commit> and possibily updates the index and working" 
+echo -e "\t\tdepending on the <mode>"
+echo -e "\t\t--hard: this mode resets the index and working tree"
+echo -e "\t\t--mixed: this mode resets the index but not the working tree(this is default action)"
 #   ...      etc
 
 echo -e "\n------------"
