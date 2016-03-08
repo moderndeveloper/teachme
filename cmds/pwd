@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+cat<<EOF
+
+Name:
+  pwd
+
+------------------------------------------------------------------------------
+
+Description:
+  Prints the full pathname for the current working directory.
+
+------------------------------------------------------------------------------
+
+Syntax:
+  pwd [-LP]
+
+------------------------------------------------------------------------------
+
+Options:
+  -P  : The pathname printed will not contain symbolic links.
+  -L  : The pathname printed can contain symbolic links
+
+------------------------------------------------------------------------------
+
+Examples:
+  # Print the name of the current working directory.
+  $ pwd
+
+EOF
+
+exit 0
