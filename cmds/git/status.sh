@@ -11,8 +11,8 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax: git status [option]"
-echo "git status -sb"
-echo "Show status for current status of the working directory and its branch in short format (-sb)"
+echo -e "\tgit status -sb"
+echo -e "\tShow status for current status of the working directory and its branch in short format (-sb)"
 
 #   ...      etc
 
