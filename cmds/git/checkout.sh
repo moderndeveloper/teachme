@@ -11,8 +11,8 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax: git checkout [option] [BRANCH]"
-echo "git checkout -bt MYBRANCH origin/MYBRANCH"
-echo -e "\-b: Create new branch named MYBRANCH"
+echo -e "\tgit checkout -bt MYBRANCH origin/MYBRANCH"
+echo -e "\t-b: Create new branch named MYBRANCH"
 echo -e "\t: Track the new branch from origin"
 #   ...      etc
 
