@@ -14,7 +14,7 @@ echo "------------"
 echo "Syntax:"
 echo
 echo "git merge [option] [branch_name]"
-echo -e "\t[option] - a command option or command flag."
+echo -e "\t[option] - A command option or command flag."
 echo -e "\t[option: --no-edit] - Use git merge with the auto-generated merge commit message."
 echo -e "\t[option: --no-commit] - Enable git merge to merge only and not make a new commit automatically."
 echo -e "\t[option: -e] - Enable git merge to open an editor before committing to edit the auto-generated merge commit message."
