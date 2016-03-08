@@ -11,10 +11,10 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax: git pull [options] [repository [refspec]]"
-echo "git pull --rebase MYDIRECTORY"
-echo "git to fetch MYDIRECTORY and instead of merging, rebase branch head to current branch"
-echo  -e "Note: that [refspec] can replace [repository] by adding them to git config file like so: [remote 'origin'] \nurl = YOUR GITHUB URL \nfetch = +refs/heads/*:refs/remotes/origin/*" 
-echo "Once this is setup in .gitconfig file, the above command can be rewritten to: git pull --rebase origin"
+echo -e "\tgit pull --rebase MYDIRECTORY"
+echo -e "\tgit to fetch MYDIRECTORY and instead of merging, rebase branch head to current branch"
+echo -e "\tNote: that [refspec] can replace [repository] by adding them to git config file like so: [remote 'origin'] \nurl = YOUR GITHUB URL \nfetch = +refs/heads/*:refs/remotes/origin/*" 
+echo -e "\tOnce this is setup in .gitconfig file, the above command can be rewritten to: git pull --rebase origin"
 
 #   ...      etc
 
