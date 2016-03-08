@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a test command."
+echo "This is a ssh command."
 
 # The command's name
-echo -e 'test'
+echo -e 'ssh'
 
 # the command's description
-echo "description here"
+echo "ssh - OpenSSH SSH client (remote login program)"
 
 echo "------------"
 
