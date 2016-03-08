@@ -11,8 +11,8 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax: git reset [option] [BRANCH/COMMIT ID]"
-echo "git reset --hard HEAD~3"
-echo -e "\--hard: Remove the last 3 commits from master branch."
+echo -e "\tgit reset --hard HEAD~3"
+echo -e "\t--hard: Remove the last 3 commits from master branch."
 #   ...      etc
 
 echo "------------"
