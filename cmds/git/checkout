@@ -14,7 +14,7 @@ echo "------------"
 echo "Syntax:"
 echo
 echo "git checkout [option] [branch] [file]"
-echo -e "\t[option] - a command option or command flag."
+echo -e "\t[option] - A command option or command flag."
 echo -e "\t[option: -b] - Tells git to run \033[4mgit branch branch\033[0m before checkout."
 echo -e "\t[branch] - The specified branch for git to checkout."
 echo -e "\t[file] - The specified file for git to revert or checkout to."
