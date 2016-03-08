@@ -17,7 +17,7 @@ Description:
 ------------------------------------------------------------------------------
 
 Syntax:
-  git log [<options>] [<revision range>] [[\--] <path>...]
+  git log [<options>] [<revision range>] [[\\--] <path>...]
 
 ------------------------------------------------------------------------------
 
@@ -68,7 +68,8 @@ Option:
     <start> and <end> can take one of these forms:
 
     number
-      If <start> or <end> is a number, it specifies an absolute line number (lines count from 1).
+      If <start> or <end> is a number, it specifies an absolute line number
+      (lines count from 1).
 
     /regex/
       This form will use the first line matching the given POSIX regex. If
@@ -95,7 +96,7 @@ Option:
     to spell <revision range>, see the Specifying Ranges section of
     gitrevisions[7].
 
-  [\--] <path>...
+  [\\--] <path>...
     Show only commits that are enough to explain how the files that match the
     specified paths came to be. See History Simplification below for details and
     other simplification modes.
@@ -390,8 +391,8 @@ Default mode
       .-A---M---N---O---P---Q
      /     /   /   /   /   /
     I     B   C   D   E   Y
-     \   /   /   /   /   /
-      `-------------'   X
+    \\   /   /   /   /   /
+     \`-------------'   X
 
     The horizontal line of history A---Q is taken to be the first parent of each
     merge. The commits are:
@@ -470,8 +471,8 @@ Default mode
       .-A---M---N---O---P---Q
      /     /   /   /   /
     I     B   /   D   /
-     \   /   /   /   /
-      `-------------'
+    \\   /   /   /   /
+     \`-------------'
 
     Compare to --full-history without rewriting above. Note that E was pruned
     away because it is TREESAME, but the parent list of P was rewritten to
@@ -513,8 +514,8 @@ Default mode
       .-A---M---N---O
      /     /       /
     I     B       D
-     \   /       /
-      `---------'
+    \\   /       /
+     \`---------'
 
     Note the major differences in N, P, and Q over --full-history:
 
@@ -539,7 +540,7 @@ Default mode
     As an example use case, consider the following commit history:
 
         D---E-------F
-       /     \       \
+       /    \\       \
       B---C---G---H---I---J
      /                     \
     A-------K---------------L--M
@@ -557,7 +558,7 @@ Default mode
     range, it results in:
 
       E-------F
-       \       \
+      \\       \
         G---H---I---J
                      \
                       L--M
@@ -589,7 +590,7 @@ Commit Ordering:
     For example, in a commit history like this:
 
     ---1----2----4----7
-        \         \
+       \\         \
          3----5----6----8---
 
     where the numbers denote the order of commit timestamps, git rev-list and
@@ -685,7 +686,7 @@ Commit Formatting
     For example, if you have this topology:
 
          y---b---b  branch B
-        / \ /
+        /\\ /
        /   .
       /   / \
      o---x---a---a  branch A
