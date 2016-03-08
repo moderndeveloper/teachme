@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}git checkout${normal} - switches branches or restores working tree files"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo -e "\n\t'git checkout' is used to change current branch you are working on by passing"
+echo -e "\tit a branch name to switch to."
+echo -e "\tIf ${bold}-b${normal} option is passed to the 'git checkout' then the new branch is"
+echo -e "\tcreated with the provided name, and then Git switches to that new branch."
+echo -e "\t'git checkout -- file' can be used to discard changes made to 'file' in the"
+echo -e "\tworking directory, reverting it to the version that is already staged for"
+echo -e "\tcommit."
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}"
+echo -e "\n\tgit test argument1 argument2"
+echo -e "\t\targument1: description of argument 1"
+echo -e "\t\targument2: description of argument 2"
+#   ...      etc
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\t\tgit test"
+echo -e "\t\tdescription here"
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\t\tgit test something"
+echo -e "\t\tdescription here\n"
+
+#   ...      etc
+
+exit 0
