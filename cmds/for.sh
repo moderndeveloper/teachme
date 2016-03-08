@@ -11,9 +11,11 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "for var in word1 word2 ... wordN"
+echo -e "\tdo"
+echo -e "\t Statement(s) to be executed for every word."
+echo -e "\done"
+
 #   ...      etc
 
 echo "------------"
