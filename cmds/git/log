@@ -12,7 +12,7 @@ echo "------------"
 echo "Syntax:"
 echo
 echo "git log [options] [time frame]"
-echo -e "\t[option] - a command option or command flag."
+echo -e "\t[option] - A command option or command flag."
 echo -e "\t[option: -3] - The number of outputs git log will display."
 echo -e "\t[option: --graph] - Enable git log to show the commit history in a graph."
 echo -e "\t[time frame: --after=<date>] - Enable git log to show only the commits after a specific date."
