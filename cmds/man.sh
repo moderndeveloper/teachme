@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is cd command."
+echo "This is a man command."
 
 # The command's name
-echo -e 'cd'
+echo -e 'man'
 
 # the command's description
-echo 'The cd command, change directory, is used to change the current working directory to other directory. This command accepts both absolute paths and relative paths. ".." is the parent directory shortcut. Typing this shortcut to change to one directory up in the path.'
+echo "The man command formats and displays man pages of commands. A man page, manual page, is a form of online documentation of commands on an Unix operating system."
 
 echo "------------"
 
@@ -31,6 +31,13 @@ echo change into "/var/tmp" directory
 # example 2
 echo "cd"
 echo change to current user home directory
+=======
+echo "man man"
+echo View the manual page for the man command
+
+# example 2
+echo "man --nh --nj man"
+echo View the manual page for man, with no hyphenated words or justified lines
 
 
 exit 0
