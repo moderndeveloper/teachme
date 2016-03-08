@@ -15,7 +15,7 @@ echo "Syntax:"
 echo
 echo "git rebase [-i] [option] [branch]"
 echo -e "\t[-i] - Sets up git for an interactive rebase."
-echo -e "\t[option] - a command option or command flag."
+echo -e "\t[option] - A command option or command flag."
 echo -e "\t[option: --continue] - Restarts the rebasing process after a merge conflict has been resolved."
 echo -e "\t[option: --abort] - Abandon the current rebasing process and return the repository to it's prior state."
 echo -e "\t[branch]: The specified branch where the current branch will be re-written to."
