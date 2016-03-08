@@ -4,42 +4,43 @@
 echo -e 'git config'
 
 # the command's description
-echo "git provides a tool called git config that lets you configure and customize git according to your liking to help increase productivity. git can be configured globally, which affects every repository in the machine or locally, which affects only the targeted repository."
+echo "git config lets you configure and customize git according to your liking to help increase productivity. git can be configured globally, which affects every repository on the machine or locally, which affects only the targeted repository."
 
 echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "git test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
-#   ...      etc
+echo "git config [options] [setting-to-configure] [setting-specification]"
+echo -e "\[options] - A command option or command flag."
+echo -e "\[options: --global] - Edit the default configuration for all commits."
+echo -e "\[setting-to-configure] - The setting you want to configure."
+echo -e "\[setting-specification] - The value of the specified [setting-to-configure]."
 
 echo "------------"
 
 # the command's usage examples
 # example 1
 echo "git config user.name John"
-echo "Define the author name to be used for all commits in the current repository. "
+echo "Defines the author name to be used for all commits in the current repository."
 
 # example 2
 echo "git config --global user.name John"
-echo "Define the author name to be used for all commits by the current user, that being the whomever is logged into the system."
+echo "Defines the author name to be used for all commits by the current user, that being whomever is logged into the system."
 
 # example 3
 echo "git config --global user.email <email>"
-echo "Define the author email to be used for all commits by the current user."
+echo "Defines the author email to be used for all commits by the current user."
 
 # example 4
 echo "git config --global alias.gf <git-command>"
-echo "This will create an alias shortcut for the git config command, so instead of typeing 'git config' you can type 'gf'. Note you can name the alias whatever you like, just replace 'gf' with your desired name."
+echo "This will create an alias shortcut for the git config command, so instead of typing 'git config' you can type 'gf'. Note you can name the alias anything you like."
 
 # example 5
 echo "git config --system core.editor pico"
-echo "Define the text editor used by commands like git commit for all users on the current machine. In this case editor selected is pico. "
+echo "Defines the text editor used by git commands, like git commit, for all users on the current machine. In this case the selected editor is pico."
 
 # example 6
 echo "git config --global --edit"
-echo "Open the global configuration file in a text editor for manual editing."
+echo "Opens the global configuration file in a text editor for manual editing."
 
 exit 0
