@@ -1,11 +1,11 @@
 #!/usr/bin/bash
-echo "This is a git test command."
+echo "This is a alias command."
 
 # The command's name
-echo -e 'git test'
+echo -e 'alias'
 
 # the command's description
-echo "description here"
+echo "alias instructs the shell to replace one string with another when executing commands."
 
 echo "------------"
 
