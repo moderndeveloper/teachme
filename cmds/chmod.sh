@@ -11,9 +11,12 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "chmod options permissions filename"
+echo -e "\toptions: -c, --changes Like --verbose, but gives verbose output only when a change is actually made."
+echo -e "\tpermissions : permissions defines the permissions for the owner of the file (the "user"),
+ members of the group who owns the file (the "group"), and anyone else ("others").
+ There are two ways to represent these permissions: with symbols (alphanumeric characters),
+ or with octal numbers (the digits 0 through 7)."
 #   ...      etc
 
 echo "------------"
