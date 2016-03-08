@@ -10,20 +10,20 @@ echo "The more command displays the contents of a text file one screen at a time
 echo "------------"
 
 # the command's syntax
-echo "Syntax: more [option] [filename]"
-echo "There are 10 options to choose from. Some of the more popular ones are: -c, -n, -s, +/string"
+echo -e "\tSyntax: more [option] [filename]"
+echo -e "\tThere are 10 options to choose from. Some of the more popular ones are: -c, -n, -s, +/string"
 
-echo "more -c MYFILE.txt"
-echo "Does not scroll, instead page through the content of the file MYFILE.txt by clearing the display screen"
+echo -e "\tmore -c MYFILE.txt"
+echo -e "\tDoes not scroll, instead page through the content of the file MYFILE.txt by clearing the display screen"
 
-echo "more -n 10 MYFILE.txt"
-echo "Display 10 lines per display screen"
+echo -e "\tmore -n 10 MYFILE.txt"
+echo -e "\tDisplay 10 lines per display screen"
 
-echo "more -s MYFILE.txt"
-echo "Combine multiple blank lines to one blank line"
+echo -e "\tmore -s MYFILE.txt"
+echo -e "\tCombine multiple blank lines to one blank line"
 
-echo "more +/'command' MYFILE.txt"
-echo "Displays the content of MYFILE.txt at the first occurrence of the word 'command'"
+echo -e "\tmore +/'command' MYFILE.txt"
+echo -e "\tDisplays the content of MYFILE.txt at the first occurrence of the word 'command'"
 
 #   ...      etc
 
