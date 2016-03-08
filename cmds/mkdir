@@ -12,7 +12,7 @@ echo "------------"
 echo "Syntax:"
 echo "mkdir [option] [directory_name(s)]"
 
-echo -e "\t[option] - a command option or command flag."
+echo -e "\t[option] - A command option or command flag."
 echo -e "\t[option: -p] - Create directories recursively if the specified parent directories do not exist."
 echo -e "\t[option: -m] - Allows you to set the permissions of the created directory. See chmod for permission syntax."
 
