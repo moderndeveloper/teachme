@@ -1,0 +1,83 @@
+#!/usr/bin/env bash
+
+cat<<EOF
+
+Name:
+  touch
+
+------------------------------------------------------------------------------
+
+Description:
+  Change file timestamps, change the access and/or modification times of the
+  specified files.
+
+------------------------------------------------------------------------------
+
+Syntax:
+  touch [options]... File...
+
+------------------------------------------------------------------------------
+
+Options:
+  -a
+  --time=atime
+  --time=access
+  --time=use
+      Change the access time only.
+
+  -c
+  --no-create
+      Do not create files that do not exist.
+
+  -d
+  --date=time
+      Use time instead of the current time.  It can contain month names,
+      timezones, 'am' and 'pm', etc.
+
+  -f   Ignored; for compatibility with BSD versions of 'touch'.
+
+  -m
+  --time=mtime
+  --time=modify
+      Change the modification time only.
+
+  -r FILE
+  --reference=FILE
+      Use the times of the reference FILE instead of the current time.
+
+  -t [[CC]YY]MMDDhhmm[.ss]
+      Set to a specific time.
+
+  The -t argument will accept four-digit or two-digit years, specifying the
+  seconds is optional. If no digits of the year are specified, the argument is
+  interpreted as a date in the current year.
+
+  If two-digit year is specified, then CC is 20 for years in the range 0 ... 68,
+  and 19 for year in 69 ... 99.
+
+  If the first FILE would be a valid argument to the '-t' option and no
+  timestamp is given with any of the '-d', '-r', or '-t' options and the '--'
+  argument is not given, that argument is interpreted as the time for the other
+  files instead of as a file name.
+
+  Any FILE that does not exist is created empty.
+
+  If changing both the access and modification times to the current time,
+  'touch' can change the timestamps for files that the user running it does not
+  own but has write permission for. Otherwise, the user must own the files.
+
+------------------------------------------------------------------------------
+
+Examples:
+  # Create/datestamp one file called sample.txt:
+  $ touch sample.txt
+
+  # Create/datestamp 10 files called file1, file2 etc:
+  $ touch file{1,2,3,4,5,6,7,8,9,10}
+
+  # Create/datestamp 100 files called file1, file2 etc:
+  $ for i in \$(seq 1 100); do echo -n "file\${i} "; touch file\${i} 2>&1; done
+
+EOF
+
+exit 0

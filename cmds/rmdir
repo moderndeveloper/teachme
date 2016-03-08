@@ -20,6 +20,8 @@ Description:
 Syntax:
   rmdir [options]... folder(s)...
 
+------------------------------------------------------------------------------
+
 Options:
       --ignore-fail-on-non-empty
                   Ignore each failure that is solely because the directory is
