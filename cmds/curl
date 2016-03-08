@@ -28,9 +28,10 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\ttest argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\tcurl [options] [URL...]"
+echo -e "\t\t-a: when used in an FTP upload, this option will tell curl to append to the target file" 
+echo -e "\t\tinstead of overwriting it. If the file doesn\'t exist, it will be created."
+echo -e "\t\t-L: this option will make the requestested page move to the new place."
 #   ...      etc
 
 echo -e "\n------------"
