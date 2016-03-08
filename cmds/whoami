@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+cat<<EOF
+
+Name:
+  whoami
+
+------------------------------------------------------------------------------
+
+Description:
+  Print the current user id and name.
+
+------------------------------------------------------------------------------
+
+Syntax:
+  whoami [options]
+
+------------------------------------------------------------------------------
+
+Options:
+  --help      Display Help
+  --version   Display program version info
+
+------------------------------------------------------------------------------
+
+Examples:
+  whoami
+
+EOF
+
+exit 0
