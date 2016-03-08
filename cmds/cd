@@ -27,9 +27,9 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\ttest argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\tcd [options] [Directory]"
+echo -e "\t\t-: quickly get back to up level directory"
+echo -e "\t\tno given directory:it will defaultly use HOME variable"
 #   ...      etc
 
 echo -e "\n------------"
