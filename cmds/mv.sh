@@ -11,14 +11,14 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax: mv [options] source dest"
-echo "[options]: -f, -i, -u, -v"
-echo "-f: Force overwrite existing files without prompt"
-echo "-i: Prompt before overwriting existing files"
-echo "-u: Move the file only if the file is newer than destination file"
-echo "-v: Provide extended information such as source and destination files"
+echo -e "\t[options]: -f, -i, -u, -v"
+echo -e "\t-f: Force overwrite existing files without prompt"
+echo -e "\t-i: Prompt before overwriting existing files"
+echo -e "\t-u: Move the file only if the file is newer than destination file"
+echo -e "\t-v: Provide extended information such as source and destination files"
 
-echo "mv -iv FILE1.txt FILE2.txt"
-echo "Before moving FILE1.txt to FILE2.txt ask user if it is ok to replace content of FILE2 with FILE1. When overwrite complete, display source file name and destination file name"
+echo -e "\tmv -iv FILE1.txt FILE2.txt"
+echo -e "\tBefore moving FILE1.txt to FILE2.txt ask user if it is ok to replace content of FILE2 with FILE1. When overwrite complete, display source file name and destination file name"
 
 #   ...      etc
 
