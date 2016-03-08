@@ -17,7 +17,7 @@ echo -e "\n------------"
 # the command's description
 echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
 echo -e "\n\t'exit' command is used to terminate the shell or program. Before logging you out from "
-echo -e "\tthe running session, shell will always remind you that some processes are currently "
+echo -e "\tthe running session, shell will always remind you, that some processes are currently "
 echo -e "\tbeing active."
 
 echo -e "\n------------"
