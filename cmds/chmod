@@ -11,7 +11,7 @@ echo "------------"
 # the command's syntax
 echo "chmod [option] [who]=[opcode][permission(s)] [file(s)]"
 
-echo -e "\t[option] - a command option or command flag specifying how the command will be executed."
+echo -e "\t[option] - A command option or command flag specifying how the command will be executed."
 echo -e "\t[option: -R] - Changes the permissions recursively for all files inside any specified directories."
 
 echo -e "\t[who] - Who's permissions will be altered. User(u), Group(g), Other(o), or All (a)."
