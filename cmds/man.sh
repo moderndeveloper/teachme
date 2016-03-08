@@ -10,7 +10,7 @@ echo "The man command formats and displays man pages of commands. A man page, ma
 echo "------------"
 
 # the command's syntax
-echo "Syntax: cd [option] [directory]"
+echo "Syntax: cd [option] [directory]" needs to be updated to man's syntax
 echo "The items in the square brackets, [option] and [directory] are option fields. When the optional fields are omitted, 'cd' command will return to the previous root directory."
 echo "[option] The cd command has two options and neither of them are commonly used. -P tells cd to use physical directory structure instead of following symbolic links"
 echo "[directory] The cd command can accept absolute or local pathname. However, it's more convenient to use local pathname when accessing a subdirectory of the current directory"
