@@ -11,9 +11,9 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax: sudo [option] COMMAND"
-echo "sudo -vl"
-echo -e "\-v: Update user's timestamp and prompt for password if necessary"
-echo -e "\-l: List of commands availabe to current user"
+echo -e "\tsudo -vl"
+echo -e "\t-v: Update user's timestamp and prompt for password if necessary"
+echo -e "\t-l: List of commands availabe to current user"
 #   ...      etc
 
 echo "------------"
