@@ -25,9 +25,10 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\tgit test argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\tgit status [OPTIONS] [PATHSPEC]"
+echo -e "\t\t-s: give the output in the short format."
+echo -e "\t\t--long: give the output in the long-format. This is default."
+echo -e "\t\t-u: show untracked files"
 #   ...      etc
 
 echo -e "\n------------"
