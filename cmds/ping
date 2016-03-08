@@ -37,12 +37,8 @@ echo "Sends 5 packets to the host study.moderndeveloper.com then stop. The comma
 echo "ping -a study.moderndeveloper.com"
 echo "Audible ping, the terminal will beep if the host study.moderndeveloper.com is reachable."
 
-# example 3
+# example 4
 echo "ping -s 88 study.moderndeveloper.com"
-echo "Change the ping packet size from the default of 56 to 88."
-
-# example 5
-echo "ping -w 5 stsudy.moderndeveloper.com"
 echo "Change the ping packet size from the default of 56 to 88."
 
 exit 0
