@@ -6,7 +6,9 @@ echo -e 'exit'
 # the command's description
 echo "Exit is a command or option used to close a program or file.
 
-The exit command is used to terminate a shell script upon an error and indicate to the user whether or not the script termination was successful. On termination programs will pass a value to their parent process. This value is referred to as an exit code or exit status. The standard convention is for the program to pass 0 for successful executions and 1 or higher for failed executions. Providing exit codes are important when scripts are used in other scripts. This is because it allows scripts to verify if other scripts they are using are running successfully or not, allowing them to operate appropriately.
+The exit command is used to terminate a shell script upon an error and indicate to the user whether or not the script termination was successful. 
+
+On termination, programs will pass a value to their parent process. This value is referred to as an exit code or exit status. The standard convention for a program is to pass 0 for successful execution and 1 or higher for failed execution. Providing exit codes is important when scripts are used in other scripts. It allows these scripts to verify if they are running successfully or not, allowing them to operate appropriately.
 "
 
 echo "------------"
@@ -16,7 +18,7 @@ echo "Syntax:"
 echo
 echo "exit [exit code]"
 echo -e "\t[exit code] - User specified exit code.
-	However some exit codes has special meaning, so refrain from using them.
+	Some exit codes have special meanings, so refrain from using them.
 	Please refer to \033[4mhttp://www.tldp.org/LDP/abs/html/exitcodes.html\033[0m
 	for more information."
 
@@ -24,12 +26,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "exit $?"
+echo "Will show the exit status of your command or script."
 
 # example 2
-echo "test something"
-echo description here
+echo "exit"
+echo "Will exit the shell."
 
 
 exit 0
