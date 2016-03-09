@@ -17,6 +17,8 @@ Description:
 Syntax:
   curl [options] [URL...]
 
+------------------------------------------------------------------------------
+
 Options:
   url  One or multiple URLs that will be fetched in sequence.
 

@@ -16,6 +16,8 @@ Syntax:
   cp [options]... Source Dest
   cp [options]... Source... Directory
 
+------------------------------------------------------------------------------
+
 Options:
   -a, --archive                same as -dpR
 

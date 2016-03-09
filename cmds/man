@@ -17,6 +17,8 @@ Syntax:
       [-M pathlist] [-P pager] [-B browser] [-H htmlpager] [-S section_list]
       [section] name ...
 
+------------------------------------------------------------------------------
+
 Options:
   -C config_file  The configuration file to use; the default is /etc/man.config.
                   (See man.config(5).)

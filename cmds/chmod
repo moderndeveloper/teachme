@@ -92,6 +92,8 @@ Syntax:
 
   chmod [Options]... --reference=RFile file...
 
+------------------------------------------------------------------------------
+
 Options:
   -f, --silent, --quiet   suppress most error messages
 

@@ -16,6 +16,8 @@ Description:
 Syntax:
   echo [options]... [string]...
 
+------------------------------------------------------------------------------
+
 Options:
   -n  Do not output the trailing newline.
 

@@ -15,119 +15,121 @@ Description:
 Syntax:
   ls [Options]... [File]...
 
-  Options:
-    Sort entries alphabetically if none of -cftuSUX nor --sort.
+------------------------------------------------------------------------------
 
-    -a, --all                  List all entries including those starting with
-                               a dot .
+Options:
+  Sort entries alphabetically if none of -cftuSUX nor --sort.
 
-    -A, --almost-all           List all entries including those starting with
-                               a dot . Except for . and .. (implied)
+  -a, --all                  List all entries including those starting with
+                             a dot .
 
-    -b, --escape               Print octal escapes for nongraphic characters
+  -A, --almost-all           List all entries including those starting with
+                             a dot . Except for . and .. (implied)
 
-        --block-size=SIZE      Use SIZE-byte blocks
+  -b, --escape               Print octal escapes for nongraphic characters
 
-    -B, --ignore-backups       Do not list implied entries ending with ~
+      --block-size=SIZE      Use SIZE-byte blocks
 
-    -c                         Sort by change time; with -l: show ctime
+  -B, --ignore-backups       Do not list implied entries ending with ~
 
-    -C                         List entries by columns
+  -c                         Sort by change time; with -l: show ctime
 
-        --color[=WHEN]         Control whether color is used to distinguish file
-                               types. WHEN can be 'never', 'always', or 'auto'
+  -C                         List entries by columns
 
-    -d, --directory            List directory entries instead of contents
+      --color[=WHEN]         Control whether color is used to distinguish file
+                             types. WHEN can be 'never', 'always', or 'auto'
 
-    -D, --dired                Generate output designed for Emacs' dired mode
+  -d, --directory            List directory entries instead of contents
 
-    -f                         Do not sort, enable -aU, disable -lst
+  -D, --dired                Generate output designed for Emacs' dired mode
 
-    -F, --classify             Append indicator (one of */=@|) to entries
+  -f                         Do not sort, enable -aU, disable -lst
 
-        --format=WORD          Across -x, commas -m, horizontal -x, long -l,
-                               single-column -1, verbose -l, vertical -C
+  -F, --classify             Append indicator (one of */=@|) to entries
 
-        --full-time            List both full date and full time
+      --format=WORD          Across -x, commas -m, horizontal -x, long -l,
+                             single-column -1, verbose -l, vertical -C
 
-    -g                         (ignored)
+      --full-time            List both full date and full time
 
-    -G, --no-group             Inhibit display of group information
+  -g                         (ignored)
 
-    -h, --human-readable       Print sizes in human readable format (e.g., 1K
-                               234M 2G)
-    -H, --si                   Likewise, but use powers of 1000 not 1024
+  -G, --no-group             Inhibit display of group information
 
-        --indicator-style=WORD Append indicator with style WORD to entry names:
-                               none (default), classify (-F), file-type (-p)
+  -h, --human-readable       Print sizes in human readable format (e.g., 1K
+                             234M 2G)
+  -H, --si                   Likewise, but use powers of 1000 not 1024
 
-    -i, --inode                Print index number of each file
+      --indicator-style=WORD Append indicator with style WORD to entry names:
+                             none (default), classify (-F), file-type (-p)
 
-    -I, --ignore=PATTERN       Do not list implied entries matching shell
-                               PATTERN
+  -i, --inode                Print index number of each file
 
-    -k, --kilobytes            Like --block-size=1024
+  -I, --ignore=PATTERN       Do not list implied entries matching shell
+                             PATTERN
 
-    -l                         Use a long listing format
+  -k, --kilobytes            Like --block-size=1024
 
-    -L, --dereference          List entries pointed to by symbolic links
+  -l                         Use a long listing format
 
-    -m                         Fill width with a comma separated list of entries
+  -L, --dereference          List entries pointed to by symbolic links
 
-    -n, --numeric-uid-gid      List numeric UIDs and GIDs instead of names
+  -m                         Fill width with a comma separated list of entries
 
-    -N, --literal              Print raw entry names (don't treat e.g. control
-                               characters specially)
+  -n, --numeric-uid-gid      List numeric UIDs and GIDs instead of names
 
-    -o                         Use long listing format without group info
+  -N, --literal              Print raw entry names (don't treat e.g. control
+                             characters specially)
 
-    -p, --file-type            Append indicator (one of /=@|) to entries
+  -o                         Use long listing format without group info
 
-    -q, --hide-control-chars   Print ? instead of non graphic characters
+  -p, --file-type            Append indicator (one of /=@|) to entries
 
-        --show-control-chars   Show non graphic characters as-is (default)
+  -q, --hide-control-chars   Print ? instead of non graphic characters
 
-    -Q, --quote-name           Enclose entry names in double quotes
-        --quoting-style=WORD   Use quoting style WORD for entry names:
-                               literal, shell, shell-always, c, escape
+      --show-control-chars   Show non graphic characters as-is (default)
 
-    -r, --reverse              Reverse order while sorting
+  -Q, --quote-name           Enclose entry names in double quotes
+      --quoting-style=WORD   Use quoting style WORD for entry names:
+                             literal, shell, shell-always, c, escape
 
-    -R, --recursive            List subdirectories recursively
+  -r, --reverse              Reverse order while sorting
 
-    -s, --size                 Print size of each file, in blocks
+  -R, --recursive            List subdirectories recursively
 
-    -S                         Sort by file size
+  -s, --size                 Print size of each file, in blocks
 
-        --sort=WORD            time -t, version -v, status -c
-                               size -S, extension -X, none -U
-                               atime -u, access -u, use -u
+  -S                         Sort by file size
 
-        --time=WORD            Show time as WORD instead of modification time:
-                               atime, access, use, ctime or status;
-                               also use this as a sort key if --sort=time
+      --sort=WORD            time -t, version -v, status -c
+                             size -S, extension -X, none -U
+                             atime -u, access -u, use -u
 
-    -t                         sort by modification time
+      --time=WORD            Show time as WORD instead of modification time:
+                             atime, access, use, ctime or status;
+                             also use this as a sort key if --sort=time
 
-    -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -t                         sort by modification time
 
-    -u                         sort by last access time; with -l: show atime
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
 
-    -U                         do not sort; list entries in directory order
+  -u                         sort by last access time; with -l: show atime
 
-    -v                         sort by version
+  -U                         do not sort; list entries in directory order
 
-    -w, --width=COLS           assume screen width instead of current value
+  -v                         sort by version
 
-    -x                         list entries by lines instead of by columns
+  -w, --width=COLS           assume screen width instead of current value
 
-    -X                         sort alphabetically by entry extension
+  -x                         list entries by lines instead of by columns
 
-    -1                         list one file per line
+  -X                         sort alphabetically by entry extension
 
-        --help                 display help and exit
+  -1                         list one file per line
 
-        --version              output version information and exit
+      --help                 display help and exit
+
+      --version              output version information and exit
 
 ------------------------------------------------------------------------------
 
