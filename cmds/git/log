@@ -4,7 +4,11 @@
 echo -e 'git log'
 
 # the command's description
-echo "git log allows you to look back at a repository's commit history. It lists all the commits made in that repository in reverse chronological order – meaning the most recent commits show up first. By default the command lists each commit with its SHA-1 checksum(the cyrptographic hash used to identify the commit, simply the commit id number), the author’s name and email, the date written, and the commit message. There are a large variety of options for presenting commit information through the use of flags."
+echo "git log allows you to look back at a repository's commit history. It lists all the commits made in that repository in reverse chronological order – meaning the most recent commits show up first. 
+
+By default the command lists each commit with its SHA-1 checksum (the cyrptographic hash used to identify the commit, simply the commit id number), the author’s name and email, the date written, and the commit message. 
+
+There is a large variety of options for presenting commit information through the use of flags."
 
 echo "------------"
 
@@ -22,12 +26,15 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "git log"
+echo "This will show the logs of your commits."
 
 # example 2
-echo "git test something"
-echo description here
+echo "git log -3"
+echo "This will show the logs of the last three commits."
 
+# example 3
+echo "git log --before=\"2016-03-01\""
+echo "This will show the logs of commits made before March 1, 2016."
 
 exit 0
