@@ -45,13 +45,18 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\ttest"
-echo -e "\t\tdescription here"
+echo -e "\t\tmv ./folder1 ./folder2"
+echo -e "\t\tMoves folder1 to folder2 within a current directory."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\ttest something"
-echo -e "\t\tdescription here\n"
+echo -e "\t\tmv file1 file2"
+echo -e "\t\tThis command will rename file1 to file2."
+
+# example 3
+echo -e "\n\t${underline}Example 3${normal}"
+echo -e "\t\tmv * /dir/new"
+echo -e "\t\tMove contents (* - all files and directories) of current directory to specified directory.\n"
 
 #   ...      etc
 
