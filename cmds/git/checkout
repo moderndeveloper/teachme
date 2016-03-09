@@ -4,7 +4,9 @@
 echo -e 'git checkout'
 
 # the command's description
-echo "The git checkout command lets you navigate between the branches created by git branch. Checking out a branch updates the files in the working directory to match the version stored in that branch, and it tells Git to record all new commits on that branch.
+echo "The git checkout command lets you navigate between the branches created by git branch. 
+
+Checking out a branch updates the files in the working directory to match the version stored in that branch, and it tells Git to record all new commits on that branch.
 
 git checkout works hand-in-hand with git branch. When you want to start a new feature, you create a branch with git branch, then check it out with git checkout. You can work on multiple features in a single repository by switching between them with git checkout."
 
@@ -15,7 +17,7 @@ echo "Syntax:"
 echo
 echo "git checkout [option] [branch] [file]"
 echo -e "\t[option] - A command option or command flag."
-echo -e "\t[option: -b] - Tells git to run \033[4mgit branch branch\033[0m before checkout."
+echo -e "\t[option: -b] - Tells git to run \033[4mgit branch [branch]\033[0m before checkout (and thus create a new branch, called [branch])."
 echo -e "\t[branch] - The specified branch for git to checkout."
 echo -e "\t[file] - The specified file for git to revert or checkout to."
 
@@ -23,12 +25,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
+echo "git checkout improve-readme"
+echo "This will checkout and 'put you on' the improve-readme branch."
 
 # example 2
-echo "git test something"
-echo description here
+echo "git checkout -b new-branch"
+echo "Will create a new branch called new-branch and checkout to this newly created branch."
 
 
 exit 0
