@@ -43,14 +43,16 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\tgit test"
-echo -e "\t\tdescription here"
+echo -e "\t\tgit rm --cached README"
+echo -e "\t\tTo keep the file on your hard drive but not have Git track it anymore use '--cached'."
+echo -e "\t\tUseful if you forgot to add something to your .gitignore file and accidentally staged it."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tgit test something"
-echo -e "\t\tdescription here\n"
-
+echo -e "\t\tgit rm log/\*.log"
+echo -e "\t\tThis command removes all files that have the '.log' extension in the 'log/' directory."
+echo -e "\t\tWe use backslash (\*) because Git does its own filename expansion in addition to your"
+echo -e "\t\tshell’s filename expansion.\n"
 #   ...      etc
 
 exit 0
