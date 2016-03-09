@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+cat<<EOF
+
+Name:
+  alias
+
+------------------------------------------------------------------------------
+
+Description:
+  An alias command is a simple string substitution of one text for another, when
+  it is used as the first word of a simple command.
+
+------------------------------------------------------------------------------
+
+Syntax:
+  $ alias name='unix command with options'
+
+  + alias   – is a shell built-in
+  + name    – any user-defined simple name for the alias.
+  + command – any unix command, which could be with the options.
+
+------------------------------------------------------------------------------
+
+Examples:
+  $ alias copy="cp"
+  $ alias ls="ll -la"
+
+EOF
+
+exit 0
