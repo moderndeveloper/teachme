@@ -24,7 +24,7 @@ echo "Or to access subdirectory in the same working directory: cd SUBDIRECTORY_N
 echo "------------"
 
 # the command's usage examples
-# example 1
+# example 1 re-added
 echo "cd /var/tmp"
 echo change into "/var/tmp" directory
 
