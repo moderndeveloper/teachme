@@ -38,13 +38,18 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\ttest"
-echo -e "\t\tdescription here"
+echo -e "\t\tcd .."
+echo -e "\t\tChange current directory to parent directory (move back one directory)."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\ttest something"
-echo -e "\t\tdescription here\n"
+echo -e "\t\tcd ~"
+echo -e "\t\tMove to \$HOME directory from the current folder."
+
+# example 3
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\t\tcd /"
+echo -e "\t\tMove to root directory.\n"
 
 #   ...      etc
 
