@@ -6,7 +6,7 @@ echo -e 'cp'
 # the command's description
 echo "The cp command is used to make a copy of files and directories. The copies that are made are considered indepent from the originals, meaning that any changes made in the original will not affect the copy.
 
-When a copy is made of a file or directory, the copy must have a different name than the original if it is to be placed in the same directory as the original. However, the copy can have the same name if it is made in a different directory."
+When a copy is made of a file or directory, the copy must have a different name than the original if it's to be placed in the same directory as the original. However, the copy can have the same name if it is made in a different directory."
 
 echo "------------"
 
@@ -24,12 +24,27 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "cp filename nameofcopy"
+echo "This will make a copy of your file in the current directory, hence a different name is needed."
 
 # example 2
-echo "test something"
-echo description here
+echo "cp filename directory"
+echo "This will make a copy in the specified directory."
 
+# example 3
+echo "cp filename .."
+echo "This will make a copy in the parent directory of the current directory."
+
+# example 4
+echo "cp ../filename ."
+echo "This will make a copy from a file in the parent directory to the current directory."
+
+# example 5
+echo "cp -R /folder1 /folder2 ~/Desktop"
+echo "This will make a copy of folder1 and folder2 and place them in the in the Desktop directory of the current user. The -R flag is needed for copying folders."
+
+# example 6
+echo "cp *.jpg /pics"
+echo "This will make a copy of all .jpg files and save them in the /pics directory."
 
 exit 0
