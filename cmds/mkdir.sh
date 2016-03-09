@@ -21,12 +21,18 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "cd /var/tmp"
-echo change into "/var/tmp" directory
+echo "mkdir MYFILE"
+echo "Create a new directory called MYFILE in the current working directory"
 
 # example 2
-echo "cd"
-echo change to current user home directory
+echo "mkdir -m a=rwx MYFILE"
+echo "Create a new diretory called MYFILE and set its permission to read, write and execute for all users"
+
+# example 3
+echo "mkdir -p /Desktop/directoryA/MYDIRECTORY"
+echo "Create a new directory called MYDIRECTORY in directoryA. If directoryA does not exist, mkdir to create one"
+
+
 
 
 exit 0
