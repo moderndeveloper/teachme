@@ -4,9 +4,11 @@
 echo -e 'pipe'
 
 # the command's description
-echo "The pipe command is used to pass information from one command process to another. The benefit of using a pipe is that it provides for more complex processing than the use of just a single command. By providing a temporary direct connection between two or more simple programs it makes possible the performance of some highly specialized task that programs could not perform by themselves.
+echo "The pipe command is used to pass the output from one command as the input to another. 
 
-A pipe is specified by a vertical bar (|) in the command line. Insead of diplaying the output to the monitor, the result of the first command sequence is redirected to be used as the input for the second command sequence."
+The benefit of using a pipe is that it provides for more complex processing than the use of just a single command. By providing a temporary direct connection between two or more simple programs it makes possible the performance of some highly specialized task that programs could not perform by themselves.
+
+A pipe is specified by a vertical bar (|) in the command line. Instead of diplaying the output to the monitor, the result of the first command sequence is redirected to be used as the input for the second command sequence."
 
 echo "------------"
 
@@ -20,12 +22,12 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "ls -a | less"
+echo "Piping ls' output to less will make it easier to read."
 
 # example 2
-echo "test something"
-echo description here
+echo "ls | wc -l"
+echo "This command pipes the output of ls to the wc command, which makes it easy to know the number of filesystem objects (files, directories, ...) are in the current directory."
 
 
 exit 0
