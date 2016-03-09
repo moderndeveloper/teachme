@@ -47,7 +47,7 @@ echo -e "\t\tcd ~"
 echo -e "\t\tMove to \$HOME directory from the current folder."
 
 # example 3
-echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\n\t${underline}Example 3${normal}"
 echo -e "\t\tcd /"
 echo -e "\t\tMove to root directory.\n"
 
