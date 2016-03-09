@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+cat<<EOF
+
+Name:
+  variables
+
+------------------------------------------------------------------------------
+
+Description:
+  You can use variables as in any programming languages. There are no data
+  types. A variable in bash can contain a number, a character, a string of
+  characters.
+
+  You have no need to declare a variable, just assigning a value to its
+  reference will create it.
+
+------------------------------------------------------------------------------
+
+Syntax:
+  Declaration:
+  <variable name>=<variable value>
+
+  Use:
+  \$<variable name>
+
+------------------------------------------------------------------------------
+
+Examples:
+  #!/bin/bash
+  STR="Hello World!"
+  echo \$STR
+
+EOF
+
+exit 0
