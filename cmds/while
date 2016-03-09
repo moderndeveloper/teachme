@@ -20,12 +20,13 @@ done
 
 # the concept's usage examples
 # example 1
-echo "test"
-echo description here
-
-# example 2
-echo "test something"
-echo description here
-
+echo -e " 
+COUNTER=0
+while [  \$COUNTER -lt 10 ]; do
+  echo Count Down \$COUNTER
+  let COUNTER=COUNTER+1 
+done
+"
+echo "We set the COUNTER variable to 0. After this the loop starts and prints Count Down followed by the current value of COUNTER. Then it increases COUNTER's count by 1 and continues this process until the condition breaks (so until COUNTER is less than 10)."
 
 exit 0
