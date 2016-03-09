@@ -4,7 +4,7 @@
 echo -e 'whoami'
 
 # the command's description
-echo "This command prints the username(login name) whoever is currently logged in."
+echo "This command prints the username (login name) whoever is currently logged in."
 
 echo "------------"
 
@@ -16,12 +16,8 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
-
-# example 2
-echo "test something"
-echo description here
+echo "whoami"
+echo "Will print the username of the currently logged in user."
 
 
 exit 0
