@@ -6,7 +6,7 @@ echo -e 'variables'
 # the concept's description
 echo "A variable is a character string to which we assign one value. The value assigned can be a number, text, filename, device, or any other type of data. It is nothing more than a pointer to the actual data, meaning that it points to the location where the data is stored. The shell enables you to create, assign, and delete these variables.
 
-Variables may also  be passed to a shell script.  Where one can simply list the arguments on the command line when running a shell script. By convention, Unix Shell variables should have their names in UPPERCASE. 
+Variables may also  be passed to a shell script. Where one can simply list the arguments on the command line when running a shell script. By convention, Unix Shell variables should have their names in UPPERCASE. 
 
 To access the value stored in a variable, prefix its name with the dollar sign '$'."
 
@@ -15,20 +15,20 @@ echo "------------"
 # the concept's syntax
 echo -e "Syntax:"
 echo -e " 
-STR=\"HELLO WORLD!\"
-echo \$STR
+variable_name=\"value\"
 "
 
 echo "------------"
 
 # the concept's usage examples
 # example 1
-echo "test"
-echo description here
+echo "STR=\"This is a string!\"
+echo \$STR"
+echo "This example will read the STR variable's content and echo \"This is a string\".
 
 # example 2
-echo "test something"
-echo description here
+echo "variable1=`echo \"store this string in variable1\"`"
+echo "You can store the output of a command in a variable by putting backticks (`) around the command whose output you want to save."
 
 
 exit 0
