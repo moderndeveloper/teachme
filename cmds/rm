@@ -27,9 +27,18 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\ttest argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\trm [option]... [file]..."
+echo -e "\n\t\t${underline}option${normal}:"
+echo -e "\n\t\t${bold}-f, --force${normal}:"
+echo -e "\t\t\tignore nonexistent files and arguments, don't prompt"
+echo -e "\n\t\t${bold}-i${normal}:\tprompt before performing every removal"
+echo -e "\n\t\t${bold}-r, -R, --recursive${normal}:"
+echo -e "\t\t\tremove directories and their content recursively, this must be used to remove directories"
+echo -e "\n\t\t${bold}-d, --dir${normal}:"
+echo -e "\t\t\tremove empty directories"
+echo -e "\n\t\t${bold}-v, --verbose${normal}:"
+echo -e "\t\t\tprint what is being done"
+echo -e "\n\t\t${underline}file${normal}: list of files or directories to be removed"
 #   ...      etc
 
 echo -e "\n------------"
