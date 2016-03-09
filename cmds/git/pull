@@ -36,16 +36,17 @@ echo -e "\t\t<refspec>:  specify which refs to fetch and which local refs to upd
 echo -e "\n------------"
 
 # the command's usage examples
-# example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+# example 1
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\tgit test"
-echo -e "\t\tdescription here"
-
+echo -e "\t\tgit pull -v"
+echo -e "\t\tUse -v option, for more verbose output."
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tgit test something"
-echo -e "\t\tdescription here\n"
+echo -e "\t\tgit pull [remote]"
+echo -e "\t\tUpdate your local repository to the newest commit from [remote] repository.\n"
+
+
 
 #   ...      etc
 
