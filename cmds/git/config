@@ -4,7 +4,7 @@
 echo -e 'git config'
 
 # the command's description
-echo "git config lets you configure and customize git according to your liking to help increase productivity. git can be configured globally, which affects every repository on the machine or locally, which affects only the targeted repository."
+echo "git config lets you configure and customize git according to your liking to help increase productivity. git can be configured globally, which affects every repository you work with or locally, which affects only the targeted repository."
 
 echo "------------"
 
