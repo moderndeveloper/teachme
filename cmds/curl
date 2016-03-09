@@ -29,7 +29,7 @@ echo -e "\n------------"
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
 echo -e "\n\tcurl [options] [URL...]"
-echo -e "\t\t-a: when used in an FTP upload, this option will tell curl to append to the target file" 
+echo -e "\t\t-a: when used in an FTP upload, this option will tell curl to append to the target file"
 echo -e "\t\tinstead of overwriting it. If the file doesn\'t exist, it will be created."
 echo -e "\t\t-L: this option will make the requestested page move to the new place."
 #   ...      etc
@@ -40,13 +40,13 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\ttest"
-echo -e "\t\tdescription here"
+echo -e "\t\tcurl -I google.com"
+echo -e "\t\tUse '-I' option to get the headers from a specified website."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\ttest something"
-echo -e "\t\tdescription here\n"
+echo -e "\t\tcurl google.com > index.htm"
+echo -e "\t\tFetch 'google.com' but redirect the output to a file 'index.htm', in the current directory.\n"
 
 #   ...      etc
 
