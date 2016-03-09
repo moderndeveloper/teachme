@@ -28,9 +28,8 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\ttest argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\tvariable=value(for non-environment variable)"
+echo -e "\tcommand \$variable"
 #   ...      etc
 
 echo -e "\n------------"
