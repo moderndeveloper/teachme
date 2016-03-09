@@ -4,7 +4,7 @@
 echo -e 'for'
 
 # the concept's description
-echo "The for command is used to execute a for loop. A for loop operates on an arrary or a list of items repeating a set of commands for every item in the list. A for command can also be used to interate through a numeric range."
+echo "The for command is used to execute a for loop. A for loop operates on an array or a list of items repeating a set of commands for every item in the list. A for command can also be used to iterate through a numeric range."
 
 echo "------------"
 
@@ -12,7 +12,7 @@ echo "------------"
 echo -e "Syntax:\n"
 echo -e "for i in \$( ls ); 
 do
-  echo item: \$i
+  echo item: \$i\n
 done"
 echo -e "\n\ti: Iteration item"
 
@@ -20,12 +20,15 @@ echo "------------"
 
 # the concept's usage examples
 # example 1
-echo "test"
-echo description here
+echo -e "for i in \$( ls ); do echo item: \$i\n; done"
+echo "This example is the same as the for loop in the syntax section, but does everything on one line. It loops through all the filesystem objects (files, directories, ...) and echoes every item in a list."
 
 # example 2
-echo "test something"
-echo description here
+echo -e "for i do
+			sum=$(($sum+$i))
+		  done
+		  printf \"$sum\n""
+echo "This loop is part of script that accepts an arbitrary number of integers. It then calculates and prints the sum of the integers. Note that no range for the loop is specified. for loops use the number of arguments of a script as the default range to loop through if no range is specified."
 
 
 exit 0
