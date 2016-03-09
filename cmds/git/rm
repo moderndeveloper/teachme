@@ -14,7 +14,7 @@ echo "------------"
 echo "Syntax:"
 echo "git rm [options] [file(s)/folder(s)]"
 echo -e "\t[options]: A command option or command flag."
-echo -e "\t[options: -f]: "
+echo -e "\t[options: -f]: Forcefully deletes the specified file/folder from the working directory and index without warnings."
 echo -e "\t[options: --cached]: This option allows you to delete a file/folder from a repository, without deleting it from the local filesystem."
 echo -e "\t[file(s)/folder(s)]: Path of file(s)/folder(s) to be deleted."
 
