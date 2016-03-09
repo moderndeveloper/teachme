@@ -5,7 +5,7 @@ echo "This is a git commit command."
 echo -e 'commit'
 
 # the command's description
-echo "Records changes to the repository"
+echo "Records changes to the git repository"
 
 echo "------------"
 
