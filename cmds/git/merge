@@ -4,9 +4,9 @@
 echo -e 'git merge'
 
 # the command's description
-echo "Merging takes the changes from one branch (in the same repository or from a fork), and applies them into another. This often happens as a Pull Request (which can be thought of as a request to merge), or via the command line, but can also be done by using the merge command.
+echo "Merging takes the changes from one branch (in the same repository or from a fork), and applies them into another. This often happens as a pull request (a request to merge), or via the command line, but can also be done by using the merge command.
 
-Merge is a non-destrucitve operation that ties together the histories of both branches. It's non destructive in that the existing branches are not changed in any way, allowing you to go back to previous commits on either of the branches if neccesary."
+Merge is a non-destrucitve operation that ties together the histories of both branches. It's non-destructive in that the existing branches are not changed in any way, allowing you to go back to previous commits on either of the branches if neccesary."
 
 echo "------------"
 
@@ -24,12 +24,7 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "git test"
-echo description here
-
-# example 2
-echo "git test something"
-echo description here
-
+echo "git merge improve-readme"
+echo "This will merge the improve-readme, possibly used to improve the repository's README file, with the master branch."
 
 exit 0
