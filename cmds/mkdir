@@ -26,9 +26,15 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\ttest argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\tmkdir [option]... directory..."
+echo -e "\n\t\t${underline}option${normal}:"
+echo -e "\n\t\t${bold}-m, --mode=MODE${normal}:"
+echo -e "\t\t\tset file mode, as in ${bold}chmod${normal}"
+echo -e "\n\t\t${bold}-p, --parents${normal}:"
+echo -e "\t\t\tdon't print error if directory exists, create parent directories if needed"
+echo -e "\n\t\t${bold}-v, --verbose${normal}:"
+echo -e "\t\t\tprint a message for each created directory"
+echo -e "\n\t\t${underline}directory${normal}: a directory or a list of directories to create"
 #   ...      etc
 
 echo -e "\n------------"
