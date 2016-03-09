@@ -25,12 +25,13 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "wc file.txt"
+echo "This will output information about file.txt. The output will resemble the following: 
+3 16 60 file.txt. Here 3 is the number of lines, 16 the number of words, 60 the number of characters."
 
 # example 2
-echo "test something"
-echo description here
+echo "wc -w file.txt"
+echo "This command will output only the word count of file.txt."
 
 
 exit 0
