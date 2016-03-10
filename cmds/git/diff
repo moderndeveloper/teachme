@@ -24,9 +24,21 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\tgit test argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\tgit diff [options] [<commit>] [--] [<path>...]"
+echo -e "\n\t\tThis form is to view the changes you made relative to the index (staging area for"
+echo -e "\t\tthe next commit). In other words, the differences are what you could tell Git to"
+echo -e "\t\tfurther add to the index but you still haven’t."
+echo -e "\n\tgit diff [options] --cached [<commit>] [--] [<path>...]"
+echo -e "\n\t\tThis form is to view the changes you staged for the next commit relative to the named <commit>."
+echo -e "\n\tgit diff [options] <commit> <commit> [--] [<path>...]"
+echo -e "\n\t\tThis is to view the changes between two arbitrary <commit>."
+echo -e "\n\tgit diff [options] [--no-index] [--] <path> <path>"
+echo -e "\n\t\tThis form is to compare the given two paths on the filesystem."
+
+echo -e "\n\t${underline}OPTIONS${normal}:"
+echo -e "\n\t\t${bold}--minimal${normal}: produce the smallest possible diff."
+echo -e "\n\t\t${bold}--name-status${normal}: only show names and status of changed files."
+echo -e "\n\t\t${bold}--check${normal}: warn if changes introduce whitespace errors."
 #   ...      etc
 
 echo -e "\n------------"
