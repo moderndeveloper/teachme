@@ -318,6 +318,7 @@ Examples:
     % git config --get-urlmatch http https://weak.example.com
     http.cookieFile /tmp/cookie.txt
     http.sslverify false
+
 EOF
 
 exit 0
