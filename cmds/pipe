@@ -28,10 +28,7 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\ttest argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
-#   ...      etc
+echo -e "\n\tprogram1 | program2 | program3 ..."
 
 echo -e "\n------------"
 
