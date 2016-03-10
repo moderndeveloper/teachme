@@ -24,10 +24,16 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\ttest argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
-#   ...      etc
+echo -e "\n\texit [${underline}n${normal}]"
+echo -e "\t\t${underline}n${normal}: exit code number. Exit code number can have values form 0 to 255."
+echo -e "\t\tIf no exit code number is provided to the 'exit' command it will default"
+echo -e "\t\tto 0, i.e. 'success'. Any number above 0 is considered to be error."
+echo -e "\t\tSome reserved exit codes:"
+echo -e "\t\t\t0 - the command executed successfully"
+echo -e "\t\t\t1 - there was an error executing the command"
+echo -e "\t\t\t126 - a file to be executed was found, but it was not an executable utility"
+echo -e "\t\t\t127 - a utility to be executed was not found"
+echo -e "\t\t\t>127 - a command was interupted by a signal"
 
 echo -e "\n------------"
 
