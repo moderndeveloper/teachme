@@ -1,0 +1,79 @@
+#!/usr/bin/env bash
+
+cat<<EOF
+
+Name:
+  exit
+
+------------------------------------------------------------------------------
+
+Description:
+  Exit from a program, shell or log out of a Unix network.
+
+------------------------------------------------------------------------------
+
+Syntax:
+  exit
+
+------------------------------------------------------------------------------
+
+Examples:
+
+  Exit the shell
+
+    $ exit
+
+  When a script ends with an exit that has no parameter, the exit status of the
+  script is the exit status of the last command executed in the script (previous
+  to the exit).
+
+    #!/bin/bash
+
+    COMMAND_1
+    ...
+    COMMAND_LAST
+
+    # Will exit with status of last command.
+    exit
+
+  The equivalent of a bare exit is exit \$? or even just omitting the exit.
+
+    #!/bin/bash
+
+    COMMAND_1
+    ...
+    COMMAND_LAST
+
+    # Will exit with status of last command.
+    exit \$?
+
+    #!/bin/bash
+
+    COMMAND1
+    ...
+    COMMAND_LAST
+
+    # Will exit with status of last command.
+
+  After a script terminates, a \$? from the command-line gives the exit status
+  of the script, that is, the last command executed in the script, which is, by
+  convention, 0 on success or an integer in the range 1 - 255 on error.
+
+    #!/bin/bash
+
+    echo hello
+    echo \$?    # Exit status 0 returned because command executed successfully.
+
+    lskdf      # Unrecognized command.
+    echo \$?    # Non-zero exit status returned -- command failed to execute.
+
+    echo
+
+    exit 113   # Will return 113 to shell.
+               # To verify this, type "echo \$?" after script terminates.
+
+    #  By convention, an 'exit 0' indicates success,
+    #  while a non-zero exit value means an error or anomalous condition.
+EOF
+
+exit 0
