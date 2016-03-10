@@ -24,10 +24,20 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\ttest argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
-#   ...      etc
+echo -e "\n\twc [option]... [${underline}file${normal}]..."
+echo -e "\twc [option]... --files0-from=${underline}f${normal}"
+echo -e "\n\t\twith no ${underline}file${normal}, or when ${underline}file${normal} is '-', read standard input"
+echo -e "\n\t\t${bold}-c, --bytes${normal}:"
+echo -e "\t\t\tprint byte counts"
+echo -e "\n\t\t${bold}-m, --chars${normal}:"
+echo -e "\t\t\tprint character counts"
+echo -e "\n\t\t${bold}-l, --lines${normal}:"
+echo -e "\t\t\tprint newline counts"
+echo -e "\n\t\t${bold}-w, --words${normal}:"
+echo -e "\t\t\tprint word counts"
+echo -e "\n\t\t${bold}--files0-from=${underline}f${normal}:"
+echo -e "\t\t\tread input from the files specified by NUL-terminated names in file ${underline}f${normal}."
+echo -e "\t\t\tWhen the file ${underline}f${normal} is '-', then read names from standard input."
 
 echo -e "\n------------"
 
