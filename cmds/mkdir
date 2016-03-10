@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+cat<<EOF
+
+Name:
+  mkdir
+
+------------------------------------------------------------------------------
+
+Description:
+  Create new folder(s), if they do not already exist.
+
+------------------------------------------------------------------------------
+
+Syntax:
+  mkdir [Options] folder...
+  mkdir "Name with spaces"
+
+  Options:
+    -m, --mode=MODE   set permission mode (as in chmod), not rwxrwxrwx - umask
+    -p, --parents     no error if existing, make parent directories as needed
+        --verbose     print a message for each created directory
+
+------------------------------------------------------------------------------
+
+Examples:
+
+  # Create a new directory named tmp
+  $ mkdir tmp
+
+  # Create three new sub-directories in the current directory
+  $ mkdir memos letters e-mail
+
+  # Use the -p option of the mkdir command to create multiple levels of
+  # subdirectories
+  $ mkdir -p /home/joe/customer/acme/foo/bar
+
+EOF
+
+exit 0
