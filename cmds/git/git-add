@@ -39,6 +39,15 @@ Description:
 
 ------------------------------------------------------------------------------
 
+Syntax:
+  git add [--verbose | -v] [--dry-run | -n] [--force | -f]
+      [--interactive | -i] [--patch | -p] [--edit | -e]
+      [--[no-]all | --[no-]ignore-removal | [--update | -u]]
+      [--intent-to-add | -N] [--refresh] [--ignore-errors] [--ignore-missing]
+      [--] [<pathspec>...]
+
+------------------------------------------------------------------------------
+
 Options:
   <pathspec>...
     Files to add content from. Fileglobs (e.g. *.c) can be given to add all
