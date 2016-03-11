@@ -21,16 +21,43 @@ echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
 echo -e "\n\tfor loop is a programming statement which allows a code block to be repeatly executed."
 echo -e "\tThis loop allows for a specification of a list of values and a list of commands is executed for"
 echo -e "\teach value in the list. At the end of loop, there gonna have a return status. Return status is"
-echo -e "\tthe exit status of the last command executes. .This value, which is a integer between 0 to 255, "
+echo -e "\tthe exit status of the last command executes. This value, which is a integer between 0 to 255, "
 echo -e "\tindicates the success or failure of the command's execution. A value of 0 means success and any other value"
-echo -e "\t means failure. Usually, when the condition is not true,the loop will terminate with a non-zero exit status."
+echo -e "\tmeans failure. Usually, when the condition is not true,the loop will terminate with a non-zero exit status."
 echo -e "\n------------"
 
 # the command's syntax
-echo -e "\nCOMMAND SYNTAX:"
+echo -e "\n${bold}COMMAND SYNTAX:${normal}:"
 echo -e "\n\tfor ITEM in LIST ; do ACTIONS ; done"
 echo -e "\t\tITEM: Each item in a list."
 echo -e "\t\tLIST: List of items you iterate through."
 echo -e "\t\tACTIONS: Some commands you execute each iteration."
 
 echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\n\tread all text files from '\$dir' and print their names along with their word count."
+echo -e "\n\t\tall_text_files=(\$dir/*.txt)
+
+\t\tfor file in \"\${all_text_files[@]}\"
+\t\tdo
+\t\t  echo \"\$file: \`cat \$file | wc -w\`\"
+\t\tdone"
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\n\tthis loop calculates the sum of the first 10 whole numbers."
+echo -e "\n\t\tsum=0
+
+\t\tfor num in {1..10}
+\t\tdo
+\t\t  sum=\$((sum+num))
+\t\tdone
+\n\t\techo \"\$sum\"\n"
+
+#   ...      etc
+
+exit 0
