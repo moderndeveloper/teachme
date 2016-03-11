@@ -26,13 +26,41 @@ echo -e "\tSo chmode command is used to define the way a file can be accessed. "
 echo -e "\n------------"
 
 # the command's syntax
-echo -e "\nCOMMAND SYNTAX:"
+echo -e "\n${bold}COMMAND SYNTAX:${normal}:"
 echo -e "\n\tchmod [ugoa...][+-=][rwx...] file"
 echo -e "\t\tu: User who owns the file."
-echo -e "\t\tg: Users in the group to which the file belongs."
+echo -e "\t\tg: Other users in the group to which the file belongs."
 echo -e "\t\to: Users not in the file’s group."
-echo -e "\t\ta: All other (non-owner) users."
+echo -e "\t\ta: All users."
 echo -e "\t\t[+-=]: Add, remove, set permissions."
 echo -e "\t\t[rwx]: r - Read permission, w - Write permission, x - Execution permission."
 
 echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\n\tchmod ug+x file"
+echo -e "\n\t\tmake 'file' executable for owner and the group that the 'file' belongs to."
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\n\tchmod a+r file1 file2 file3"
+echo -e "\n\t\tmake 'file1', 'file2' and 'file3' readable for all users."
+
+# example 3
+echo -e "\n\t${underline}Example 3${normal}"
+echo -e "\n\tchmod o-x file"
+echo -e "\n\t\tremove executable permission from 'file' for all uses not in file's group."
+
+# example 4
+echo -e "\n\t${underline}Example 4${normal}"
+echo -e "\n\tchmod g=rw file"
+echo -e "\n\t\tmake 'file' readable and writable for other users in file's group and remove"
+echo -e "\t\texecutable permission if it has it..\n"
+
+#   ...      etc
+
+exit 0
