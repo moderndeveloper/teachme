@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-echo "This is the pwd command."
+echo "This is the cd command."
 
 # The command's name
-echo -e 'pwd'
+echo -e 'cd'
 
 # the command's description
 echo "description here"
