@@ -11,11 +11,21 @@ echo -e "\n------"
 
 #command des
 echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
-echo "\nclear command will clear current terminal screen.But the former commands and results are still there, they are just moved upwards."
+echo -e "\n\tclear command will clear current terminal screen. But the former commands and"
+echo -e "\tresults are still there, they are just moved upwards."
 
 # the command's syntax
-echo -e "\nCOMMAND SYNTAX:"
+echo -e "\n${bold}COMMAND SYNTAX:${normal}:"
 echo -e "\n\tclear"
-echo -e "\t\tclear command accepts neither options nor arguments, and if specified ignores them"
+echo -e "\t\tclear command accepts neither options nor arguments, and if specified ignores them."
 
 echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\n\tclear"
+echo -e "\t\tsimply write the command without any arguments.\n"
+
+exit 0
