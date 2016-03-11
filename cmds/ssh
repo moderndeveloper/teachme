@@ -53,13 +53,13 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\ttest"
-echo -e "\t\tdescription here"
+echo -e "\t\tssh -V"
+echo -e "\t\tthis command shows the corresponding version info about the ssh client"
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\ttest something"
-echo -e "\t\tdescription here\n"
+echo -e "\t\tlocalhost$scp tom@remotehost.example.com/home/jsmith/remotehostfile.txt remotehostfile.txt"
+echo -e "\t\tthis command copys file from the remotehost to the localhost.\n"
 
 #   ...      etc
 
