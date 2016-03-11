@@ -73,13 +73,13 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\tgit test"
-echo -e "\t\tdescription here"
+echo -e "\t\tgit config --global user.name "Tom Jerry""
+echo -e "\t\tUsing --global flag will make system always remember the info you set."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tgit test something"
-echo -e "\t\tdescription here\n"
+echo -e "\t\tgit config --list"
+echo -e "\t\tThis command will list all settings Git can find at that point.\n"
 
 #   ...      etc
 
