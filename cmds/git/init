@@ -53,13 +53,15 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\tgit test"
-echo -e "\t\tdescription here"
+echo -e "\t\tgit init --bare mysapce"
+echo -e "\t\tIt will create a new folder called myspace containing nothing but the .git subdirectory."
+echo -e "\t\t--bare flag creates a repository that doesn't have a working directory, making it impossible"
+echo -e "\t\tto edit files and commit changes in that directory.So this flag is usually for central repository."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tgit test something"
-echo -e "\t\tdescription here\n"
+echo -e "\t\tssh hostname git init --shared --bare /path/to/repo.git"
+echo -e "\t\tA centralised server that all developers have access to will allow them to merge their changes together.\n"
 
 #   ...      etc
 
