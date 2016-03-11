@@ -36,13 +36,14 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\ttest"
-echo -e "\t\tdescription here"
-
+echo -e "\t\tls -l| wc -l"
+echo -e "\t\tfirstly,it will list a sinly-column listing of the directory content. And then the output will"
+echo -e "\t\tbe piped to wc, which will count the lines and return the number."
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\ttest something"
-echo -e "\t\tdescription here\n"
+echo -e "\t\tls -l | grep -i "tom.*sep""
+echo -e "\t\tfirstly,it will list a sinly-column listing of the directory content.And then the grep command"
+echo -e "\t\tseach lines with "tom",followed by 0 or more characters,then followed by "sep"."
 
 #   ...      etc
 
