@@ -17,16 +17,33 @@ echo -e "\n------------"
 # the command's description
 echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
 
-echo -e "\n\tgit log command shows all the commit logs.If it does not have any argument or" 
-echo -e "\tflag, it will list all commits, the latest one on the top, together with username,email,"
+echo -e "\n\tgit log command shows all the commit logs. If it does not have any argument or"
+echo -e "\tflag, it will list all commits, the latest one on the top, together with username, email,"
 echo -e "\ttime and comment about the commit."
 
 echo -e "\n------------"
 
 # the command's syntax
-echo -e "\nCOMMAND SYNTAX:"
+echo -e "\n${bold}COMMAND SYNTAX:${normal}:"
 echo -e "\n\tgit log [options]"
 echo -e "\t\t--author=<pattern>: Use the —author flag, if you need commits created by a particular user."
 echo -e "\t\t--grep=<pattern>: Use the —grep flag, to filter commits by their commit message."
 
 echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\n\tgit log"
+echo -e "\n\t\tlists all commits in the current branch."
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\n\tgit log -5 --name-only --author=mike"
+echo -e "\n\t\tlogs 5 latest commits whose author name matches regex pattern 'mike',"
+echo -e "\t\toutputing the names of the changed files.\n"
+
+#   ...      etc
+
+exit 0
