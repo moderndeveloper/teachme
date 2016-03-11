@@ -18,18 +18,27 @@ echo -e "\n------------"
 echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
 
 echo -e "\n\tping is a simple way to send network data to, and receive data from, another computer on a"
-echo -e "\tnetwork. It is usually used to test whether another system is reachable over a network and " 
-echo -e "\thow much time it takes. Ping sends Internet Control Message Protool echo request packets to" 
-echo -e "\tthe target host and waiting for an ICMP echo reply. ICMP is one of the main internet"   
-echo -e "\tprotocols. It is used by network devices, such as routers,to send error message to indicate"  
-echo -e "\tthe requested services is not available or that a host could not be reached. Packet means a " 
-echo -e "\tformated data unit carried by network." 
+echo -e "\tnetwork. It is usually used to test whether another system is reachable over a network and "
+echo -e "\thow much time it takes. Ping sends Internet Control Message Protool echo request packets to"
+echo -e "\tthe target host and waiting for an ICMP echo reply. ICMP is one of the main internet"
+echo -e "\tprotocols. It is used by network devices, such as routers, to send error message to indicate"
+echo -e "\tthe requested services is not available or that a host could not be reached. Packet means a "
+echo -e "\tformated data unit carried by network."
 echo -e "\n------------"
 
 # the command's syntax
-echo -e "\nCOMMAND SYNTAX:"
+echo -e "\n${bold}COMMAND SYNTAX:${normal}:"
 echo -e "\n\tping [options] destination"
 echo -e "\t\t-c: Specify the number of echo requests to send."
 echo -e "\t\t-i time: Specify a wait time between each ping."
 
 echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example${normal}"
+echo -e "\n\tping -4 -c 3 google.com"
+echo -e "\t\tpings 'google.com' two times using IPv4 and then exits.\n"
+
+exit 0
