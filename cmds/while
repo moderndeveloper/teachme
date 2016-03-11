@@ -17,7 +17,7 @@ echo -e "\n------------"
 # the command's description
 echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
 echo -e "\n\tWhile loop enables you to execute a set of actions/commands repeatedly, until"
-echo -e "\tcondition is evaluated to true, after it's being evaluated to false, it will stop execution"
+echo -e "\tcondition is evaluated to false, after it's being evaluated to false, it will stop execution"
 echo -e "\tand will exit the loop. One full execution of a command within a while loop is called"
 echo -e "\titeration. The process starts with a variable evaluation, then execution of the body and"
 echo -e "\tafter condition is no longer true - process ends."
@@ -26,9 +26,12 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\ttest argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\twhile TEST; do COMMANDS; done"
+echo -e "\n\t\t${bold}TEST${normal}:"
+echo -e "\t\t\tthe condition that is evaluated during each iteration."
+echo -e "\n\t\t${bold}COMMANDS${normal}:"
+echo -e "\t\t\tthe commands that are executed after successful evaluation of"
+echo -e "\t\t\t${bold}TEST${normal} at each iteration."
 #   ...      etc
 
 echo -e "\n------------"
