@@ -17,17 +17,39 @@ echo -e "\n------------"
 # the command's description
 echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
 
-echo -e "\n\tgit add command adds a change from working area to staging area.Every project has 3"
-echo -e "\tplaces:working directory, staging area and repository.The working are is the place where user change "
-echo -e "\tthe files from repository. The staging are is a buffer area between the working directory and the project"
-echo -e "\thistory. This area let user group related changes into a snapshot before committing it to the project "
-echo -e "\thistory.git add does not really change the repository-git commit will update the repository with new snapshots of the files."
-echo -e "\n------"
+echo -e "\n\tgit add command adds a change from working area to staging area. Every project has 3"
+echo -e "\tplaces: working directory, staging area and repository. The working area is the place where user change "
+echo -e "\tthe files from repository. The staging area is a buffer area between the working directory and the project"
+echo -e "\thistory. This area lets user group related changes into a snapshot before committing it to the project "
+echo -e "\thistory. git add does not really change the repository - git commit will update the repository with new snapshots of the files."
+echo -e "\n------------"
 
 # the command's syntax
-echo -e "\nCOMMAND SYNTAX:"
+echo -e "\n${bold}COMMAND SYNTAX:${normal}:"
 echo -e "\n\tgit add [options]"
 echo -e "\t\t-A: Stages all files (new, modified, deleted)."
 echo -e "\t\t-u, Stages modified and deleted files only."
 
 echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\n\tgit add -A"
+echo -e "\n\t\tadds all changed, new and deleted files to the staging area."
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\n\tgit add functions.js"
+echo -e "\n\t\tadds file 'functions.js' to the index. If there are other new or changed files"
+echo -e "\t\tin the working tree, they are not added to the staging area."
+
+# example 3
+echo -e "\n\t${underline}Example 3${normal}"
+echo -e "\n\tgit add lib/\*.js"
+echo -e "\n\t\tadds all javascript files from the 'lib' directory to the index.\n"
+
+#   ...      etc
+
+exit 0
