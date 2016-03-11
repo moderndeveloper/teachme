@@ -112,13 +112,14 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\ttest"
-echo -e "\t\tdescription here"
+echo -e "\t\tfind . -iname 'tom'"
+echo -e "\t\tlocate and print a list of any files in or below the current directory whose name is "tom","
+echo -e "\t\tbut match the letters case-insensitively."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\ttest something"
-echo -e "\t\tdescription here\n"
+echo -e "\t\tfind . -name '*jpg' -o -name '*gif'"
+echo -e "\t\tfind any files in or below the current directories whose extension is '.jpg' or '.gif'\n"
 
 #   ...      etc
 
