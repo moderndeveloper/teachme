@@ -57,13 +57,14 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\tgit test"
-echo -e "\t\tdescription here"
+echo -e "\t\tgit push origin develop-new-feature"
+echo -e "\t\tpush your local changes to your online repository."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tgit test something"
-echo -e "\t\tdescription here\n"
+echo -e "\t\tgit push origin :develop-new-feature"
+echo -e "\t\tthis command means put nothing into develop-new-feature on remote repository origin."
+echo -e "\t\tThen the git push will delete the branch on the remote repository.\n"
 
 #   ...      etc
 
