@@ -27,9 +27,12 @@ echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\ttest argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
+echo -e "\n\talias [alias-name[=string]...]"
+echo -e "\n\t\t${bold}alias-name${normal}:"
+echo -e "\t\t\tthe name given to the alias."
+echo -e "\n\t\t${bold}string${normal}:"
+echo -e "\t\t\tstring or command that alias is bound to."
+echo -e "\n\t\tThere are no options for 'alias' command."
 #   ...      etc
 
 echo -e "\n------------"
