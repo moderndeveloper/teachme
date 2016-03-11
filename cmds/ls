@@ -48,13 +48,15 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\ttest"
-echo -e "\t\tdescription here"
+echo -e "\t\tls -l"
+echo -e "\t\tList the total files in the directory and subdirectories, the names of the files in the"
+echo -e "\t\tcurrent directory,their permissions, the number of subdirectories in the directories listed"
+echo -e "\t\tthe size of the file, and the date of last modification."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\ttest something"
-echo -e "\t\tdescription here\n"
+echo -e "\t\tls -ltr"
+echo -e "\t\tList files sorted by the time they were lasted modified in reverse order."
 
 #   ...      etc
 
