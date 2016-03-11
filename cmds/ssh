@@ -58,8 +58,8 @@ echo -e "\t\tthis command shows the corresponding version info about the ssh cli
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tlocalhost$scp tom@remotehost.example.com/home/jsmith/remotehostfile.txt remotehostfile.txt"
-echo -e "\t\tthis command copys file from the remotehost to the localhost.\n"
+echo -e "\t\tssh $HOST 'ls;pwd'"
+echo -e "\t\tto run two commands on a remote server over SSH.\n"
 
 #   ...      etc
 
