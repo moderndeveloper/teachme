@@ -17,19 +17,40 @@ echo -e "\n------------"
 # the command's description
 echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
 
-echo -e "\n\tgit commit command commits the staged snapshot to the project history. Commited snapshots" 
+echo -e "\n\tgit commit command commits the staged snapshot to the project history. Commited snapshots"
 echo -e "\tare safe versions of a project because Git will not change them unless the user ask it"
-echo -e "\tto.Every project has 3 places:working directory, staging area and repository.The working are" 
-echo -e "\tis the place where user change the files from repository. The staging are is a buffer area" 
-echo -e "\tbetween the working directory and the project history. This area let user group related"
-echo -e "\tchanges into a snapshot before committing it to the project history. git commit is moving a grouped snapshot of the modified files into repository."
+echo -e "\tto. Every project has 3 places: working directory, staging area and repository.The working area"
+echo -e "\tis the place where user change the files from repository. The staging area is a buffer area"
+echo -e "\tbetween the working directory and the project history. This area lets user group related"
+echo -e "\tchanges into a snapshot before committing it to the project history. git commit is moving"
+echo -e "\ta grouped snapshot of the modified files into repository."
 
 echo -e "\n------------"
 
 # the command's syntax
-echo -e "\nCOMMAND SYNTAX:"
+echo -e "\n${bold}COMMAND SYNTAX:${normal}:"
 echo -e "\n\tgit commit [options] "
 echo -e "\t\t-m <msg>:  Specify a message <msg> to be used as the commit message."
 echo -e "\t\t-a: Stage files that have been deleted or modified automatically."
 
 echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\n\tgit commit"
+echo -e "\n\t\tcommits all files that are in the index (staged), user needs to enter commit"
+echo -e "\t\tmessage after hitting 'enter' if message is empty, then the commit is canceled."
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\n\tgit commit --author=guest_developer -t guests_msg_template.txt  README.md description.txt"
+echo -e "\n\t\tcommits only README.md and description.txt files even if there are other files"
+echo -e "\t\tin the index, those files are untouched and can be committed afterwards"
+echo -e "\t\tnormally, sets author of the commit to be 'guest_developer' and to use"
+echo -e "\t\t'guests_msg_template.txt' file as a starting template for commit message.\n"
+
+#   ...      etc
+
+exit 0
