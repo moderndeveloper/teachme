@@ -4,7 +4,7 @@
 echo -e 'git diff'
 
 # the command's description
-echo "The command git diff lets you compare different versions of your files. It is most commonly used to see what changes you made since your last commit. 
+echo "The git diff command lets you compare different versions of your files. It is most commonly used to see what changes you made since your last commit. 
 
 You can also compare files between two different commits. Every commit in Git has a commit id, which you can get with the git log command. You can use these ids to compare the differences bewteen the current state of the repository as well as other commits."
 
