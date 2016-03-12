@@ -11,9 +11,11 @@ echo "------------"
 
 # the command's syntax
 echo "Syntax:"
-echo "test argument1 argument2"
-echo -e "\targument1: description of argument 1"
-echo -e "\targument2: description of argument 2"
+echo "pwd [-L] [-P]"
+echo -e "\-L: $PWD is the environment variable definition of the current working directory. When the -L option is used, this $PWD definition is printed to the screen."
+echo -e "\-P: This option displays ALL the links to the present directory location. For example if we have a directory /home/projects but its full link is 
+/var/www/root/projects then when we use the `-P` flag, the full link will be displayed to the screen."
+
 #   ...      etc
 
 echo "------------"
