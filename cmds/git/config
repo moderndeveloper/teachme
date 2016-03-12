@@ -1,0 +1,86 @@
+#!/usr/bin/env bash
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}git config${normal} - set repository / global Git defaults"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo -e "\n\tWhen you have initialised a project, inside your repository, you will find a hidden"
+echo -e "\tsubdirectory .git, it will contain all necessary metadata. In that folder, you will find a"
+echo -e "\tconfiguration file (.git/config), which has a default configurations for this specific"
+echo -e "\trepository (e.g. your username, preferred editor etc.)"
+echo -e "\n\tCustomising can be also done globally by configuring a global (~/.gitconfig) file just "
+echo -e "\tprovide a '—global' flag after the 'git config' command (e.g git config —global -e, this "
+echo -e "\twill open a global gitconfig file in a text editor, which is ready for further configuration)."
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}"
+echo -e "\n\tgit config [<file-option>] [type] [-z|--null] name [value [value_regex]]"
+echo -e "\tgit config [<file-option>] [type] --add name value"
+echo -e "\tgit config [<file-option>] [type] --replace-all name value [value_regex]"
+echo -e "\tgit config [<file-option>] [type] [-z|--null] --get name [value_regex]"
+echo -e "\tgit config [<file-option>] [type] [-z|--null] --get-all name [value_regex]"
+echo -e "\tgit config [<file-option>] [type] [-z|--null] [--name-only] --get-regexp name_regex [value_regex]"
+echo -e "\tgit config [<file-option>] [type] [-z|--null] --get-urlmatch name URL"
+echo -e "\tgit config [<file-option>] --unset name [value_regex]"
+echo -e "\tgit config [<file-option>] --unset-all name [value_regex]"
+echo -e "\tgit config [<file-option>] --rename-section old_name new_name"
+echo -e "\tgit config [<file-option>] --remove-section name"
+echo -e "\tgit config [<file-option>] [-z|--null] [--name-only] -l | --list"
+echo -e "\tgit config [<file-option>] --get-color name [default]"
+echo -e "\tgit config [<file-option>] --get-colorbool name [stdout-is-tty]"
+echo -e "\tgit config [<file-option>] -e | --edit"
+echo -e "\n\t${underline}<file-option>${normal}:"
+echo -e "\n\t\t${bold}--global${normal}"
+echo -e "\t\t\twrite or read only options from the ~./gitconfig file, or if it does not exist"
+echo -e "\t\t\tthen from the file ${bold}\$XDG_CONFIG_HOME/git/config${normal}."
+echo -e "\n\t\t${bold}--system${normal}"
+echo -e "\t\t\twrite or read only options from the ${bold}\$(prefix)/etc/gitconfig${normal} file."
+echo -e "\n\t\t${bold}--local${normal}"
+echo -e "\t\t\twrite or read only options from the .git/config file. This is default behaviour."
+echo -e "\n\t${bold}--add${normal}:"
+echo -e "\t\tadd a new line to the option without altering existing values."
+echo -e "\n\t${bold}--get${normal}:"
+echo -e "\t\tget the value for a given option."
+echo -e "\n\t${bold}--remove-section${normal}:"
+echo -e "\t\tremove section from the config file."
+echo -e "\n\t${bold}--rename-section${normal}:"
+echo -e "\t\trename section with a new name."
+echo -e "\n\t${bold}--unset${normal}:"
+echo -e "\t\tremove the given key from config file."
+echo -e "\n\t${bold}--unset-all${normal}:"
+echo -e "\t\tremove all matching keys from config file."
+echo -e "\n\t${bold}-l, --list${normal}:"
+echo -e "\t\tlist all variables set in config file, along with their values."
+#   ...      etc
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\t\tgit config --global user.name "Tom Jerry""
+echo -e "\t\tUsing --global flag will make system always remember the info you set."
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\t\tgit config --list"
+echo -e "\t\tThis command will list all settings Git can find at that point.\n"
+
+#   ...      etc
+
+exit 0
