@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo -e clear
+echo clear command will clear current terminal screen.But the former commands and results are still there, they are just moved upwards.
+echo -------
