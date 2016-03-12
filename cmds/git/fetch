@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}git fetch${normal} - download objects and refs from another repository"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo -e "\n\t'git fetch' command downloads changes from other repositories and updates"
+echo -e "\tremote tracking branches in the local repository. It can fetch from either"
+echo -e "\ta single named repository or url, or from several repositories at once."
+echo -e "\tThe default remote repository is called ${bold}origin${normal} and it will be"
+echo -e "\tused if no upstream branch is configured for the current branch."
+echo -e "\n\tThe names of refs (branches and/or tags) that are fetched, together with the object"
+echo -e "\tnames they point at, are written to '.git/FETCH_HEAD' file. This information may be"
+echo -e "\tused by scripts or other git commands, such as 'git pull'."
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}"
+echo -e "\n\tgit fetch [<options>] [<repository>[<refspec>...]]"
+echo -e "\n\tgit fetch [<options>] <group>"
+echo -e "\n\tgit fetch --multiple [<options>] [(<repository> | <group>)...]"
+echo -e "\t\t--multiple: allow several <repository> and <group> arguments to be specified."
+echo -e "\t\t<repository>: the remote repository that is the source of a fetch or pull operation."
+echo -e "\t\t<group>: a name referring to a list of repositories as the value of remotes."
+echo -e "\t\t<refspec>: specifies which refs to fetch and which local refs to update."
+#   ...      etc
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\t\tgit fetch origin"
+echo -e "\t\tDownloads all the changes (from origin) needed to represent the given remote branch"
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\t\tgit fetch --all"
+echo -e "\t\tFetch all remotes\n"
+
+#   ...      etc
+
+exit 0
