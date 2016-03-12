@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}git diff${normal} - compare files"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo -e "\n\t'git diff' command is used to visualise the changes between one version of a file and "
+echo -e "\tanother. This command enables you to track changes between commits and the"
+echo -e "\tprogress made along the development process, it's also useful for tracking bugs."
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}"
+echo -e "\n\tgit diff [options] [<commit>] [--] [<path>...]"
+echo -e "\n\t\tThis form is to view the changes you made relative to the index (staging area for"
+echo -e "\t\tthe next commit). In other words, the differences are what you could tell Git to"
+echo -e "\t\tfurther add to the index but you still haven’t."
+echo -e "\n\tgit diff [options] --cached [<commit>] [--] [<path>...]"
+echo -e "\n\t\tThis form is to view the changes you staged for the next commit relative to the named <commit>."
+echo -e "\n\tgit diff [options] <commit> <commit> [--] [<path>...]"
+echo -e "\n\t\tThis is to view the changes between two arbitrary <commit>."
+echo -e "\n\tgit diff [options] [--no-index] [--] <path> <path>"
+echo -e "\n\t\tThis form is to compare the given two paths on the filesystem."
+
+echo -e "\n\t${underline}OPTIONS${normal}:"
+echo -e "\n\t\t${bold}--minimal${normal}: produce the smallest possible diff."
+echo -e "\n\t\t${bold}--name-status${normal}: only show names and status of changed files."
+echo -e "\n\t\t${bold}--check${normal}: warn if changes introduce whitespace errors."
+#   ...      etc
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\t\tgit diff HEAD --myfile.txt"
+echo -e "\t\tthis command will show the difference between the myfile's change in the working directory and "
+echo -e "\t\tits most recent commit.\n"
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\t\tgit diff --cached"
+echo -e "\t\tIt will compare the difference between the staged file and the most recent commit.\n"
+
+#   ...      etc
+
+exit 0
