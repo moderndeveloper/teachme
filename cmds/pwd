@@ -5,7 +5,7 @@ underline="\033[4m"
 normal="\033[0m"
 #the command name
 echo -e "\n${bold}COMMAND NAME:${normal}"
-echo -e "\n\t${bold}pwd{normal}"
+echo -e "\n\t${bold}pwd${normal}"
 echo -e "\n------"
 
 #command's description
