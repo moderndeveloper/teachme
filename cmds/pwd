@@ -1,0 +1,78 @@
+#!/usr/bin/env bash
+
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+#the command name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}pwd{normal}"
+echo -e "\n------"
+
+#command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo -e "\n\tpwd means print working directory, it writes full pathname of current working"
+echo -e "\tdirectory to the prompt,prompt means the flashing cursor."
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}:"
+echo -e "\n\tpwd [options]"
+echo -e "\t\t-L: Use pwd from environment, even if it contains symbolic links\n\t\t (symbolic link is a link pointing to the original copy)"
+echo -e "\t\t-P: Avoid all symbolic links"
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\t\tpwd"
+echo -e "\t\tTyping only 'pwd' you will get the full path to the working directory you are in."
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\t\tthis bash script is taking the user input to create a project directory. It first"
+echo -e "\t\tasks user to give a name for the project and then the location where to create it."
+echo -e "\t\tIf location is not provided script will use 'pwd' command to create project in the"
+echo -e "\t\tcurrent working directory."
+
+echo -e "
+\tfunction read_name {
+\t  echo -e \"\\\nEnter the name of your project: \"
+\t  read project_name
+
+\t  if [ -z \"\$project_name\" ]
+\t  then
+\t    read_name
+\t  fi
+\t}
+
+\tfunction get_path {
+
+\t  read_name
+
+\t  echo -e \"\\\nEnter directory where to create your project [ leave empty for current directory '\`pwd\`' ]: \"
+\t  read project_dir
+
+\t  if [ -z "\$project_dir" ]
+\t  then
+\t    project_dir=\`pwd\`
+\t  fi
+
+\t  project_path=\"\$project_dir/\$project_name\"
+
+\t  if [ -d \"\$project_path\" ]
+\t  then
+\t    echo -e \"\\\nThe directory \\"\$project_path\\" already exists, please choose another name or different directory to create your project.\"
+\t    get_path
+\t  else
+\t    echo -e \"\\\nOK, those are available, we can move on.\"
+\t  fi
+\t}
+
+\tget_path
+\tmkdir -p \$project_path
+"
+
+echo -e "\t\t\n"
+
+exit 0
