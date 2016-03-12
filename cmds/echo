@@ -1,0 +1,64 @@
+#!/usr/bin/env bash
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}echo${normal}"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo -e "\n\t'echo' command displays the line of text. The text can be a string literal"
+echo -e "\tthat is passed to the echo command or it may be a variable, or a combination of"
+echo -e "\tstrings and variables."
+echo -e "\tFor example:"
+echo -e "\t\t\tname=\"Slartibartfast\""
+echo -e "\t\t\techo \"Hello my friend \$name!\""
+echo -e "\t\t\tOutputs: Hello my friend Slartibartfast!"
+echo -e "\n\t'echo' accepts a few options that enable or disable some formatting options."
+echo -e "\tThe most usable option is the '-e' option which enables interpretation of"
+echo -e "\ttabs, newlines, backslashes and some more formatting options."
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}"
+echo -e "\n\techo [SHORT-OPTION] [STRING]"
+echo -e "\t\t-n: don\'t output a trailing new line"
+echo -e "\t\t-e: enable interpretation of backslash escape sequences"
+echo -e "\t\t-E: disable interpretation of backslash escape sequences(this is the default)"
+echo -e "\n"
+echo -e "\t\tfor -e option,the following escape sequence are recognized."
+echo -e "\t\t\\\\\:a literal backslash character"
+echo -e "\t\t\\\\n:a new line"
+echo -e "\t\t\\\\t:a horizontal tab"
+echo -e "\t\t\\\\v:a vertical tab"
+echo -e "\t\t\\\\b:a backspace"
+echo -e "\t\t\\\\a:an alert"
+#   ...      etc
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\t\techo \"Hello World\""
+echo -e "\t\tOutputs 'Hello World' to terminal."
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\t\techo \$HOME"
+echo -e "\t\tPrint the value of \$HOME environment variable.\n"
+
+#   ...      etc
+
+exit 0
