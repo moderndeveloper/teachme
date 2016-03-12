@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}git reset${normal} - reset current HEAD to the specified state"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo -e "\n\tOne form, 'git reset file', can be used to reset index entries, that is,"
+echo -e "\tto do the opposite of 'git add file', so the staged file will be unstaged."
+echo -e "\n\tThe other form of this command, 'git reset <mode> <commit>', is used to reset"
+echo -e "\tthe head of the current branch to the <commit> and depending on the mode to"
+echo -e "\tupdate the index and the working tree."
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}"
+echo -e "\n\tgit reset [<mode>] [<commit>]"
+echo -e "\n\tgit reset [-q][<tree-ish>] [--] <paths>..."
+echo -e "\n\t\ttree-ish: this is a way to refer to particular commits in Git using either full or "
+echo -e "\t\tpartial hash of the commits, refs, branch and remotes."
+echo -e "\t\t<mode>: reset the current branch head to <commit> and possibily updates the index and working"
+echo -e "\t\tdepending on the <mode>"
+echo -e "\t\t--hard: this mode resets the index and working tree"
+echo -e "\t\t--mixed: this mode resets the index but not the working tree(this is default action)"
+#   ...      etc
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\t\tgit reset [file]"
+echo -e "\t\tRemove [file] from a staging area."
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\t\tgit reset --hard [commit]"
+echo -e "\t\tReset branch to a previous [commit] and reset both the staging area and the"
+echo -e "\t\tworking directory to match. You can check the hash of needed commit by running 'git log'.\n"
+
+
+#   ...      etc
+
+exit 0
