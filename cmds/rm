@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}rm${normal} - remove files."
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo -e "\n\t'rm' command is used for deleting one or more files in the directory. As a safety "
+echo -e "\tmeasure 'rm' does not delete directories by default. In order to delete directories (-r) "
+echo -e "\toption is used (removes files and directories recursively). "
+echo -e "\n\tTo remove a file, you must have write permission on the directory, that contains the"
+echo -e "\tfile, but you don't need to have permission on the file itself. If you do not have write"
+echo -e "\tpermission on the file, you are prompted (y or n) to override."
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}"
+echo -e "\n\trm [option]... [file]..."
+echo -e "\n\t\t${underline}option${normal}:"
+echo -e "\n\t\t${bold}-f, --force${normal}:"
+echo -e "\t\t\tignore nonexistent files and arguments, don't prompt"
+echo -e "\n\t\t${bold}-i${normal}:\tprompt before performing every removal"
+echo -e "\n\t\t${bold}-r, -R, --recursive${normal}:"
+echo -e "\t\t\tremove directories and their content recursively, this must be used to remove directories"
+echo -e "\n\t\t${bold}-d, --dir${normal}:"
+echo -e "\t\t\tremove empty directories"
+echo -e "\n\t\t${bold}-v, --verbose${normal}:"
+echo -e "\t\t\tprint what is being done"
+echo -e "\n\t\t${underline}file${normal}: list of files or directories to be removed"
+#   ...      etc
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\t\trm -- -file.txt"
+echo -e "\t\tremove a file whose name begins with a dash("-"),user should put a double dash"
+echo -e "\t\tseparately before the filename. So the rm command will not misinterpret the filename as an option."
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\t\trm -f myfile.txt"
+echo -e "\t\tremove the file myfile.txt and will not be prompted,it will be removed enven if the file is write-protected.\n"
+
+#   ...      etc
+
+exit 0
