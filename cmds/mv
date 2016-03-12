@@ -1,0 +1,63 @@
+#!/usr/bin/env bash
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}mv${normal} - rename/move"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo -e "\n\tThe 'mv' command is used for renaming or moving files in the filesystem."
+echo -e "\tIt accepts two or more arguments. If 'mv' command is passed two arguments,"
+echo -e "\tand if second argument is not a directory, then the first file will be\n\trenamed so its name will match the second argument:"
+echo -e "\t(e.g. 'mv file_old.txt file_new.csv') - the 'file_old.txt' becomes 'file_new.csv'."
+echo -e "\n\tIf the second argument is a directory then the file will be moved to that"
+echo -e "\tdirectory: (e.g. 'mv my_file.pdf ~/pdf_files/')"
+echo -e "\n\tWhen 'mv' command gets more than two arguments, the last argument must be a"
+echo -e "\tdirectory name and all preceeding files and directories that are passed to"
+echo -e "\t'mv' will be moved into that last passed directory:"
+echo -e "\t(e.g. 'mv file1 file2 dir1 dir2 target_dir/')"
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}"
+echo -e "\n\tmv [options]... SOURCE ....DIRECTORY"
+echo -e "\n\tmv [options]... SOURCE ....DEST"
+echo -e "\t\t-t: move all SOURCE arguments into directory DIRECTORY"
+echo -e "\t\t-T:treate DEST as a normal file,not as a directory"
+echo -e "\t\t-u:perform the move only if the SOURCE file is newer then the destination file,"
+echo -e "\t\tor the destination file does not exist."
+#   ...      etc
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\t\tmv ./folder1 ./folder2"
+echo -e "\t\tMoves folder1 to folder2 within a current directory."
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\t\tmv file1 file2"
+echo -e "\t\tThis command will rename file1 to file2."
+
+# example 3
+echo -e "\n\t${underline}Example 3${normal}"
+echo -e "\t\tmv * /dir/new"
+echo -e "\t\tMove contents (* - all files and directories) of current directory to specified directory.\n"
+
+#   ...      etc
+
+exit 0
