@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}git checkout${normal} - switches branches or restores working tree files"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo -e "\n\t'git checkout' is used to change current branch you are working on by passing"
+echo -e "\tit a branch name to switch to."
+echo -e "\tIf ${bold}-b${normal} option is passed to the 'git checkout' then the new branch is"
+echo -e "\tcreated with the provided name, and then Git switches to that new branch."
+echo -e "\t'git checkout -- file' can be used to discard changes made to 'file' in the"
+echo -e "\tworking directory, reverting it to the version that is already staged for"
+echo -e "\tcommit."
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}"
+echo -e "\n\tgit checkout [-b] <new_branch> [<start point>]"
+echo -e "\n\tgit checkout <branch>"
+echo -e "\n\tgit checkout [-p|--patch] [<tree-ish>] [--]<pathspec>..."
+echo -e "\t\t-b: create new branch named <new_branch> and start it at <start point>"
+echo -e "\t\t-p: selectively discard edits(difference between <tree_ish> or the index,if unspecified and "
+echo -e "\t\tthe working tree)from yourworking tree."
+#   ...      etc
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\t\tgit checkout master"
+echo -e "\t\tReturn to master branch, from any branch."
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\t\tgit checkout [commit]"
+echo -e "\t\tUpdate all files in the working directory to match the specified commit."
+echo -e "\t\tYou can check the hash of needed commit by running 'git log'."
+
+# example 3
+echo -e "\n\t${underline}Example 3${normal}"
+echo -e "\t\tgit checkout [commit] [file]"
+echo -e "\t\tReturn to the previous version of a [file] from the specified [commit] and add it to a staging area.\n"
+
+#   ...      etc
+
+exit 0
