@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}cp${normal} - copy"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo -e "\n\tThe 'cp' command is used for copying files and directories in the filesystem."
+echo -e "\tIt accepts two or more arguments. The last argument is a directory where the"
+echo -e "\tfiles and other directories will be copied."
+echo -e "\tTo be able to copy directories '-r' option must be specified."
+echo -e "\t(e.g. 'cp -r file1 file2 dir1 dir2 target_dir/')"
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}"
+echo -e "\n\tcp [OPTION] SOURCE DIRECTORY"
+echo -e "\n\tcp [OPTION] SOURCE DEST"
+echo -e "\t\t-r: copy directories recursively"
+echo -e "\t\t-t: copy all SOURCE arguments into DIRECTORY"
+echo -e "\t\t-u: copy only when the SOURCE file is newer than the destination file or the destination file"
+echo -e "\t\tis missing."
+#   ...      etc
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\t\tcp -r dir2 dir3"
+echo -e "\t\tMake a copy of dir2 (including all files and subdirectories) and name a copy dir3"
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\t\tcp file.txt file2.txt"
+echo -e "\t\tMake copy of a file in the current directory."
+
+# example 3
+echo -e "\n\t${underline}Example 3${normal}"
+echo -e "\t\tcp ~/files/file-*.txt ~/backup"
+echo -e "\t\tCopy all files with the names (e.g. file-1.txt, file2-txt....etc) to another folder."
+echo -e "\t\t'*' is a wildcard, is used to select all files in current directory, which match the 'file-*.txt.'"
+
+# example 4
+echo -e "\n\t${underline}Example 4${normal}"
+echo -e "\t\tcp /home/destination/file.txt /home/another_destination/file.txt"
+echo -e "\t\tCopy file from one destination to another.\n"
+
+
+#   ...      etc
+
+exit 0
