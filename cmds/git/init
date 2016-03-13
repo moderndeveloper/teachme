@@ -13,12 +13,11 @@ echo "------------"
 # the command's syntax
 echo "Syntax:"
 echo "git init [option] [directory]"
-
 echo -e "\t[option] - A command option or command flag specifiying how the repository will be created and who can access it."
 echo -e "\t[option: -q] - Creates the repository without any messaging. Messages will only print if there are errors or warnings."
 echo -e "\t[option: --bare] - Places all the files all the files normally in the .git directory at the top-level directory."
-
 echo -e "\t[directory] - The directory where you wish to initiate a git repository. By default will initiate in the current directory where you execute the command."
+
 echo "------------"
 
 # the command's usage examples
