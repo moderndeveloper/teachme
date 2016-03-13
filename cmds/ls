@@ -18,8 +18,8 @@ echo -e "\n------------"
 echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
 echo -e "\n\tIf invoked without any arguments, 'ls' command will list the files in the current directory."
 echo -e "\tFiles will be listed without any details (e.g view details, file types, size, modified date and "
-echo -e "\ttime, permission and links etc.). To be able to see the details, use different options available, most "
-echo -e "\tuseful ones are -F, -R, -a, -l, and -s."
+echo -e "\ttime, permission and links etc.). To be able to see the details, use different options available,"
+echo -e "\tmost useful ones are -F, -R, -a, -l, and -s."
 
 echo -e "\n------------"
 
@@ -39,7 +39,7 @@ echo -e "\t\t\tlist subdirectories recursively"
 echo -e "\n\t\t${bold}-s${normal}: \tprint allocated file sizes, in blocks"
 echo -e "\n\t\t${bold}-S${normal}: \tsort by file size, largest first"
 echo -e "\n\t\t${bold}-1${normal}: \tlist one file per line"
-echo -e "\n\t\t${underline}file${normal}: the name of the directory to be listed. If omitted then the current directory is listed."
+echo -e "\n\t\t${underline}file${normal}:   the name of the directory to be listed. If omitted then the current directory is listed."
 #   ...      etc
 
 echo -e "\n------------"
@@ -48,15 +48,15 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\tls -l"
+echo -e "\n\tls -lR"
 echo -e "\t\tList the total files in the directory and subdirectories, the names of the files in the"
-echo -e "\t\tcurrent directory,their permissions, the number of subdirectories in the directories listed"
+echo -e "\t\tcurrent directory, their permissions, the number of subdirectories in the directories listed"
 echo -e "\t\tthe size of the file, and the date of last modification."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tls -ltr"
-echo -e "\t\tList files sorted by the time they were lasted modified in reverse order."
+echo -e "\n\tls -ltr"
+echo -e "\t\tList files sorted by the time they were last modified in reverse order.\n"
 
 #   ...      etc
 
