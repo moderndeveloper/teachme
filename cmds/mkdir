@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+echo "This is the mkdir command."
+
+# The command's name
+echo -e 'mkdir'
+
+# the command's description
+echo "This command is short for [make directory] and is used to create new folders or directories via the command line, if they do not already exist. If the directory already exists, an error message is shown. The mkdir command can also be used to create multiple directories at once."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "$ mkdir [option] <directory_name(s)>"
+echo -e "\tmkdir -p food/fruit/citrus/oranges: Creates the intermediate directories if they do not exist."
+echo -e "\tmkdir dir_1 dir_2 dir_3: Creates three directories under current directory."
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "mkdir -p cat/cat_pictures/cat_pictures_2"
+echo "creates a folder called cat_pictures_2; create parent directories cat and cat_pictures if it doesn't exist."
+
+# example 2
+echo "mkdir -v dog_pictures"
+echo "creates a folder called dog_pictures and then prints a message for the created directory."
+
+
+exit 0
