@@ -16,7 +16,7 @@ echo -e "\n------------"
 #commmand des
 echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
 echo -e "\n\ttouch is a command which is used to change the modification or access date of a file."
-echo -e "\tIf that file does not exist,it equals to create that file with current time and 0 length."
+echo -e "\tIf that file does not exist, it equals to create that file with current time and 0 length."
 echo -e "\tIf that file exists, it will update the modification or access date of this file based on"
 echo -e "\tspecific option requirement called flag."
 
@@ -27,7 +27,7 @@ echo -e "\n${bold}COMMAND SYNTAX:${normal}:"
 echo -e "\n\ttouch [options] [date] files"
 echo -e "\t\t-a: update only the access time"
 echo -e "\t\t-m: update modification time only"
-echo -e "\t\t-t: creates a file using a specified time,\n\t\t in format [[cc ]yy ]mmddhhmm [.ss ]"
+echo -e "\t\t-t: creates a file using a specified time,\n\t\t in format [[cc]yy]mmddhhmm[.ss]"
 
 echo -e "\n------------"
 
@@ -36,18 +36,18 @@ echo -e "\n------------"
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
 echo -e "\n\ttouch my_new_file"
-echo -e "\t\tcreates empty file called 'my_new_file' in the current working directory,"
+echo -e "\n\t\tcreates empty file called 'my_new_file' in the current working directory,"
 echo -e "\t\twith current time as creation time."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
 echo -e "\n\ttouch -m myfile"
-echo -e "\t\tchanges the modification time on existing file called 'myfile' to current time.\n"
+echo -e "\n\t\tchanges the modification time on existing file called 'myfile' to current time.\n"
 
 # example 3
 echo -e "\n\t${underline}Example 3${normal}"
 echo -e "\n\ttouch -t 197807060615.45 my_old_file"
-echo -e "\t\tcreates empty file called 'my_old_file' in the current working directory,"
+echo -e "\n\t\tcreates empty file called 'my_old_file' in the current working directory,"
 echo -e "\t\twith creation time July 6th, 1978 at 06:15:45.\n"
 
 exit 0
