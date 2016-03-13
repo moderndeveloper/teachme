@@ -30,10 +30,10 @@ echo -e "\n------------"
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
 echo -e "\n\tgit checkout [-b] <new_branch> [<start point>]"
 echo -e "\n\tgit checkout <branch>"
-echo -e "\n\tgit checkout [-p|--patch] [<tree-ish>] [--]<pathspec>..."
-echo -e "\t\t-b: create new branch named <new_branch> and start it at <start point>"
-echo -e "\t\t-p: selectively discard edits(difference between <tree_ish> or the index,if unspecified and "
-echo -e "\t\tthe working tree)from yourworking tree."
+echo -e "\n\tgit checkout [-p|--patch] [<tree-ish>] [--] <pathspec>..."
+echo -e "\n\t\t-b: create new branch named <new_branch> and start it at <start point>"
+echo -e "\t\t-p: selectively discard edits (difference between <tree_ish> or the index,"
+echo -e "\t\t    if unspecified and the working tree) from your working tree."
 #   ...      etc
 
 echo -e "\n------------"
@@ -42,19 +42,19 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\tgit checkout master"
-echo -e "\t\tReturn to master branch, from any branch."
+echo -e "\n\tgit checkout master"
+echo -e "\n\t\tReturn to master branch, from any branch."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tgit checkout [commit]"
-echo -e "\t\tUpdate all files in the working directory to match the specified commit."
+echo -e "\n\tgit checkout [commit]"
+echo -e "\n\t\tUpdate all files in the working directory to match the specified commit."
 echo -e "\t\tYou can check the hash of needed commit by running 'git log'."
 
 # example 3
 echo -e "\n\t${underline}Example 3${normal}"
-echo -e "\t\tgit checkout [commit] [file]"
-echo -e "\t\tReturn to the previous version of a [file] from the specified [commit] and add it to a staging area.\n"
+echo -e "\n\tgit checkout [commit] [file]"
+echo -e "\n\t\tReturn to the previous version of a [file] from the specified [commit] and add it to a staging area.\n"
 
 #   ...      etc
 
