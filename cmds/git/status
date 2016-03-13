@@ -26,9 +26,9 @@ echo -e "\n------------"
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
 echo -e "\n\tgit status [OPTIONS] [PATHSPEC]"
-echo -e "\t\t-s: give the output in the short format."
-echo -e "\t\t--long: give the output in the long-format. This is default."
-echo -e "\t\t-u: show untracked files"
+echo -e "\n\t\t-s:\tgive the output in the short format."
+echo -e "\t\t--long:\tgive the output in the long-format. This is default."
+echo -e "\t\t-u:\tshow untracked files"
 #   ...      etc
 
 echo -e "\n------------"
@@ -37,13 +37,13 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\tgit status -s"
-echo -e "\t\tRunning with option -s or —short will result in more simplified output."
+echo -e "\n\tgit status -s"
+echo -e "\n\t\tRunning with option -s or —short will result in more simplified output."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tgit status --ignored"
-echo -e "\t\tShows ignored files, which are specified in .gitignore file.\n"
+echo -e "\n\tgit status --ignored"
+echo -e "\n\t\tShows ignored files, which are specified in .gitignore file.\n"
 
 #   ...      etc
 
