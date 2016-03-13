@@ -28,8 +28,8 @@ echo -e "\n------------"
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
 echo -e "\n\tcd [options] [Directory]"
-echo -e "\t\t-: quickly get back to up level directory"
-echo -e "\t\tno given directory:it will defaultly use HOME variable"
+echo -e "\n\t\t-: quickly get back to the previous active directory"
+echo -e "\t\tno given directory: it will defaultly use \$HOME variable"
 #   ...      etc
 
 echo -e "\n------------"
@@ -38,18 +38,18 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\tcd .."
-echo -e "\t\tChange current directory to parent directory (move back one directory)."
+echo -e "\n\tcd .."
+echo -e "\n\t\tChange current directory to parent directory (move back one directory)."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tcd ~"
-echo -e "\t\tMove to \$HOME directory from the current folder."
+echo -e "\n\tcd ~"
+echo -e "\n\t\tMove to \$HOME directory from the current folder."
 
 # example 3
 echo -e "\n\t${underline}Example 3${normal}"
-echo -e "\t\tcd /"
-echo -e "\t\tMove to root directory.\n"
+echo -e "\n\tcd /"
+echo -e "\n\t\tMove to root directory.\n"
 
 #   ...      etc
 
