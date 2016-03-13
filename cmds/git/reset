@@ -29,11 +29,11 @@ echo -e "\n${bold}COMMAND SYNTAX:${normal}"
 echo -e "\n\tgit reset [<mode>] [<commit>]"
 echo -e "\n\tgit reset [-q][<tree-ish>] [--] <paths>..."
 echo -e "\n\t\ttree-ish: this is a way to refer to particular commits in Git using either full or "
-echo -e "\t\tpartial hash of the commits, refs, branch and remotes."
-echo -e "\t\t<mode>: reset the current branch head to <commit> and possibily updates the index and working"
-echo -e "\t\tdepending on the <mode>"
-echo -e "\t\t--hard: this mode resets the index and working tree"
-echo -e "\t\t--mixed: this mode resets the index but not the working tree(this is default action)"
+echo -e "\t\t\t  partial hash of the commits, refs, branch and remotes."
+echo -e "\n\t\t<mode>:   reset the current branch head to <commit> and possibily updates the index and working"
+echo -e "\t\t\t  depending on the <mode>:"
+echo -e "\n\t\t\t--hard: this mode resets the index and working tree"
+echo -e "\t\t\t--mixed: this mode resets the index but not the working tree (this is default action)"
 #   ...      etc
 
 echo -e "\n------------"
@@ -42,13 +42,13 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\tgit reset [file]"
-echo -e "\t\tRemove [file] from a staging area."
+echo -e "\n\tgit reset [file]"
+echo -e "\n\t\tRemove [file] from a staging area."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tgit reset --hard [commit]"
-echo -e "\t\tReset branch to a previous [commit] and reset both the staging area and the"
+echo -e "\n\tgit reset --hard [commit]"
+echo -e "\n\t\tReset branch to a previous [commit] and reset both the staging area and the"
 echo -e "\t\tworking directory to match. You can check the hash of needed commit by running 'git log'.\n"
 
 
