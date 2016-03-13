@@ -16,7 +16,6 @@ echo -e "\t[option: -l] - Lists files in a long listing format, displaying permi
 echo -e "\t[option: -a] - Lists all hidden files in the specified directory."
 echo -e "\t[option: -t] - Sorts listing by modification time."
 echo -e "\t[directory] - The directory filepath you wish to list, by default it is the current directory."
-#   ...      etc
 
 echo "------------"
 
