@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'rm'
+
+# the command's description
+echo "The rm command is used to remove files or directories from the file system. This means that files or directories are removed from the storage device, i.e. hard disk drive, which subsequently increases the amount of available disk space on your hard disk drive. An important thing to take note is that the effects of the command rm CANNOT be undone."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "rm [options] [file/folder name]"
+echo -e "\t[options]: A command option or command flag."
+echo -e "\t[options: -r]: Delete the specified folder recursively, which means that all folders within the folder will be deleted as well as the folder itself."
+echo -e "\t[options: -f]: Force deletion. No warnings will be shown before a file or folder is removed."
+echo -e "\t[options: -i]: The -i flag will ask for confirmation every time it wants to remove a file or folder."
+echo -e "\t[file/folder name]: File or folder to be removed."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "rm computer.log"
+echo "Will remove the specified file."
+
+# example 2
+echo "rm file1.txt file2.txt file3.txt"
+echo "Will remove all specified files."
+
+# example 3
+echo "rm -d documents/"
+echo "Will remove specified documents folder if it is empty."
+
+#example 4
+echo "rm -r movie/"
+echo "Will remove movie/ recursively, which means that all files and folders within /movie will be removed before removing /movie."
+
+#example 5
+echo "rm -ri movie/"
+echo "-i will make the removal process interactive, meaning it will ask for confirmation every time rm wants to delte a file or folder."
+
+#example 6
+echo "rm -f computer.log "
+echo "-f means it will force delete the file. Even if a file as 'access read-only`, rm will delete the file without a warning."
+
+exit 0

@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'more'
+
+# the command's description
+echo "The more command displays the first screen of the specified file in the terminal screen, which is as much of the file that fits in the terminal window.
+
+Pressing the [Return] key will display the next line of the file. Pressing the [Space] bar will display as much of the remainder of the file as the window allows."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "more [option] [-num line] [+/ pattern] [+ linenum] [file-name]"
+echo -e "\t[option] - A command option or command flag."
+echo -e "\t[filename] - The file whose contents you wish to display. If no file name is provided, more looks for input from standard input."
+echo -e "\t[-num line] - This options specifies the number of lines to be displayed of the file, 'line' is the number you would like to dispay"
+echo -e "\t[+/ pattern] - Where you place the regular expression of the pattern you are looking for."
+echo -e "\t[+ linenum] - If specified will display file content starting at the line number given."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "more file.txt"
+echo "Displays the content of the specified file in the terminal screen."
+
+# example 2
+echo "more +10 file.txt"
+echo "Displays the content of the specified file in terminal screen beginning at line 10."
+
+# example 3
+echo "more +/"pattern" file.txt"
+echo -e "Displays the content of the specified file in terminal screen containing the string \"pattern\"."
+
+exit 0

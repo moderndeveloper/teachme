@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'git push'
+
+# the command's description
+echo "Pushing is a mechanism provided by git to transfer commits from a local repository to a remote repository. It is the counterpart to git fetch. The git push command is a crucial command to learn if you want to collaborate through git as it syncs everything from the local repository to the remote repository where other developers can git fetch (download) from."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "git push [remote] [branch]"
+echo -e "\t[remote]: The destination of the push operation. Can be either a URL or the name of a remote. When not specified [remote] is equal to 'origin', which is the default name of the repository you originally cloned from."
+echo -e "\t[branch]: The specified [branch] will be pushed to [remote]. When no branch is specified, it will  push changes from all local branches to matching branches in the origin remote. Branches are forks within your own repository that allow you to work on different features at once."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git push origin master"
+echo "This pushes the selected branch 'master' to the remote alias 'origin'. If the master branch exists on the remote it will be updated, otherwise it will be created."
+
+# example 2
+echo "git push origin"
+echo "If no branch is specified it will default to pushing to the upstream branch, this may vary depending on you version of git. You can set the push.default in git config."
+
+
+exit 0

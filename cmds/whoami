@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'whoami'
+
+# the command's description
+echo "This command prints the username (login name) whoever is currently logged in."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "whoami"
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "whoami"
+echo "Will print the username of the currently logged in user."
+
+
+exit 0

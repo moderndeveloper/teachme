@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'git rebase'
+
+# the command's description
+echo "Rebasing is the process of moving a branch to a new base commit. Rebasing involves moving a branch from one commit to another. Internally, Git accomplishes this by creating new commits (replacing the commits from the branch being moved) and applying them to the specified base, literally rewriting the project history.
+
+The primary reason for rebasing is to maintain a linear project history and is a common way to integrate upstream changes into your local repository."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo
+echo "git rebase [-i] [option] [base]"
+echo -e "\t[-i] - Sets up git for an interactive rebase."
+echo -e "\t[option] - A command option or command flag."
+echo -e "\t[option: --continue] - Restarts the rebasing process after a merge conflict has been resolved."
+echo -e "\t[option: --abort] - Abandon the current rebasing process and return the repository to its prior state."
+echo -e "\t[base]: Any kind of commit reference (an ID, a branch name, a tag, or a relative reference to HEAD)."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git rebase mybranch"
+echo "This command will set the current branch to mybranch. It doesn't merely switch between branches, but rewrites your commit history to that of mybranch."
+
+# example 2
+echo "git -i rebase f48d47c"
+echo "Will set the current branch's commit base to commit f48d47c. Because the -i flag is specified git will be rebasing interactively, which means we can choose how each commit is transferred to the new base."
+
+
+exit 0

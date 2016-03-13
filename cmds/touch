@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'touch'
+
+# the command's description
+echo "The touch command is used to update the modification and access times of files to the current system time. If the specified file to the touch command does not already exist, touch will create an empty file with that name."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "touch [option] [filename(s)]"
+echo -e "\t[option]: A command option or command flag."
+echo -e "\t[option: -a]: Only change the access time."
+echo -e "\t[option: -m]: Only change the modification time."
+echo -e "\t[option: -r]: Use the timestamp of the file that follows this flag."
+echo -e "\t[option: -d]: Set the last access time to a specified timestamp."
+echo -e "\t[filename(s)]: Path(s) of file(s) to be modified or created if the file(s) doesn't exist yet."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "touch file.txt"
+echo "If file.txt exists, touch updates its access and modification times to the current time. If file.txt doesn't exist, it creates a new, empty file."
+
+# example 2
+echo "touch file1.txt file2.txt file3.txt"
+echo "This will update the access times of multiple files. If any of these files do not exist a new empty file will be created."
+
+# example 3
+echo "touch -am file3.txt"
+echo "Is the target -a changes the access time and -m changes the the modification time, so both are changed in file3.txt"
+
+#example 4
+echo "touch -r file4.txt file5.txt"
+echo "-r takes the timestamp from file4.txt and applies it to file5.txt, instead of using the current time"
+
+#example 5
+echo "touch -r file4.txt -B 30 file5.txt"
+echo "Modifies the timestamp by going backwards a specified amount, in this case back 30 seconds."
+
+#example 6
+echo "touch -r file4.txt -F 30 file5.txt"
+echo "Modifies the timestamp by going forwards a specified amount, in this case forward 30 seconds."
+
+#example 7
+echo "touch -d '1 May 2015 10:22' file8"
+echo "-d changes the last accessed time to the specified time, in this case 10:22am, May 1st, 2015. If a partial date is"
+
+#example 8
+echo "touch -d '1 May 2015 10:22' file8"
+echo "-d changes the last accessed time to the specified time, in this case 10:22am, May 1st, 2015."
+
+#example 9
+echo "touch -d '15 May' file8"
+echo "If a partial date is provided the time will be set to 0:00"
+
+exit 0

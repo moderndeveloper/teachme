@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'mv'
+
+# the command's description
+echo "The mv command is used to rename and move files or directories. The mv command is very similar to the cp command, but it DOES NOT create a copy of files or directories, it simply moves and renames them. This distinction is important to take note of."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "mv [options] [source] [destination]"
+echo -e "\t[options]: A command option or command flag."
+echo -e "\t[options: -f]: No warning is shown if files will be overwritten."
+echo -e "\t[options: -i]: Will prompt a warning and ask permission if a file will be overwritten. If permission is denied, the file is skipped "
+echo -e "\t[options: -n]: Tells mv to not overwrite any files."
+echo -e "\t[source]: File(s) and/or folder(s) to be removed and/or renamed."
+echo -e "\t[destination]: Destined place or name of file(s) and/or folder(s) specified in the [source]."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "mv myfile.txt ../"
+echo "Moves myfile.txt to the parent directory."
+
+# example 2
+echo "mv file1.txt file2.txt"
+echo "Renames file1.txt to file2.txt in the same directory."
+
+# example 3
+echo "mv * /home/jackson"
+echo "Move all files in the current directory to the specified destination."
+
+# example 4
+echo "mv -i file1.txt directory"
+echo "If there is a copy of a file it will print 'overwrite directory/file1.txt? (y/n [n])'. -i makes it interactive, prompting you if a file of the same name already exists."
+
+# example 5
+echo "mv -f file.txt destination/"
+echo "mv will move the file(s) without prompting even if it is writing over an existing target."
+
+# example 6
+echo "mv -b filte.txt "
+echo "Modifies the timestamp by going forwards a specified amount, in this case forward 30 seconds."
+
+#example 7
+echo "mv -v * /home/jackson"
+echo "-v tells mv to be verbose and display the name of each file and its destination before moving it."
+
+# example 8
+echo "mv -u * /home/jackson"
+echo "This will only perform an update if the source is newer than the destination."
+
+# example 9
+echo "mv -n *.txt /home/pungki/office"
+echo "-n will prevent any files from being overwritten."
+
+exit 0

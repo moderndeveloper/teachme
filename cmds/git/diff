@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'git diff'
+
+# the command's description
+echo "The git diff command lets you compare different versions of your files. It is most commonly used to see what changes you made since your last commit. 
+
+You can also compare files between two different commits. Every commit in Git has a commit id, which you can get with the git log command. You can use these ids to compare the differences bewteen the current state of the repository as well as other commits."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo
+echo "git diff [option] [branch1/commit1] [branch2/commit2]"
+echo -e "\t[option] - A command option or command flag."
+echo -e "\t[option: --stat] - Enable git diff to show only the stats of the file changes since the last commit."
+echo -e "\t[branch1/commit1] - The name of a branch or SHA (unique ID) of a commit to be compared to branch2 and commit2 respectively."
+echo -e "\t[branch2/commit2] - The name of a branch or SHA of a commit to be compared to branch1 and commit1 respectively."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git diff HEAD file1"
+echo "This will compare file1 from your working directory with the local repository (which HEAD is a pointer to)."
+
+# example 2
+echo "git diff file1"
+echo "This will compare file1 from your working directory with the stage (or index)."
+
+# example 3
+echo "git diff --cached"
+echo "The --cached option will allow you to view staged changes ready for the next commit compared to the a specified commit. Typically, you want to compare with the latest commit, which is why we don't specify a commit to compare to here. The latest commit will be used for comparison by default."
+
+exit 0

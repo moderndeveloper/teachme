@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'chmod'
+
+# the command's description
+echo "The chmod command allows you to change the read/write/execute permissions of files and folders."
+
+echo "------------"
+
+# the command's syntax
+echo "chmod [option] [who]=[opcode][permission(s)] [file(s)]"
+
+echo -e "\t[option] - A command option or command flag specifying how the command will be executed."
+echo -e "\t[option: -R] - Changes the permissions recursively for all files inside any specified directories."
+echo -e "\t[who] - Who's permissions will be altered. User(u), Group(g), Other(o), or All (a)."
+echo -e "\t[opcode] - Specifies whether to add (+), remove (-), or assign and remove all other permissions (=)."
+echo -e "\t[permission(s)] - Specifies what permissions the command will be targeting: read(r), write (w), and execute(x)."
+echo -e "\t[file(s)] - The file(s) on which the permission changes will be applied to."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "chmod u+x myFile"
+echo "Change myFile execution permission so that only the user can execute it."
+
+echo "chmod a+x myFile"
+echo "Change myFile execution permission so that anyone can execute it."
+
+# example 3
+echo "chmod u-rx myFile"
+echo "Change myFile read and write permission so that the user can't read and write to it."
+
+# example 4
+echo "chmod --reference=file1 file2"
+echo "Change file2 read/write and execute permission to be the same as file1."
+
+# example 5
+echo "chmod -R 777 myDir/"
+echo "Change the read/write and execute permission of all files recursively into the specified directory."
+
+exit 0

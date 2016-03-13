@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'clear'
+
+# the command's description
+echo "The clear command clears previous input/output from the terminal window.
+
+Note that clear does not undo any actions, nor deletes input/output. Cleared input/output can be viewed by scrolling back up or using certain keyboard combinations, depending on the system being used."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "clear"
+echo -e "\tThis command accepts neither options nor arguments. Simply use as stated."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "clear"
+echo "Clears all previous input/output from the terminal window."
+
+exit 0

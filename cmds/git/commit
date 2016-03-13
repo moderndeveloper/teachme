@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'git commit'
+
+# the command's description
+echo "git commit adds the latest version of your staged files to the project's version control.
+
+Commits are made to the local repository, not the remote repository (which would require a git push)."
+
+echo "------------"
+
+# the command's syntax
+echo "git commit [option] [filename(s)]"
+
+echo -e "\t[option] - A command option or command flag specifiying how the staged filechanges will be committed."
+echo -e "\t[option: -m] - Allows the user to provide a committ message on the command line."
+echo -e "\t[option: -a] - Only commits files that have previously been committed."
+echo -e "\t[filename(s)] - Files are given on the command line, the command commits the contents of the named files, without recording the changes that are already staged. By default all staged files will be committed."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git commit"
+echo "Adds the latest version of the staged files to the project's version control, an editor will open for the user to input the commit message."
+
+# example 2
+echo "git commit -m \"my commit message\""
+echo "Adds the latest version of the staged files to the project's version control, and use the -m option to provide the commit message on the command line."
+
+# example 3
+echo "git commit -a"
+echo "Instead of running git add, the -a option allows git to add only that is previously tracked - that is files that were in the last commit and has since been modified."
+
+# example 4
+echo "git commit -am \"my commit message\""
+echo "Runs git commit -a and git commit -m together in one command so that tracked files that has since been modified can be added into the project's version control."
+
+exit 0

@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'cp'
+
+# the command's description
+echo "The cp command is used to make a copy of files and directories. The copies that are made are considered indepent from the originals, meaning that any changes made in the original will not affect the copy.
+
+When a copy is made of a file or directory, the copy must have a different name than the original if it's to be placed in the same directory as the original. However, the copy can have the same name if it is made in a different directory."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo
+echo "cp [option] [source] [destination]"
+echo -e "\t[option] - A command option or command flag."
+echo -e "\t[option: -R] - Enable cp to copy the entire directory from one place to another recursively."
+echo -e "\t[option: -s] - Enable cp to create a symbolic link, where \033[4mdestination.txt\033[0m points to \033[4msource.txt\033[0m."
+echo -e "\t[source] - Path of source file to be copied or symbolic linked."
+echo -e "\t[destination] - Path of destination to where source file should be copied or symbolic linked to."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "cp filename nameofcopy"
+echo "This will make a copy of your file in the current directory, hence a different name is needed."
+
+# example 2
+echo "cp filename directory"
+echo "This will make a copy in the specified directory."
+
+# example 3
+echo "cp filename .."
+echo "This will make a copy in the parent directory of the current directory."
+
+# example 4
+echo "cp ../filename ."
+echo "This will make a copy from a file in the parent directory to the current directory."
+
+# example 5
+echo "cp -R /folder1 /folder2 ~/Desktop"
+echo "This will make a copy of folder1 and folder2 and place them in the in the Desktop directory of the current user. The -R flag is needed for copying folders."
+
+# example 6
+echo "cp *.jpg /pics"
+echo "This will make a copy of all .jpg files and save them in the /pics directory."
+
+exit 0

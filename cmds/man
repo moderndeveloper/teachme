@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'man'
+
+# the command's description
+echo "The man command provides an interface or way to view and format man pages. A man page is simply a user manual that provides extensive documentation about the operating system and various commands that are available on the system.
+
+A man page can be easily quit by pressing the "q" key."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "man [options] [command]"
+echo -e "\t[options]: A command option or command flag."
+echo -e "\t[options: a]: By default man display only the man page of the first man page of [command] it finds. With the -a option, all man pages that match [command] will be displayed."
+echo -e "\t[options: k]: Searches for man pages that have occurences of the keyword that's specified after this flag."
+echo -e "\t[command]: The command whose man page will be requested."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "man ls"
+echo "Will show information on the following command. 'man man' would provide a man page for the man command."
+
+# example 2
+echo "man --nh --nj man"
+echo "View the manual page for man, with no hyphenated words or justified lines"
+
+# example 3
+echo "man 5 passwd"
+echo "Will display section 5 of the man page for the command passwd"
+
+#example 4
+echo "man -a printf"
+echo "Forces man to display all the manual pages (sections) with names that match the search criteria."
+
+#example 5
+echo "man -aw printf"
+echo "Will list all the available sections for the chosen topic, but not display the actual man page(s)."
+
+#example 6
+echo "man -k printf"
+echo "This command will search for the keyword “printf” as regular expression and display all the man pages that matches the keyword"
+exit 0

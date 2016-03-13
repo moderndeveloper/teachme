@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+# The concepts's name
+echo -e 'for'
+
+# the concept's description
+echo "The for command is used to execute a for loop. A for loop operates on an array or a list of items repeating a set of commands for every item in the list. A for command can also be used to iterate through a numeric range."
+
+echo "------------"
+
+# the concept's syntax
+echo -e "Syntax:\n"
+echo -e "for i in \$( ls ); 
+do
+  [command]
+  echo item: \$i\n
+done"
+echo -e "\n\ti: Is the variable that will take the different values of \$( ls )."
+echo -e "\n\t\$( ls ): Is the item that will be interated through. This can be an array or a list of words separated by a space. "
+echo -e "\n\tdo: This indicates the beginning of the commands that will be run in the for loop."
+echo -e "\n\t[command]: This is a placeholder for a command. Any bash command can be placed within the loop. There is no limit to the number of commands you can have run in a loop."
+echo -e "\n\t\$i: You can grab the value of the present item in the list by calling the variable using the \$ symbol."
+echo -e "\n\tdone: This indicates the end of the loop. The commands will loop through until reaching the end of the list."
+
+echo "------------"
+
+# the concept's usage examples
+# example 1
+echo -e "for i in \$( ls ); do echo item: \$i\n; done"
+echo "This example is the same as the for loop in the syntax section, but does everything on one line. It loops through all the filesystem objects (files, directories, ...) and echoes every item in a list."
+
+# example 2
+echo -e "for i do
+			sum=$(($sum+$i))
+		  done
+		  printf \"$sum\n""
+echo "This loop is part of script that accepts an arbitrary number of integers. It then calculates and prints the sum of the integers. Note that no range for the loop is specified. for loops use the number of arguments of a script as the default range to loop through if no range is specified."
+
+
+exit 0

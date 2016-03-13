@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'git add'
+
+# the command's description
+echo "The git add command adds changes made in the working directory to the staging area. git add tells git that you want to include a file or update a file in the next commit.
+
+Files added to the staging area via git add are waiting to be snapshot or committed via the git commit command. Once the files are added to the staging area via git add, git status can be used to view the state of the working directory and staging area."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "git add [file(s)/folder(s)/options]"
+echo -e "\t[file(s)/folder(s)]: Path of file(s)/folder(s) to be added to the stage. A dot (.) will add all the present working directory's contect recursively to the stage."
+echo -e "\t[option: -A]: To match the stage (or index) with all files in the working tree, add the -A option."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git add README.md file.txt"
+echo "Will add all the specified files to the staging area."
+
+# example 2
+echo "git add ."
+echo "This will recursively add all files and subdirectories in the working directory to the staging area."
+
+# example 3
+echo "git add -A"
+echo "Will add all files and paths in the working directory to the staging area."
+
+
+exit 0

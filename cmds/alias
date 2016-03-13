@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'alias'
+
+# the command's description
+echo "The alias command allows you to create aliases, or shorthand commands, of any other long, complex, commonly used commands."
+
+echo "------------"
+
+# the command's syntax
+echo "alias [name]=[command]"
+echo -e "\t[name] - The name of the alias you would like to use for your given command."
+echo -e "\t[command] - The command for which you would like to create an alias."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "alias cls=\"clear\""
+echo "Creates an alias called cls that points to the command clear."
+
+# example 2
+echo "alias ..=\"cd ..\""
+echo "Creates an alias called .. that cd's one directory up."
+
+# example 3
+echo "alias subl=\"C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe\""
+echo "Creates an alias called subl that launches the SublimeText text editor from the terminal."
+
+exit 0

@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'pwd'
+
+# the command's description
+echo "The pwd command returns the full pathname of your current location in the filesystem or working directory. Your working directory is the location from which your commands are being executed."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "pwd [option]"
+echo -e "\t[option] - A command option or command flag"
+echo -e "\t[option: -P] - Print a fully resolved name for the current directory, in which all components of the name are actual directory names, and not symbolic links)"
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "pwd"
+echo "Outputs the absolute pathname of the current working directory."
+
+# example 2
+echo "pwd -P"
+echo "Outputs the absolute pathname of the current working directory while resolving any symbolic links involved."
+
+
+exit 0

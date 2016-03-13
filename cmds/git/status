@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'git status'
+
+# the command's description
+echo "git status displays changes in the state of your working tree and stage.
+
+It makes notice of the following:
+
+-Files that were added to the working tree after the git repository was initialized, also known as untracked files
+-Files that were already tracked, but not staged, and have changed since
+-Files that were already tracked and staged, and have changed since the last git commit
+"
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "git status [option(s)] [path]"
+echo -e "\t[option(s)] - The command options or command flags you wish to execute to alter the output of the repositories status."
+echo -e "\t[option(s): -s] - Displays the status of the repository in short format."
+echo -e "\t[path] - Display the status of the file(s) at the specified path. By default displays the status of the entire repository."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git status"
+echo "Displays the state of the working tree and staging area in the long format. Similar as running git status --long."
+
+# example 2
+echo "git status -s"
+echo "Displays the state of the working tree and staging area in the short format."
+
+# example 3
+echo "git status /path/to/directory"
+echo "Displays the state of the specified directory and the staging area."
+
+exit 0

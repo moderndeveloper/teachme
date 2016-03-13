@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'cd'
+
+# the command's description
+echo "The cd command changes your present location in the filesystem or working directory to the specified destination, either an absolute or relative file path."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "cd [option] [directory]"
+echo -e "\t[option] - A command option or command flag."
+echo -e "\t[option: -P] - Only change into the specified directory if it actually exists as named."
+echo -e "\t[directory] - The directory filepath you wish to change to."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "cd /path/to/directory"
+echo "Changes the current working directory to the directory specified."
+
+# example 2
+echo "cd -P /path/to/directory"
+echo "Changes the current working directory to the directory specified while resolving any symbolic links involved."
+
+
+exit 0

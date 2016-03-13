@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'ssh'
+
+# the command's description
+echo "SSH stands for Secure Shell, which is a protocol for remote logins. The ssh command is a tool for connecting to remote systems using the SSH protocol. Once the user is logged into the remote system, they are free to execute commands on the remote machine."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "ssh [options] [remote host]"
+echo -e "\t[options]: A command option or command flag."
+echo -e "\t:[remote host] - IP address or domain name that you're trying to connect to."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "ssh stanford.edu"
+echo "Login to a remote host on which you have an account under the same user name as the host you're currently logged into."
+
+# example 2
+echo "ssh username@stanford.edu"
+echo "Login to a remote host on which you have an account under a different user name than the host you're current logged into."
+
+# example 3
+echo "ssh -V"
+echo "Identify ssh client version."
+exit 0

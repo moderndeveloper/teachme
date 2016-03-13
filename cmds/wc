@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'wc'
+
+# the command's description
+echo "The wc command, also now as word count, by default counts the number of lines, words, and characters in a given set of text. wc prints newline, word, and byte counts for each file provided, and a total if more than one file is specified.
+
+wc defines a word as ay set of letters, numbers and/or symbols which are separated from other characters by one or more spaces, tabs and/or newline characters (which are generated when the RETURN key is pressed). When counting the number of characters, all characters are counted, not only letters, numbers and symbols, but also spaces, tabs and newline characters. A line is only counted if it ends with a newline character."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo
+echo "wc [option] [file]"
+echo -e "\t[option] - a command option or command flag."
+echo -e "\t[option: -l] - Enable wc to print the number of newlines."
+echo -e "\t[option: -w] - Enable wc to print the word count of a file."
+echo -e "\t[option: -c] - Enable wc to print the total number of bytes in a file."
+echo -e "\t[file] - The file where wc will be performed."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "wc file.txt"
+echo "This will output information about file.txt. The output will resemble the following: 
+3 16 60 file.txt. Here 3 is the number of lines, 16 the number of words, 60 the number of characters."
+
+# example 2
+echo "wc -w file.txt"
+echo "This command will output only the word count of file.txt."
+
+
+exit 0

@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'git rm'
+
+# the command's description
+echo "The git rm command removes files from the staging area and the working directory, so that they will no longer be tracked by git.
+
+This command differs from the command rm. Whereas rm only deletes a file in the working directory, git still keeps it in the staging area."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "git rm [options] [file(s)/folder(s)]"
+echo -e "\t[options]: A command option or command flag."
+echo -e "\t[options: -f]: Forcefully deletes the specified file/folder from the working directory and index without warnings."
+echo -e "\t[options: --cached]: This option allows you to delete a file/folder from a repository, without deleting it from the local filesystem."
+echo -e "\t[file(s)/folder(s)]: Path of file(s)/folder(s) to be deleted."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git rm file.txt"
+echo "This will remove the file from the working directory and stage while simultaneously staging the deletion, making the change ready to be committed in one command."
+
+# example 2
+echo "git rm -f sample.txt"
+echo "-f will allow you to remove a file that has unstaged changes to it."
+
+# example 3
+echo "git rm --cached file.txt"
+echo "Will remove file.txt from the stage, but not from your local filesystem."
+
+exit 0

@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'git log'
+
+# the command's description
+echo "git log allows you to look back at a repository's commit history. It lists all the commits made in that repository in reverse chronological order – meaning the most recent commits show up first. 
+
+By default the command lists each commit with its SHA-1 checksum (the cyrptographic hash used to identify the commit, simply the commit id number), the author’s name and email, the date written, and the commit message. 
+
+There is a large variety of options for presenting commit information through the use of flags."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "git log [options] [time frame]"
+echo -e "\t[option] - A command option or command flag."
+echo -e "\t[option: -3] - The number of outputs git log will display."
+echo -e "\t[option: --graph] - Enable git log to show the commit history in a graph."
+echo -e "\t[time frame: --after=<date>] - Enable git log to show only the commits after a specific date."
+echo -e "\t[time frame: --before=<date>] - Enable git log to show only the commits before a specific date."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git log"
+echo "This will show the logs of your commits."
+
+# example 2
+echo "git log -3"
+echo "This will show the logs of the last three commits."
+
+# example 3
+echo "git log --before=\"2016-03-01\""
+echo "This will show the logs of commits made before March 1, 2016."
+
+exit 0

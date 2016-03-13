@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+# The concepts's name
+echo -e 'while'
+
+# the concept's description
+echo "The while command allows you to execute a 'While' loop, which executes one or many commands until the supplied condition no longer holds true. It is usually used when you need to manipulate the value of a variable repeatedly."
+
+echo "------------"
+
+# the concept's syntax
+echo -e "Syntax:"
+echo -e " 
+COUNTER=0
+while [ condition ]; do
+  [command]
+done
+"
+echo -e "\n\t[  condition ]: This is a statement that will either evaluate to true or false. If true the loop will run, if false the loop will not run. As long as the condition remains true the loop will run (forever potentially, be careful though as this causes time outs and prevent anything from running). "
+echo -e "\n\t[command]: This is a placeholder for a command. Any bash command can be placed within the loop. There is no limit to the number of commands you can have run in a loop."
+echo -e "\n\tdone: This indicates the end of the loop. The commands will loop through until the condition is no longer true."
+
+
+# the concept's usage examples
+# example 1
+echo -e " 
+COUNTER=0
+while [  \$COUNTER -lt 10 ]; do
+  echo Count Down \$COUNTER
+  let COUNTER=COUNTER+1 
+done
+"
+echo "We set the COUNTER variable to 0. After this the loop starts and prints Count Down followed by the current value of COUNTER. Then it increases COUNTER's count by 1 and continues this process until the condition breaks (so until COUNTER is less than 10)."
+
+exit 0

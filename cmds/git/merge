@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'git merge'
+
+# the command's description
+echo "Merging takes the changes from one branch (in the same repository or from a fork), and applies them into another. This often happens as a pull request (a request to merge), or via the command line, but can also be done by using the merge command.
+
+Merge is a non-destrucitve operation that ties together the histories of both branches. It's non-destructive in that the existing branches are not changed in any way, allowing you to go back to previous commits on either of the branches if neccesary."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "git merge [option] [branch_name]"
+echo -e "\t[option] - A command option or command flag."
+echo -e "\t[option: --no-edit] - Use git merge with the auto-generated merge commit message."
+echo -e "\t[option: --edit] - Will invoke an editor before committing a merge to edit the auto-generated merge comment, so that the user can explain and justify the merge."
+echo -e "\t[option: --no-commit] - Enable git merge to merge only and not make a new commit automatically."
+echo -e "\t[option: -e] - Enable git merge to open an editor before committing to edit the auto-generated merge commit message."
+echo -e "\t[branch_name] - The specified branch to merge into the current branch."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git merge improve-readme"
+echo "This will merge the improve-readme, possibly used to improve the repository's README file, with the master branch."
+
+# example 2
+echo "git merge --no-commit improve-readme"
+echo "This example does the same thing as the above example. However, the merge will not be automatically committed, to give the user a chance to inspect and further optimize the merge before committing."
+
+# example 3
+echo "git merge --edit improve-readme"
+echo "Specifying the --edit option will start an editor to provide an explanation for the merge."
+
+exit 0

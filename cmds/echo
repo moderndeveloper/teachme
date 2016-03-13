@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'echo'
+
+# the command's description
+echo "Echo is used to display its argument(s) back to the terminal window (standard output). It is a command typically used in shell scripts and bash files to output status text to the screen or a file."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo
+echo "echo [option] [\"string\"]"
+echo -e "\t[option] - A command option or command flag."
+echo -e "\t[option: -e] - Enable echo to interpret backslash as escaped characters."
+echo -e "\t[option: -n] - Disable echo from echoing trailing new line."
+echo -e "\t[\"string\"] - The string where echo outputs."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "echo -e \"This\nwill\nprint\nevery\nword\non\na\nnew\nline\n.\""
+echo "As the echo argument tells, this command will output every word in the phrase on a new line, thanks to the newline character (\n)."
+
+# example 2
+echo "echo -n \"Test ouput\"" 
+echo "There will be no new line after the output of this command."
+
+exit 0
+
+
+```bash
+
+
+```

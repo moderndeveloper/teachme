@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'ping'
+
+# the command's description
+echo "The ping command is used to test the connection between a local computer/server and a remote server or host.
+
+Aside from checking connectivity, ping also tests the speed and reliability of a connection."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "ping [options] [destination]"
+echo -e "\t[options] - The command options or command flags you wish to execute."
+echo -e "\t[options: -c num] - Sends 'num' packets to the specified destination."
+echo -e "\t[options: -a] - Will generate an audible ping if the destination is reachable."
+echo -e "\t[options: -s num] - Changes the packet size to 'num'."
+echo -e "\t[destination] - The URL where you wish to send or receive network data"
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "ping study.moderndeveloper.com"
+echo "ping the host study.moderndeveloper.com to check whether it is alive."
+
+# example 2
+echo "ping -c 5 study.moderndeveloper.com"
+echo "Sends 5 packets to the host study.moderndeveloper.com then stop. The command automatically exits after sending the 5 packets."
+
+# example 3
+echo "ping -a study.moderndeveloper.com"
+echo "Audible ping, the terminal will beep if the host study.moderndeveloper.com is reachable."
+
+# example 4
+echo "ping -s 88 study.moderndeveloper.com"
+echo "Change the ping packet size from the default of 56 to 88."
+
+exit 0

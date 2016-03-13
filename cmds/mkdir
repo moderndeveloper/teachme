@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+# The command's name
+echo -e 'mkdir'
+
+# the command's description
+echo "The mkdir command creates a new directory or folder. If no path is specified in front of the directory name, the directory will be created in the present working directory."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "mkdir [option] [directory_name(s)]"
+echo -e "\t[option] - A command option or command flag."
+echo -e "\t[option: -p] - Create directories recursively if the specified parent directories do not exist."
+echo -e "\t[option: -m] - Allows you to set the permissions of the created directory. See chmod for permission syntax."
+echo -e "\t[directory_name(s)] - the directory(s) filepaths and names you wish to create."
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "mkdir dir1"
+echo "Creates a new directory called mydir1."
+
+# example 2
+echo "mkdir dir1 dir2 dir3"
+echo "Creates multiple directories at once, namely dir1, dir2 and dir3."
+
+# example 3
+echo "mkdir -p /a/b/c"
+echo "Recursively creates a directory called c. If the parent directory of a and b does not already exists, mkdir will create those directory first."
+
+# example 4
+echo "mkdir -m a=rwx dir1"
+echo "Creates a directory called dir1 and set its permission so that all users may read, write and execute the contents."
+
+exit 0
