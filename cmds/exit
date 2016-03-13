@@ -26,9 +26,8 @@ echo -e "\n------------"
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
 echo -e "\n\texit [${underline}n${normal}]"
 echo -e "\t\t${underline}n${normal}: exit code number. Exit code number can have values form 0 to 255."
-echo -e "\t\tIf no exit code number is provided to the 'exit' command it will default"
-echo -e "\t\tto 0, i.e. 'success'. Any number above 0 is considered to be error."
-echo -e "\t\tSome reserved exit codes:"
+echo -e "\t\t   Any number above 0 is considered to be error."
+echo -e "\n\t\tSome reserved exit codes:"
 echo -e "\t\t\t0 - the command executed successfully"
 echo -e "\t\t\t1 - there was an error executing the command"
 echo -e "\t\t\t126 - a file to be executed was found, but it was not an executable utility"
@@ -41,13 +40,13 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\texit 0"
-echo -e "\t\t0 means normal shell exit,and create a shell script called exitcmd.sh"
+echo -e "\n\texit 0"
+echo -e "\n\t\t0 means normal shell exit."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\texit "
-echo -e "\t\tif the number is omitted, the exit status is that of last command executed.\n"
+echo -e "\n\texit "
+echo -e "\n\t\tif the number is omitted, the exit status is that of last command executed.\n"
 
 #   ...      etc
 
