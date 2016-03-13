@@ -14,7 +14,6 @@ echo "cd [option] [directory]"
 echo -e "\t[option] - A command option or command flag."
 echo -e "\t[option: -P] - Only change into the specified directory if it actually exists as named."
 echo -e "\t[directory] - The directory filepath you wish to change to."
-#   ...      etc
 
 echo "------------"
 
