@@ -38,19 +38,20 @@ echo -e "\t9   Kernel routines [Non standard]"
 
 echo -e "\n\tEach manual page consists of several sections. Conventional  section names include:"
 echo -e "\t${bold}NAME, SYNOPSIS, CONFIGURATION, DESCRIPTION, OPTIONS, EXIT STATUS, RETURN VALUE,${normal}"
-echo -e "\t${bold}ERRORS, ENVIRONMENT, FILES, VERSIONS, CONFORMING TO, NOTES, BUGS, EXAMPLE, AUTHORS,${normal} and ${bold}SEE ALSO.${normal}"
+echo -e "\t${bold}ERRORS, ENVIRONMENT, FILES, VERSIONS, CONFORMING TO, NOTES, BUGS, EXAMPLE, AUTHORS,${normal}"
+echo -e "\tand ${bold}SEE ALSO.${normal}"
 
 echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
 echo -e "\n\tman [options] [[section] subjects]"
-echo -e "\t\t-d: printing debug info"
-echo -e "\t\t-f: searches the manual page names and displays the manual page descriptions of any name "
-echo -e "\t\tmatched."
-echo -e "\t\t-k keywords:search the short manual page descriptions for keywords and display any matches"
-echo -e "\t\t-M path:searches in the specified path instead of the MANPATH directories."
-echo -e "\t\tsection(1-9):the number represent the section of the command located."
+echo -e "\n\t\t-d:\t\tprinting debug info"
+echo -e "\t\t-f:\t\tsearches the manual page names and displays the manual page descriptions of"
+echo -e "\t\t\t\tany name matched."
+echo -e "\t\t-k keywords:\tsearch the short manual page descriptions for keywords and display any matches"
+echo -e "\t\t-M path:\tsearches in the specified path instead of the MANPATH directories."
+echo -e "\n\t\tsection(1-9):\tthe number represent the section of the command located."
 #   ...      etc
 
 echo -e "\n------------"
@@ -59,13 +60,13 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\tman -aw ls"
-echo -e "\t\tList all availale sections in a manual for 'ls' command."
+echo -e "\n\tman -aw ls"
+echo -e "\n\t\tList all availale sections in a manual for 'ls' command."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tman 5 passwd"
-echo -e "\t\tDisplay section 5 of manual page of '/etc/passwd' configuration file.\n"
+echo -e "\n\tman 5 passwd"
+echo -e "\n\t\tDisplay section 5 of manual page of '/etc/passwd' configuration file.\n"
 
 #   ...      etc
 
