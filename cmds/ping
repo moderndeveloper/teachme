@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+echo "This is the ping command."
+
+# The command's name
+echo -e 'ping'
+
+# the command's description
+echo "the ping command is used to send network data to and from other computers and networks. It is commonly used for testing purposes as it measures loss and time taken to receive/send network data. "
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "ping [ -LRUbdfnqrvVaAB] [ -c count] [ -i interval] [ -l preload] [ -p pattern] [ -s packetsize] [ -t ttl] [ -w deadline] [ -F flowlabel] [ -I interface] [ -M hint] [ -Q tos] [ -S sndbuf] [ -T timestamp option] [ -W timeout] [ hop ...] destination
+"
+echo "ping i <NUM> <address>"
+echo -e "\ti: this option determines the interval between pings set by <NUM>. If NUM was 5 then the ping would be executed once every 5 seconds."
+echo -e "\t<address>: This is the network location that we would like to ping. eg. http://google.com"
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+#example 1
+echo "ping google.com"
+echo "PING google.com (172.217.2.14): 56 data bytes"
+echo "64 bytes from 172.217.2.14: icmp_seq=0 ttl=57 time=16.856 ms"
+echo "..."
+#example 2
+echo "ping -c 2 google.com"
+echo "PING google.com (172.217.2.14): 56 data bytes"
+echo "64 bytes from 172.217.2.14: icmp_seq=0 ttl=57 time=17.605 ms"
+echo "64 bytes from 172.217.2.14: icmp_seq=1 ttl=57 time=20.568 ms"
+echo "--- google.com ping statistics ---"
+echo "2 packets transmitted, 2 packets received, 0.0% packet loss"
+echo "round-trip min/avg/max/stddev = 17.605/19.087/20.568/1.482 ms"
+
+
+exit 0
