@@ -13,13 +13,10 @@ echo "------------"
 # the command's syntax
 echo "Syntax:"
 echo "ping [options] [destination]"
-
 echo -e "\t[options] - The command options or command flags you wish to execute."
 echo -e "\t[options: -c num] - Sends 'num' packets to the specified destination."
 echo -e "\t[options: -a] - Will generate an audible ping if the destination is reachable."
 echo -e "\t[options: -s num] - Changes the packet size to 'num'."
-
-
 echo -e "\t[destination] - The URL where you wish to send or receive network data"
 
 echo "------------"
