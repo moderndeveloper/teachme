@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+echo "This is the echo command."
+
+# The command's name
+echo -e 'echo'
+
+# the command's description
+echo "echo is a command to display a string on the terminal."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "echo [options] <string>"
+echo -e "\t-e: Enables interpretation of backslash escapes."
+echo -e "\t-n: Does not output the trailing new line"
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "echo Hello World"
+echo "This command will print the string 'Hello World' to the terminal."
+
+# example 2
+echo "echo -e We'd love to \n run around the yard."
+echo "Using -e allows us to interpret the \n as a new line.This will output everything before the \n on the first line and everything after the \n on the second line. "
+
+
+exit 0
