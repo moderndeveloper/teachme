@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+echo "This is the wc command."
+
+# The command's name
+echo -e 'wc'
+
+# the command's description
+echo "This command prints the amount of new lines, words and bytes contained within a file. If more than one file is specified, it gives a total count for all the files. The output is similar to a table and counts are always in the following order: newline, word, character, byte, maximum line length. "
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "$ wc [OPTION]... [FILE]..."
+echo -e "\$ wc -c: print the byte counts."
+echo -e "\$ wc -m: print the character counts."
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "wc -w playlist.txt"
+echo "output only the word count in playlist.txt"
+
+# example 2
+echo "wc -m twitter.txt"
+echo "output only the character count in twitter.txt "
+
+
+exit 0
