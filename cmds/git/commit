@@ -16,7 +16,6 @@ echo "git commit [option] [filename(s)]"
 echo -e "\t[option] - A command option or command flag specifiying how the staged filechanges will be committed."
 echo -e "\t[option: -m] - Allows the user to provide a committ message on the command line."
 echo -e "\t[option: -a] - Only commits files that have previously been committed."
-
 echo -e "\t[filename(s)] - Files are given on the command line, the command commits the contents of the named files, without recording the changes that are already staged. By default all staged files will be committed."
 
 echo "------------"
