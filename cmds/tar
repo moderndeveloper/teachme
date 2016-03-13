@@ -10,7 +10,7 @@ normal="\033[0m"
 
 # The command's name
 echo -e "\n${bold}COMMAND NAME:${normal}"
-echo -e "\n\t${bold}tar${normal}"
+echo -e "\n\t${bold}tar${normal} - tape archive"
 
 echo -e "\n------------"
 
@@ -19,7 +19,7 @@ echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
 
 echo -e "\n\ttar stands for tape archive. Originally, it was used to backup files to taped-based storage"
 echo -e "\tdevices. Nowadays, it is used to collect, distribute and archive files together with keeping"
-echo -e "\tfile system attributes such as user name, acess and modification dates, and directory"
+echo -e "\tfile system attributes such as user name, access and modification dates, and directory"
 echo -e "\tstructures. In short, tar is to combine a few files into a single file, for easy storage and distribution."
 
 echo -e "\n------------"
@@ -27,7 +27,7 @@ echo -e "\n------------"
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}:"
 echo -e "\n\ttar [options] archive-name files-to-archive"
-echo -e "\t\t-c: Create archive from the specified files."
+echo -e "\n\t\t-c: Create archive from the specified files."
 echo -e "\t\t-x: Extract the contents of a tar archive."
 echo -e "\t\t-t: List the contents of a tar archive."
 
