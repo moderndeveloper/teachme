@@ -13,15 +13,12 @@ echo "------------"
 # the command's syntax
 echo "Syntax:"
 echo "tar [option(s)] [archive_name] [file_name(s)]"
-
 echo -e "\t[option(s)] - The command options or command flags you wish to execute."
 echo -e "\t[option(s): -c] - Used to create a new archive."
 echo -e "\t[option(s): -x] - Used to extract the files from an existing archive."
 echo -e "\t[option(s): -c] - Used to create a new archive."
 echo -e "\t[option(s): -t] - Lists the content of the specified archive."
-
 echo -e "\t[archive_name] - The name of the archive file you wish to create."
-
 echo -e "\t[file_name(s)] - The name of all the files you wish to archive."
 
 echo "------------"
