@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+echo "This is the tar command."
+
+# The command's name
+echo -e 'tar'
+
+# the command's description
+echo "tar is an archiving utility command capable of manipulating files and directories and packaging them in to a single compressed file. It is useful for when archiving files/directories and extracting packaged contents such as .zip files."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "tar [-] A --catenate --concatenate | c --create | d --diff --compare | 
+    --delete | r --append | t --list | --test-label | u --update | 
+    x --extract --get [options] [pathname ...]"
+echo "tar -xf <file> -C <directory>"
+echo -e "\t-x: x is one of the function letter that tells the tar command how to behave. x makes the command do an extract."
+echo -e "\tf: f is one of the options of the tar command. It tells tar to perform the function specified by the preceding letter a named file."
+echo -e "\t-C: this is another option that tell the tar command to change to the specified directory before executing the preceding commands."
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "tar cf archive.tar text1.txt text2.txt"
+echo "create an archive.tar file for text1.txt and text2.txt file"
+
+#example 2
+echo "tar -xvzf archive.tar"
+echo "Extract archive.tar file"
+
+
+exit 0
