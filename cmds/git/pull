@@ -12,11 +12,8 @@ echo "------------"
 
 # the command's syntax
 echo "git pull [option(s)] [repository]"
-
 echo -e "\t[option(s)] - The command options or command flags you wish to execute to specify how the selected repository will be pulled."
 echo -e "\t[option(s) --rebase] -Uses git rebase instead of git merge when pulling. Look up git rebase for more information"
-
-
 echo -e "\t[repository] -The remote repository you wish to pull from and merge to the local copy."
 
 echo "------------"
