@@ -42,9 +42,9 @@ echo -e "\n\t\t${bold}-6${normal}: \tforces ssh to use IPv6 addresses only."
 echo -e "\n\t\t${bold}-C${normal}: \trequests compression of all data."
 echo -e "\n\t\t${bold}-c${normal}: \tselects the cipher specification for encrypting the session."
 echo -e "\n\t\t${bold}-l${normal} ${underline}login_name${normal}:"
-echo -e "\t\t\tspecifies the user to log in as on the remote machine."
+echo -e "\n\t\t\tspecifies the user to log in as on the remote machine."
 echo -e "\n\t\t${bold}-p${normal} ${underline}port${normal}:"
-echo -e "\t\t\tport to connect to on the remote host."
+echo -e "\n\t\t\tport to connect to on the remote host."
 #   ...      etc
 
 echo -e "\n------------"
@@ -53,13 +53,13 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\tssh -V"
-echo -e "\t\tthis command shows the corresponding version info about the ssh client"
+echo -e "\n\tssh -V"
+echo -e "\n\t\tthis command shows the corresponding version info about the ssh client"
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tssh $HOST 'ls;pwd'"
-echo -e "\t\tto run two commands on a remote server over SSH.\n"
+echo -e "\n\tssh $HOST 'ls;pwd'"
+echo -e "\n\t\tto run two commands on a remote server over SSH.\n"
 
 #   ...      etc
 
