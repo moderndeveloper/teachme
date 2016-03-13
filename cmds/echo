@@ -32,17 +32,17 @@ echo -e "\n------------"
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
 echo -e "\n\techo [SHORT-OPTION] [STRING]"
-echo -e "\t\t-n: don\'t output a trailing new line"
+echo -e "\n\t\t-n: don\'t output a trailing new line"
 echo -e "\t\t-e: enable interpretation of backslash escape sequences"
-echo -e "\t\t-E: disable interpretation of backslash escape sequences(this is the default)"
+echo -e "\t\t-E: disable interpretation of backslash escape sequences (this is the default)"
 echo -e "\n"
-echo -e "\t\tfor -e option,the following escape sequence are recognized."
-echo -e "\t\t\\\\\:a literal backslash character"
-echo -e "\t\t\\\\n:a new line"
-echo -e "\t\t\\\\t:a horizontal tab"
-echo -e "\t\t\\\\v:a vertical tab"
-echo -e "\t\t\\\\b:a backspace"
-echo -e "\t\t\\\\a:an alert"
+echo -e "\t\tfor -e option, the following escape sequence are recognized."
+echo -e "\n\t\t\\\\\: a literal backslash character"
+echo -e "\t\t\\\\n: a new line"
+echo -e "\t\t\\\\t: a horizontal tab"
+echo -e "\t\t\\\\v: a vertical tab"
+echo -e "\t\t\\\\b: a backspace"
+echo -e "\t\t\\\\a: an alert"
 #   ...      etc
 
 echo -e "\n------------"
@@ -51,13 +51,13 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\techo \"Hello World\""
-echo -e "\t\tOutputs 'Hello World' to terminal."
+echo -e "\n\techo \"Hello World\""
+echo -e "\n\t\tOutputs 'Hello World' to terminal."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\techo \$HOME"
-echo -e "\t\tPrint the value of \$HOME environment variable.\n"
+echo -e "\n\techo \$HOME"
+echo -e "\n\t\tPrint the value of \$HOME environment variable.\n"
 
 #   ...      etc
 
