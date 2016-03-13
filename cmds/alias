@@ -10,9 +10,7 @@ echo "------------"
 
 # the command's syntax
 echo "alias [name]=[command]"
-
 echo -e "\t[name] - The name of the alias you would like to use for your given command."
-
 echo -e "\t[command] - The command for which you would like to create an alias."
 
 echo "------------"
