@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+echo "This is the rm command."
+
+# The command's name
+echo -e 'rm'
+
+# the command's description
+echo "This command is used to remove a specified file or files. By default, it does not remove directories. It is important to note that the effects of the rm command cannot be reversed so one should be cautious when using it. This command usually deletes one file at a time however there is an option that allows this behaviour to change. It should also be noted that if the file to be deleted does not have write permissions, a prompt for confirmation is given before the command is executed."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "$ rm [OPTION]... FILE..."
+echo -e "\$ rm -i: Prompt before every removal."
+echo -e "\$ rm -r: Remove directories and their contents recursively."
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "rm receipt.txt"
+echo "remove the text file named receipt"
+
+# example 2
+echo "rm -i *.jpg"
+echo "interactively remove all .jpg files"
+
+
+exit 0
