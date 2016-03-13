@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+echo "This is the cp command."
+
+# The command's name
+echo -e 'cp'
+
+# the command's description
+echo "cp (copy) is a command to copy files or directories."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "cp [options] <source> <destination>"
+echo -e "\t-r: Copy directories recursively"
+echo -e "\t-t: Copy everything in <source> into <directory>"
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "cp main.js main1.js"
+echo "In this example, the cp command is used to make a copy of the main.js file and store it as main1.js "
+
+# example 2
+echo "cp ~/pictures/picture-*.jpg ~/picture-backup"
+echo "Here the cp command is used to copy multiple files and folders at once based on a pattern. The command is used to copy all the .jpg files that start with the word 'picture' from the pictures directory into the picture-backup directory."
+
+
+exit 0
