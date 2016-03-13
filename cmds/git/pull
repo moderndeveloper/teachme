@@ -27,10 +27,10 @@ echo -e "\n------------"
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
 echo -e "\n\tgit pull [options] [<repository>[<refspec]>...]"
-echo -e "\t\t--edit: invoke an editor before committing successful merge to further edit the"
-echo -e "\t\tauto-generated message, so that the user can explain and justify the merge. "
-echo -e "\t\t<repository>:  the remote repository is the source of a fetch or pull operation."
-echo -e "\t\t<refspec>:  specify which refs to fetch and which local refs to update."
+echo -e "\n\t\t--edit:\t\tinvoke an editor before committing successful merge to further edit the"
+echo -e "\t\t\t\tauto-generated message, so that the user can explain and justify the merge. "
+echo -e "\t\t<repository>:\tthe remote repository that is the source of a fetch or pull operation."
+echo -e "\t\t<refspec>:\tspecify which refs to fetch and which local refs to update."
 #   ...      etc
 
 echo -e "\n------------"
@@ -39,12 +39,13 @@ echo -e "\n------------"
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 # example 1
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\tgit pull -v"
-echo -e "\t\tUse -v option, for more verbose output."
+echo -e "\n\tgit pull -v"
+echo -e "\n\t\tUse -v option, for more verbose output."
+
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tgit pull [remote]"
-echo -e "\t\tUpdate your local repository to the newest commit from [remote] repository.\n"
+echo -e "\n\tgit pull [remote]"
+echo -e "\n\t\tUpdate your local repository to the newest commit from [remote] repository.\n"
 
 
 
