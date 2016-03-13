@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+echo "This is the more command."
+
+# The command's name
+echo -e 'more'
+
+# the command's description
+echo "more in a command to review the contents of a text file one screen at a time."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "more [options] <file>"
+echo -e "\t-p: Prevents scrolling but instead clears the screen and then outputs the text."
+echo -e "\t-d: Prompts the user with [Press space to continue or 'q' to quit] instead of alerting the user when an illegal key is pressed"
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "more +5 story.txt"
+echo "Using more, followed by a plus sign (+) and a number instructs the command to begin at the line specified by that number. In this case, the more command will show the contents of the file (story.txt), beginning at line 5. "
+
+# example 2
+echo "more -d about_me.txt"
+echo "Using more with the -d option shows additional information on how to navigate through the file contents being viewed. It instructs the user - [Press space to continue, 'q' to quit.]. This can be helpful for users who are unfamiliar with navigating through file content via the terminal."
+
+
+exit 0
