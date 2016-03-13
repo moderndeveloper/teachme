@@ -18,7 +18,6 @@ echo -e "\t[search option]: Option(s) to specify your search. Multiple options c
 echo -e "\t[search option: -name]: find will search for a specified name, which could be one or more letters, a file extension, letter pattern, etc."
 echo -e "\t[search option: -type]: find will search for folders or files, depending on the specified [search criteria]."
 echo -e "\t[search option: -mindepth/-maxdepth]: find will search only as 'deep' in the filesystem as specified in the [search criteria] for this option."
-
 echo -e "\t[search criteria]: The exact criteria for the earlier specified options."
 
 echo "------------"
