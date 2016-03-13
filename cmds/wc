@@ -15,7 +15,6 @@ echo "Syntax:"
 echo
 echo "wc [option] [file]"
 echo -e "\t[option] - a command option or command flag."
-
 echo -e "\t[option: -l] - Enable wc to print the number of newlines."
 echo -e "\t[option: -w] - Enable wc to print the word count of a file."
 echo -e "\t[option: -c] - Enable wc to print the total number of bytes in a file."
