@@ -13,17 +13,11 @@ echo "------------"
 # the command's syntax
 echo "Syntax:"
 echo "more [option] [-num line] [+/ pattern] [+ linenum] [file-name]"
-
 echo -e "\t[option] - A command option or command flag."
-
 echo -e "\t[filename] - The file whose contents you wish to display. If no file name is provided, more looks for input from standard input."
-
 echo -e "\t[-num line] - This options specifies the number of lines to be displayed of the file, 'line' is the number you would like to dispay"
-
 echo -e "\t[+/ pattern] - Where you place the regular expression of the pattern you are looking for."
-
 echo -e "\t[+ linenum] - If specified will display file content starting at the line number given."
-
 
 echo "------------"
 
