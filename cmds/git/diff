@@ -31,7 +31,7 @@ echo -e "\t\tfurther add to the index but you still haven’t."
 echo -e "\n\tgit diff [options] --cached [<commit>] [--] [<path>...]"
 echo -e "\n\t\tThis form is to view the changes you staged for the next commit relative to the named <commit>."
 echo -e "\n\tgit diff [options] <commit> <commit> [--] [<path>...]"
-echo -e "\n\t\tThis is to view the changes between two arbitrary <commit>."
+echo -e "\n\t\tThis is to view the changes between two arbitrary <commit> objects."
 echo -e "\n\tgit diff [options] [--no-index] [--] <path> <path>"
 echo -e "\n\t\tThis form is to compare the given two paths on the filesystem."
 
@@ -47,14 +47,14 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\tgit diff HEAD --myfile.txt"
-echo -e "\t\tthis command will show the difference between the myfile's change in the working directory and "
+echo -e "\n\tgit diff HEAD -- myfile.txt"
+echo -e "\n\t\tthis command will show the difference between the myfile's change in the working directory and "
 echo -e "\t\tits most recent commit.\n"
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tgit diff --cached"
-echo -e "\t\tIt will compare the difference between the staged file and the most recent commit.\n"
+echo -e "\n\tgit diff --cached"
+echo -e "\n\t\tIt will compare the difference between the staged file and the most recent commit.\n"
 
 #   ...      etc
 
