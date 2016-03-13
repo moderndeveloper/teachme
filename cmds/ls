@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+echo "This is the ls command."
+
+# The command's name
+echo -e 'ls'
+
+# the command's description
+echo "The `ls` command displays an alphabetically ordered list of the files and folders in the current directory and information about those files and folders. 
+When used with any of its many options, the `ls` command can be made to filter and sort the results it displays based on a variety of criteria. "
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "$ ls [options] <directory>"
+echo -e "\tls -a: list all files including hidden file starting with '.'"
+echo -e "\tls -d: List directories only"
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "ls"
+echo "List all files and directories in the present working directory."
+
+# example 2
+echo "ls -al home/pictures/cat"
+echo "List all files and directories including hidden files of the cat directory in long format through a relative path."
+
+
+exit 0
