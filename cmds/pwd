@@ -20,12 +20,14 @@ echo "------------"
 
 # the command's usage examples
 # example 1
-echo "test"
-echo description here
+echo "To print current working directory"
+echo "$ pwd" 
+echo "/Users/Neverland/documents/test"
 
 # example 2
-echo "test something"
-echo description here
+echo "$ x=$(pwd)"
+echo "$ The current working directory : $x"
+echo "The current working directory : /Users/Neverland/documents/test"
 
 
 exit 0
