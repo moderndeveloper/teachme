@@ -5,7 +5,7 @@ echo "This is the pwd command."
 echo -e 'pwd'
 
 # the command's description
-echo "description here"
+echo "Short for present working directory. As the name suggests, this command outputs the user's current working directory. This command is helpful when you need to know where you in a given path or directory."
 
 echo "------------"
 
@@ -23,12 +23,12 @@ echo "------------"
 # the command's usage examples
 # example 1
 echo "To print current working directory"
-echo "$ pwd" 
+echo "pwd" 
 echo "/Users/Neverland/documents/test"
 
 # example 2
-echo "$ x=$(pwd)"
-echo "$ The current working directory : $x"
+echo "x=$(pwd)"
+echo "The current working directory : $x"
 echo "The current working directory : /Users/Neverland/documents/test"
 
 
