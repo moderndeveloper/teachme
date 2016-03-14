@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}git init${normal} - create an empty git repository"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo -e "\n\tThere are two ways to create a Git repository, to use a 'git clone' or 'git init', the latter "
+echo -e "\tcommand is used to create an empty git repository or reinitialize an existing one."
+echo -e "\n\tThis is a first command you'll be running while starting a new project. Running 'git init' will"
+echo -e "\tcreate a hidden subdirectory .git, in a projects root folder, which will have all "
+echo -e "\tnecessary metadata for the repository."
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}"
+echo -e "\n\tgit init [-q | --quiet] [--bare] [--template=<template_directory>]"
+echo -e "\t\t [--separate-git-dir <git dir>]"
+echo -e "\t\t [--shared[=<permissions>]] [directory]"
+echo -e "\n\t\t${bold}-q, --quiet${normal}:"
+echo -e "\n\t\t\tonly print error and warning messages, all other output will be suppressed."
+echo -e "\n\t\t${bold}-b, --bare${normal}:"
+echo -e "\n\t\t\tcreate a bare repository. If GIT_DIR environment is not set, it is set to"
+echo -e "\t\t\tthe current working directory."
+echo -e "\n\t\t${bold}--template=<template_directory>${normal}:"
+echo -e "\n\t\t\tspecify the directory for the templates."
+echo -e "\n\t\t${bold}--separate-git-dir=<git dir>${normal}:"
+echo -e "\n\t\t\tcreate git directory separately from the project directory, and create a text file"
+echo -e "\t\t\tin the project directory that points to the actual repository."
+echo -e "\n\t\t${bold}--shared[=(false|true|umask|group|all|world|everybody|0xxx)]${normal}:"
+echo -e "\n\t\t\tset sharing of the repository amongst several users."
+echo -e "\n\t\t${underline}directory${normal}: run 'git init' inside the ${underline}directory${normal}, if ${underline}directory${normal} does not exist,"
+echo -e "\t\t\t   it will be created."
+#   ...      etc
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\n\tgit init --bare myspace"
+echo -e "\n\t\tIt will create a new folder called myspace containing nothing but the .git subdirectory."
+echo -e "\t\t--bare flag creates a repository that doesn't have a working directory, making it impossible"
+echo -e "\t\tto edit files and commit changes in that directory. So this flag is usually for central repository."
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\n\tssh hostname git init --shared --bare /path/to/repo.git"
+echo -e "\n\t\tA centralised server that all developers have access to will allow them to merge their changes together.\n"
+
+#   ...      etc
+
+exit 0

@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}variables${normal} - generic BASH variables"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo -e "\n\tIn BASH shell there are a lot of variables that define various system or"
+echo -e "\tshell settings or settings for programs. They can be used to retrieve some"
+echo -e "\tinformation from the system or to change desired behaviour of the system,"
+echo -e "\tshell, or some program. These variables are called ${bold}environment variables${normal}"
+echo -e "\tand they are named with uppercase letters."
+echo -e "\n\tSome of the environment variables are: ${bold}USER, HOME, SHELL, PWD, LANG, EDITOR,"
+echo -e "\tDESKTOP_SESSION, PATH,${normal} etc."
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}"
+echo -e "\n\tvariable=value (for non-environment variable)"
+echo -e "\tcommand \$variable"
+#   ...      etc
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\n\tname=\$(whoami)"
+echo -e "\n\t\tSet the value of your variable to be the output of a given (whoami) command."
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\n\tgreeting=\"Hello World\""
+echo -e "\n\t\tSet a greeting variable to be equal to 'Hello World'. Note: no spaces before and after '=' sign\n"
+
+#   ...      etc
+
+exit 0

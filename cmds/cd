@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}cd${normal} - (c)hange (d)irectory"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo -e "\n\tThe 'cd' command changes the current working directory in the command line."
+echo -e "\tAs argument it uses a path to the desired directory, either a relative path (e.g. 'cd path/to/the/directory')"
+echo -e "\tor an absolute path (e.g. 'cd ~/projects')."
+echo -e "\tIf 'cd' command is used without an argument it will try to use \$HOME environment variable as its argument."
+echo -e "\tIf you use a dash as the argument ('cd -') you can go back to the previous active directory and the command"
+echo -e "\twill output its path to the console."
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}"
+echo -e "\n\tcd [options] [Directory]"
+echo -e "\n\t\t-: quickly get back to the previous active directory"
+echo -e "\t\tno given directory: it will defaultly use \$HOME variable"
+#   ...      etc
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\n\tcd .."
+echo -e "\n\t\tChange current directory to parent directory (move back one directory)."
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\n\tcd ~"
+echo -e "\n\t\tMove to \$HOME directory from the current folder."
+
+# example 3
+echo -e "\n\t${underline}Example 3${normal}"
+echo -e "\n\tcd /"
+echo -e "\n\t\tMove to root directory.\n"
+
+#   ...      etc
+
+exit 0

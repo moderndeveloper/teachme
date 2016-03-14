@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}pipe '|'${normal} - redirect output from one command to the input of another"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo -e "\n\tPipe is a vertical bar character \"|\" (located on the same key as the backslash on U.S"
+echo -e "\tkeyboards), which is form of redirection used to send the output of one program to the"
+echo -e "\tinput of another program for further processing."
+echo -e "\n\tPipes are used to create a pipelines of commands, temporary connections between commands,"
+echo -e "\twhich enable to transfer data continuously while not waiting, when one command ends"
+echo -e "\tits process and other starts it."
+
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}"
+echo -e "\n\tprogram1 | program2 | program3 ..."
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\n\tls -1 | wc -l"
+echo -e "\n\t\tfirst, it will list the directory content one file per line. And then the output will"
+echo -e "\t\tbe piped to wc, which will count the lines and return the number."
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\n\tls -1 | grep -i \"tom.*sep\""
+echo -e "\n\t\tfirst, it will list the directory content one file per line. And then the grep command"
+echo -e "\t\tseach lines with \"tom\", followed by 0 or more characters, then followed by \"sep\".\n"
+
+#   ...      etc
+
+exit 0

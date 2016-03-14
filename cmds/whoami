@@ -10,22 +10,21 @@ normal="\033[0m"
 
 # The command's name
 echo -e "\n${bold}COMMAND NAME:${normal}"
-echo -e "\n\t${bold}test${normal} - command used for testing"
+echo -e "\n\t${bold}whoami${normal} - who am I?"
 
 echo -e "\n------------"
 
 # the command's description
 echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
-echo -e "\n\tThe 'test' command is used for testing...."
 
+echo -e "\n\twhoami is a command which will prints the effective username of the current"
+echo -e "\tlogin user to the standard out, which usually is display screen."
 echo -e "\n------------"
 
 # the command's syntax
-echo -e "\n${bold}COMMAND SYNTAX:${normal}"
-echo -e "\n\ttest argument1 argument2"
-echo -e "\t\targument1: description of argument 1"
-echo -e "\t\targument2: description of argument 2"
-#   ...      etc
+echo -e "\n${bold}COMMAND SYNTAX:${normal}:"
+echo -e "\n\twhoami"
+echo -e "\t\twhoami is mostly used by itself, without any options"
 
 echo -e "\n------------"
 
@@ -33,13 +32,18 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\ttest"
-echo -e "\t\tdescription here"
+echo -e "\n\twhoami"
+echo -e "\n\t\tprints the user name."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\ttest something"
-echo -e "\t\tdescription here\n"
+echo -e "\n\twhoami --help"
+echo -e "\n\t\tdisplays help for the command."
+
+# example 3
+echo -e "\n\t${underline}Example 3${normal}"
+echo -e "\n\twhoami --version"
+echo -e "\n\t\tdisplays version of the command.\n"
 
 #   ...      etc
 

@@ -1,0 +1,63 @@
+#!/usr/bin/env bash
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}for${normal}"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+
+
+echo -e "\n\tfor loop is a programming statement which allows a code block to be repeatedly executed."
+echo -e "\tThis loop allows for a specification of a list of values and a list of commands to be executed for"
+echo -e "\teach value in the list. Return status is the exit status of the last executed command. This value,"
+echo -e "\twhich is a integer between 0 to 255, indicates the success or failure of the command's execution."
+echo -e "\tA value of 0 means success and any other value means failure. Usually, when the condition is not true,"
+echo -e "\tthe loop will terminate with a non-zero exit status."
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}:"
+echo -e "\n\tfor ITEM in LIST ; do ACTIONS ; done"
+echo -e "\n\t\tITEM: Each item in a list."
+echo -e "\t\tLIST: List of items you iterate through."
+echo -e "\t\tACTIONS: Some commands you execute each iteration."
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\n\tread all text files from '\$dir' and print their names along with their word count."
+echo -e "\n\t\tall_text_files=(\$dir/*.txt)
+
+\t\tfor file in \"\${all_text_files[@]}\"
+\t\tdo
+\t\t  echo \"\$file: \`cat \$file | wc -w\`\"
+\t\tdone"
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\n\tthis loop calculates the sum of the first 10 whole numbers."
+echo -e "\n\t\tsum=0
+
+\t\tfor num in {1..10}
+\t\tdo
+\t\t  sum=\$((sum+num))
+\t\tdone
+\n\t\techo \"\$sum\"\n"
+
+#   ...      etc
+
+exit 0

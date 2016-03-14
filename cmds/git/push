@@ -1,0 +1,71 @@
+#!/usr/bin/env bash
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}git push${normal} - transfer commits from your local repository to a remote repository"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+echo -e "\n\tWhen you've worked on a project some time, and decided to push changes to the "
+echo -e "\tmain (master) repository, git push command is here to help. Git push exports your "
+echo -e "\tlocal changes to a central remote repository. "
+
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}"
+echo -e "\n\tgit push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run] [--receive-pack=<git-receive-pack>]"
+echo -e "\t\t [--repo=<repository>] [-f | --force] [--prune] [-v | --verbose]"
+echo -e "\t\t [-u | --set-upstream]"
+echo -e "\t\t [--[no-]signed|--sign=(true|false|if-asked)]"
+echo -e "\t\t [--force-with-lease[=<refname>[:<expect>]]]"
+echo -e "\t\t [--no-verify] [<repository> [<refspec>...]]"
+
+echo -e "\n\t\t${bold}<repository>${normal}:"
+echo -e "\n\t\t\tremote repository, the destination of the push operation,"
+echo -e "\t\t\teither a remote url or name of a remote repository."
+echo -e "\n\t\t${bold}<refspec>${normal}:"
+echo -e "\n\t\t\tspecify what destination ref (reference) to update with what source object."
+echo -e "\t\t\tThe format of <refspec> parameter is ${bold}+<src>:<dst>${normal}, where the '+' sign is optional."
+echo -e "\t\t\t${bold}<src>${normal} is often the name of the branch you would like to push, and ${bold}<dst>${normal} is ref"
+echo -e "\t\t\ton the remote side that is updated with this push."
+echo -e "\n\t\t${bold}--all${normal}:  push all branches."
+echo -e "\n\t\t${bold}--delete${normal}:"
+echo -e "\n\t\t\tall listed refs are deleted from the remote repository. The same as prefixing"
+echo -e "\t\t\tall ref with a colon, e.g. 'git push :branch1 :branch2'"
+echo -e "\n\t\t${bold}-f, --force${normal}:"
+echo -e "\n\t\t\tforce pushing to the remote repository. This may cause remote to lose some commits."
+echo -e "\n\t\t${bold}-u, --set-upstream${normal}:"
+echo -e "\n\t\t\tadd tracking reference for successfully pushed branch. That reference can"
+echo -e "\t\t\tbe used by 'git pull' to pull changes from remote without specifying refs."
+#   ...      etc
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\n\tgit push origin develop-new-feature"
+echo -e "\n\t\tpush your local changes to your online repository."
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\n\tgit push origin :develop-new-feature"
+echo -e "\n\t\tthis command means put nothing into develop-new-feature on remote repository origin."
+echo -e "\t\tThen the git push will delete the branch on the remote repository.\n"
+
+#   ...      etc
+
+exit 0

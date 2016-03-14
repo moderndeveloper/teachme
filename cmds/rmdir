@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+# some formatting variables
+bold="\033[1m"
+underline="\033[4m"
+normal="\033[0m"
+# to use this formatting use 'echo -e'
+# start formatting sequence with ${bold} or ${underline}
+# and end it with ${normal}
+
+# The command's name
+echo -e "\n${bold}COMMAND NAME:${normal}"
+echo -e "\n\t${bold}rmdir${normal} - remove directory"
+
+echo -e "\n------------"
+
+# the command's description
+echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
+
+echo -e "\n\trmdir is a command which will remove an empty directory. If the directory is not empty,"
+echo -e "\tthis command will not work. If together with -p flag, rmdir command can remove the"
+echo -e "\tparent directory if it is empty."
+
+echo -e "\n------------"
+
+# the command's syntax
+echo -e "\n${bold}COMMAND SYNTAX:${normal}:"
+echo -e "\n\trmdir [option] directory_names"
+echo -e "\n\t\t-p: removes directories and parent directories that become empty as a result. \n\t\t    This command is useful for removing subdirectory trees."
+
+
+echo -e "\n------------"
+
+# the command's usage examples
+# example 1
+echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
+echo -e "\n\t${underline}Example 1${normal}"
+echo -e "\n\trmdir new_project_dir"
+echo -e "\n\t\tremoves newly created empty directory called 'new_project_dir'."
+
+# example 2
+echo -e "\n\t${underline}Example 2${normal}"
+echo -e "\n\trmdir -p project/dir1/ project/dir2/ project/dir3/"
+echo -e "\n\t\tremoves empty directories 'dir1', 'dir2' and 'dir3' and their parent directory"
+echo -e "\t\t'project' if it ends up to be empty. Errors will be printed for the first two"
+echo -e "\t\tdeleted directories because the parent is not empty yet, but on the deletion"
+echo -e "\t\tof the thid directory, when parent becomes empty, it will be deleted without errors.\n"
+
+#   ...      etc
+
+exit 0
