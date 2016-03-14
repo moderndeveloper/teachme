@@ -19,22 +19,22 @@ echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
 echo -e "\n\t'git rm' removes files from the index, or from the index and the working"
 echo -e "\ttree. Files can not be removed only from the working tree with 'git rm'"
 echo -e "\tand be left in the index. Files that you want to remove must be already"
-echo -e "\tcommited and no changes of those files can be staged in the index, but that"
+echo -e "\tcommitted and no changes of those files can be staged in the index, but that"
 echo -e "\tcan be changed with ${bold}--cached${normal} option."
 echo -e "\n\t'git rm' actually performs two actions in one go, first it removes the file"
 echo -e "\tlike 'rm file' command will do, and then it adds that change to the index,"
-echo -e "\tlike with 'git add file' so that the deletion will be commited."
+echo -e "\tlike with 'git add file' so that the deletion will be committed."
 
 echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
 echo -e "\n\tgit rm [-f] [-n] [-r] [--cached] [--ignore-unmatch] [--quite] [--] <file>"
-echo -e "\t\t-f /--force: override the up-to-date"
-echo -e "\t\t-n: not actually remove any file and just show them whether they are in the index."
-echo -e "\t\t-r: allow recursive removal when a leading directory name is given."
-echo -e "\t\t--cached: use this option to unstaged and remove paths only from the index. "
-echo -e "\t\t--ignore-unmatch: exit with 0 status even if no files matched."
+echo -e "\n\t\t-f / --force:\t  override the up-to-date"
+echo -e "\n\t\t-n:\t\t  not actually remove any file and just show them whether they are in the index."
+echo -e "\n\t\t-r:\t\t  allow recursive removal when a leading directory name is given."
+echo -e "\n\t\t--cached:\t  use this option to unstaged and remove paths only from the index. "
+echo -e "\n\t\t--ignore-unmatch: exit with 0 status even if no files matched."
 #   ...      etc
 
 echo -e "\n------------"
@@ -43,14 +43,14 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\tgit rm --cached README"
-echo -e "\t\tTo keep the file on your hard drive but not have Git track it anymore use '--cached'."
+echo -e "\n\tgit rm --cached README"
+echo -e "\n\t\tTo keep the file on your hard drive but not have Git track it anymore use '--cached'."
 echo -e "\t\tUseful if you forgot to add something to your .gitignore file and accidentally staged it."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tgit rm log/\*.log"
-echo -e "\t\tThis command removes all files that have the '.log' extension in the 'log/' directory."
+echo -e "\n\tgit rm log/\*.log"
+echo -e "\n\t\tThis command removes all files that have the '.log' extension in the 'log/' directory."
 echo -e "\t\tWe use backslash (\*) because Git does its own filename expansion in addition to your"
 echo -e "\t\tshell’s filename expansion.\n"
 #   ...      etc

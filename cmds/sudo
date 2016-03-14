@@ -19,7 +19,7 @@ echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
 echo -e "\n\t'sudo <command>' allows a user to execute a command as superuser or another user"
 echo -e "\tdepending on the security policy. The default security policy is configured"
 echo -e "\twith the file '/etc/sudoers'. The security policy determines what privileges"
-echo -e "\tthe user has to run sudo. In general, the user need to authenticate when using"
+echo -e "\tthe user has to run sudo. In general, the user needs to authenticate when using"
 echo -e "\tsudo command."
 echo -e "\n\tWhen used as 'sudoedit' the command accepts filenames as arguments and starts"
 echo -e "\teditor to edit one or more files with another user's privileges instead or runnig"
@@ -30,10 +30,11 @@ echo -e "\n------------"
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
 echo -e "\n\tsudo -v|-k|[-u |#uid] command"
-echo -e "\t\t-u: the -u(user) option causes sudo to run the specified command as a user other than root."
-echo -e "\t\t-v: if given the -v(validate) option,sudo will update the user's timestamp, prompting for "
+echo -e "\n\t\t-u: the -u(user) option causes sudo to run the specified command as a user other than root."
+echo -e "\t\t-v: if given the -v(validate) option, sudo will update the user's timestamp, prompting for"
+echo -e "\t\t    authentication if needed"
 echo -e "\t\t-k: terminate sudo authentication for the current user. The next sudo command will require a"
-echo -e "\t\tpassword"
+echo -e "\t\t    password"
 #   ...      etc
 
 echo -e "\n------------"
@@ -42,13 +43,13 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\tsudo ls /dir/protected"
-echo -e "\t\tRead the contents of unreadable directory."
+echo -e "\n\tsudo ls /dir/protected"
+echo -e "\n\t\tRead the contents of unreadable directory."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tsudo -u username any_command"
-echo -e "\t\tThe -u (user) option causes sudo to run the specified command as a user other than root.\n"
+echo -e "\n\tsudo -u username any_command"
+echo -e "\n\t\tThe -u (user) option causes sudo to run the specified command as a user other than root.\n"
 
 #   ...      etc
 

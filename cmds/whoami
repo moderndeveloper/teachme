@@ -10,7 +10,7 @@ normal="\033[0m"
 
 # The command's name
 echo -e "\n${bold}COMMAND NAME:${normal}"
-echo -e "\n\t${bold}whoami${normal}"
+echo -e "\n\t${bold}whoami${normal} - who am I?"
 
 echo -e "\n------------"
 
@@ -18,7 +18,7 @@ echo -e "\n------------"
 echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
 
 echo -e "\n\twhoami is a command which will prints the effective username of the current"
-echo -e "\tlogin user to the standard out,which usually is display screen."
+echo -e "\tlogin user to the standard out, which usually is display screen."
 echo -e "\n------------"
 
 # the command's syntax
@@ -33,17 +33,17 @@ echo -e "\n------------"
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
 echo -e "\n\twhoami"
-echo -e "\t\tprints the user name."
+echo -e "\n\t\tprints the user name."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
 echo -e "\n\twhoami --help"
-echo -e "\t\tdisplays help for the command."
+echo -e "\n\t\tdisplays help for the command."
 
 # example 3
 echo -e "\n\t${underline}Example 3${normal}"
 echo -e "\n\twhoami --version"
-echo -e "\t\tdisplays version of the command.\n"
+echo -e "\n\t\tdisplays version of the command.\n"
 
 #   ...      etc
 

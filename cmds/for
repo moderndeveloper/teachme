@@ -18,18 +18,18 @@ echo -e "\n------------"
 echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
 
 
-echo -e "\n\tfor loop is a programming statement which allows a code block to be repeatly executed."
-echo -e "\tThis loop allows for a specification of a list of values and a list of commands is executed for"
-echo -e "\teach value in the list. At the end of loop, there gonna have a return status. Return status is"
-echo -e "\tthe exit status of the last command executes. This value, which is a integer between 0 to 255, "
-echo -e "\tindicates the success or failure of the command's execution. A value of 0 means success and any other value"
-echo -e "\tmeans failure. Usually, when the condition is not true,the loop will terminate with a non-zero exit status."
+echo -e "\n\tfor loop is a programming statement which allows a code block to be repeatedly executed."
+echo -e "\tThis loop allows for a specification of a list of values and a list of commands to be executed for"
+echo -e "\teach value in the list. Return status is the exit status of the last executed command. This value,"
+echo -e "\twhich is a integer between 0 to 255, indicates the success or failure of the command's execution."
+echo -e "\tA value of 0 means success and any other value means failure. Usually, when the condition is not true,"
+echo -e "\tthe loop will terminate with a non-zero exit status."
 echo -e "\n------------"
 
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}:"
 echo -e "\n\tfor ITEM in LIST ; do ACTIONS ; done"
-echo -e "\t\tITEM: Each item in a list."
+echo -e "\n\t\tITEM: Each item in a list."
 echo -e "\t\tLIST: List of items you iterate through."
 echo -e "\t\tACTIONS: Some commands you execute each iteration."
 

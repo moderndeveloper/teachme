@@ -30,8 +30,8 @@ echo -e "\n------------"
 # the command's syntax
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
 echo -e "\n\tmore [-dlfpcsu] [-num] [+/ pattern] [+linenum] [files...]"
-echo -e "\t\t-num: sets the number of lines that makes up a screenful.It must be an Integer."
-echo -e "\t\t+linenum: start displaying text at line number num"
+echo -e "\n\t\t-num: sets the number of lines that makes up a screenful. It must be an Integer."
+echo -e "\n\t\t+linenum: start displaying text at line number num"
 #   ...      etc
 
 echo -e "\n------------"
@@ -40,13 +40,13 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\tmore +10 file.txt"
-echo -e "\t\tDisplay the contents of file.txt, beginning at line 10."
+echo -e "\n\tmore +10 file.txt"
+echo -e "\n\t\tDisplay the contents of file.txt, beginning at line 10."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tmore +/\"smile\" file.txt"
-echo -e "\t\tDisplay the contents of 'file.txt', beginning at the first line containing the string 'smile'.\n"
+echo -e "\n\tmore +/\"smile\" file.txt"
+echo -e "\n\t\tDisplay the contents of 'file.txt', beginning at the first line containing the string 'smile'.\n"
 
 #   ...      etc
 

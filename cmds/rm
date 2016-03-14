@@ -17,7 +17,7 @@ echo -e "\n------------"
 # the command's description
 echo -e "\n${bold}COMMAND DESCRIPTION:${normal}"
 echo -e "\n\t'rm' command is used for deleting one or more files in the directory. As a safety "
-echo -e "\tmeasure 'rm' does not delete directories by default. In order to delete directories (-r) "
+echo -e "\tmeasure 'rm' does not delete directories by default. In order to delete directories '${bold}-r${normal}'"
 echo -e "\toption is used (removes files and directories recursively). "
 echo -e "\n\tTo remove a file, you must have write permission on the directory, that contains the"
 echo -e "\tfile, but you don't need to have permission on the file itself. If you do not have write"
@@ -47,14 +47,14 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\trm -- -file.txt"
-echo -e "\t\tremove a file whose name begins with a dash("-"),user should put a double dash"
+echo -e "\n\trm -- -file.txt"
+echo -e "\n\t\tto remove a file whose name begins with a dash ("-"), user should put a double dash"
 echo -e "\t\tseparately before the filename. So the rm command will not misinterpret the filename as an option."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\trm -f myfile.txt"
-echo -e "\t\tremove the file myfile.txt and will not be prompted,it will be removed enven if the file is write-protected.\n"
+echo -e "\n\trm -f myfile.txt"
+echo -e "\n\t\tremove the file myfile.txt and will not be prompted, it will be removed even if the file is write-protected.\n"
 
 #   ...      etc
 

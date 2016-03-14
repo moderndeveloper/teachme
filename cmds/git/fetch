@@ -32,10 +32,10 @@ echo -e "\n${bold}COMMAND SYNTAX:${normal}"
 echo -e "\n\tgit fetch [<options>] [<repository>[<refspec>...]]"
 echo -e "\n\tgit fetch [<options>] <group>"
 echo -e "\n\tgit fetch --multiple [<options>] [(<repository> | <group>)...]"
-echo -e "\t\t--multiple: allow several <repository> and <group> arguments to be specified."
-echo -e "\t\t<repository>: the remote repository that is the source of a fetch or pull operation."
-echo -e "\t\t<group>: a name referring to a list of repositories as the value of remotes."
-echo -e "\t\t<refspec>: specifies which refs to fetch and which local refs to update."
+echo -e "\n\t\t--multiple: \tallow several <repository> and <group> arguments to be specified."
+echo -e "\t\t<repository>: \tthe remote repository that is the source of a fetch or pull operation."
+echo -e "\t\t<group>: \ta name referring to a list of repositories as the value of remotes."
+echo -e "\t\t<refspec>: \tspecifies which refs to fetch and which local refs to update."
 #   ...      etc
 
 echo -e "\n------------"
@@ -44,13 +44,13 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\tgit fetch origin"
-echo -e "\t\tDownloads all the changes (from origin) needed to represent the given remote branch"
+echo -e "\n\tgit fetch origin"
+echo -e "\n\t\tDownloads all the changes (from origin) needed to represent the given remote branch"
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\tgit fetch --all"
-echo -e "\t\tFetch all remotes\n"
+echo -e "\n\tgit fetch --all"
+echo -e "\n\t\tFetch all remotes\n"
 
 #   ...      etc
 

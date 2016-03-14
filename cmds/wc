@@ -45,14 +45,14 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\twc myfile.txt"
-echo -e "\t\tdisplay info about the myfile.txt.The first number is number of lines,the second number is number of words."
-echo -e "\t\tthe third number is the number of characters."
+echo -e "\n\twc myfile.txt"
+echo -e "\n\t\tdisplay info about the myfile.txt. The first number is number of lines, the"
+echo -e "\t\tsecond number is number of words, the third number is the number of characters."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\twc -w myfile.txt"
-echo -e "\t\tpring the word counts of the file.\n"
+echo -e "\n\twc -w myfile.txt"
+echo -e "\n\t\tpring the word counts of the file.\n"
 
 #   ...      etc
 

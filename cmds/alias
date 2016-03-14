@@ -41,14 +41,15 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\talias .....='cd ../../../../'"
-echo -e "\t\t this command create a alias for quickly navigating to four higher-level directories."
+<<<<<<< HEAD
+echo -e "\n\ttest"
+echo -e "\n\t\tdescription here"
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\talias ls='ls --color=auto'"
-echo -e "\t\tthis command creates the alias \'ls\' such that using {bold}ls${normal} command will always display color input\n"
-
+echo -e "\n\ttest something"
+echo -e "\n\t\tdescription here\n"
+>>>>>>> 37255c0547acfa23b2ebfebd02d325073633eb66
 
 #   ...      etc
 
