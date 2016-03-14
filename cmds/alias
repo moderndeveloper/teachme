@@ -29,9 +29,9 @@ echo -e "\n------------"
 echo -e "\n${bold}COMMAND SYNTAX:${normal}"
 echo -e "\n\talias [alias-name[=string]...]"
 echo -e "\n\t\t${bold}alias-name${normal}:"
-echo -e "\t\t\tthe name given to the alias."
+echo -e "\n\t\t\tthe name given to the alias."
 echo -e "\n\t\t${bold}string${normal}:"
-echo -e "\t\t\tstring or command that alias is bound to."
+echo -e "\n\t\t\tstring or command that alias is bound to."
 echo -e "\n\t\tThere are no options for 'alias' command."
 #   ...      etc
 
@@ -41,13 +41,14 @@ echo -e "\n------------"
 # example 1
 echo -e "\n${bold}COMMAND EXAMPLES:${normal}"
 echo -e "\n\t${underline}Example 1${normal}"
-echo -e "\t\ttest"
-echo -e "\t\tdescription here"
+echo -e "\t\talias .....='cd ../../../../'"
+echo -e "\t\t this command create a alias for quickly navigating to four higher-level directories."
 
 # example 2
 echo -e "\n\t${underline}Example 2${normal}"
-echo -e "\t\ttest something"
-echo -e "\t\tdescription here\n"
+echo -e "\t\talias ls='ls --color=auto'"
+echo -e "\t\tthis command creates the alias \'ls\' such that using {bold}ls${normal} command will always display color input\n"
+
 
 #   ...      etc
 
