@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+echo "This is the git merge command."
+
+# The command's name
+echo -e 'git merge'
+
+# the command's description
+echo "The Git merge command merges two or more branches into one branch, effectively combining the two development histories together." 
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "git merge [-n] [--stat] [--no-commit] [--squash] [--[no-]edit]
+               [-s <strategy>] [-X <strategy-option>] [-S[<keyid>]]
+               [--[no-]rerere-autoupdate] [-m <msg>] [<commit>...]
+       git merge <msg> HEAD <commit>...
+       git merge --abort"
+echo "git merge --no-commit branch3"
+echo -e "\t--no-commit: this option performs the merge without a commit."
+echo -e "\tbranch3: this option is the branch with which the merge will be performed."
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git merge ab123"
+echo "index.html |    1 +"
+echo "1 file changed, 1 insertion(+)"
+echo "merge ab123 branch into master."
+
+# example 2
+echo "git merge hotfix bugfix"
+echo "Creates a 3 way merge between hotfix and bugfix into the current branch."
+
+
+exit 0
