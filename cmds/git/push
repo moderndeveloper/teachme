@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+echo "This is the git push command."
+
+# The command's name
+echo -e 'git push'
+
+# the command's description
+echo "This command allows you to upload your changes to a centralized location or remote server. It takes two arguments which are the remote name and the branch name. This command can also be configured to push all or some of the changes made on the local repostory to the remote server. "
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run] [--receive-pack=<git-receive-pack>]
+	   [--repo=<repository>] [-f | --force] [--prune] [-v | --verbose]
+	   [-u | --set-upstream]
+	   [--[no-]signed|--sign=(true|false|if-asked)]
+	   [--force-with-lease[=<refname>[:<expect>]]]
+	   [--no-verify] [<repository> [<refspec>…​]]"
+echo -e "\tgit push --all: Push all branches"
+echo -e "\tgit push -q: Suppress all push output and reports"
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git push origin master"
+echo "Push all local committed changes on master to the remote aka origin"
+
+# example 2
+echo "git push origin HEAD"
+echo "Push all changes from the current branch to the same matching branch on the remote"
+
+
+exit 0
