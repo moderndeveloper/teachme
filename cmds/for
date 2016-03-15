@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+echo "This is the for command."
+
+# The command's name
+echo -e 'for'
+
+# the command's description
+echo "A 'for loop' is a bash programming language statement which allows code to be repeatedly executed. A for loop is classified as an iteration statement which means it is the repetition of a process within a bash script."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "for VARIABLE in <file(s)> <directory(s)> <numbers>
+        do
+          command
+          command2
+          command3
+      done"
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "for NUM in `seq 1 1 1000`; do touch $NUM-file.txt; done"
+echo "create 1,000 files in a numbered order"
+
+# example 2
+echo "for i in {1..100}; do echo http://www.example.com/${i}.jpg; done"
+echo "present 100 imagelinks from 1.jpg to 100.jpg on http://www.example.com website"
+
+
+exit 0
