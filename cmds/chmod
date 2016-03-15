@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+echo "This is the chmod command."
+
+# The command's name
+echo -e 'chmod'
+
+# the command's description
+echo "This command stands for [change mode] and changes the permissions on files and folder for various users of the system. This means that it allows you to set the rules for each file/folder and this determines who can access it and how it can be accessed."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "chmod <user/group/owner/all> [+/-] [r/w/x] <file/directory>"
+echo -e "\t+: the plus symbol signifies access to a given mode (read, write, execute)"
+echo -e "\t-: conversely the minus symbol removes the user or group, access to a given mode."
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "chmod u=rw test.txt"
+echo "Change owner's permissions to read and write the test.txt file."
+
+# example 2
+echo "chmod 666 test.txt"
+echo "Set the permission of test.txt to "read and write by everyone."."
+
+
+exit 0
