@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+echo "This is the sudo command."
+
+# The command's name
+echo -e 'sudo'
+
+# the command's description
+echo "sudo (superuser do) allows a permitted user to execute a command as the superuser. It prompts you for your personal password and confirms your request to execute a command."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "ALL OPTIONS: sudo -h | -K | -k | -V
+     sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+     sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user]
+          [command]
+     sudo [-AbEHnPS] [-C num] [-g group] [-h host] [-p prompt] [-r role]
+          [-t type] [-u user] [VAR=value] [-i | -s] [command]
+     sudoedit [-AknS] [-C num] [-g group] [-h host] [-p prompt] [-u user] file
+          ...
+"
+echo "EXAMPLE OPTIONS: sudo -u <username> <command>"
+echo -e "\t-u <username>: specifies the user that should be used to execute this command."
+echo -e "\t<command>: the command that should be executed."
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "sudo ls /user/john/private"
+echo "List all contents inside a restricted access directory"
+
+# example 2
+echo "sudo -u jane emacs index.html"
+echo "Set the user id to jane and edit the index.html file"
+
+
+exit 0
