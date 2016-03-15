@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+echo "This is the cd command."
+
+# The command's name
+echo -e 'cd'
+
+# the command's description
+echo "CD (Change directory) is a command-line OS shell command used to change the current working directory."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "cd path/to/directory"
+echo -e "\tcd ../<directory_name>: traverse one level down the current directory to the specified path"
+echo -e "\tcd ~/<directory_name>: change directory using an absolute path"
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "cd home"
+echo "Assume that the current directory is the root directory of the filesystem denoted by `/`. To navigate to the home directory (which is one level down from the root directory), the above command can be used."
+
+# example 2
+echo "cd home/Pictures"
+echo "It is possible to access any directory on the filesystem by typing the `cd` command, followed by the full path to the desired folder. To go straight to the `Pictures` directory from the root directory (`/`) the above command can be used."
+
+
+exit 0

@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+echo "This is the variables."
+
+# The command's name
+echo -e 'variables'
+
+# the command's description
+echo "Variables in bash scripting behave similar to most programming languages. Variables are containers that store data - character, string, number, function , and etc. Additionally you can parse variables as command input."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "VARNAME=VALUE"
+echo -e "\tVARNAME: the name of the variable being defined for easy reference."
+echo -e "\tVALUE: the value of the variable being defined. This value can be of different types - string, integer, boolean, array."
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "my_array={2, 4, 6, 8, 10}"
+echo "sets the variable name 'my_array' equal to the given array"
+
+# example 2
+echo "alert_msg='User warning! Access denied'"
+echo "sets the variable named 'alert_msg' equal to the given string" 
+
+
+exit 0

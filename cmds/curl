@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+echo "This is the curl command."
+
+# The command's name
+echo -e 'curl'
+
+# the command's description
+echo "curl is a command used to transfer data to and from a server, via a plethora of available protocols such as HTTP, FTP, SFTP and many more."
+
+# the command's syntax
+echo "Syntax:"
+echo "curl [options] <url>"
+echo -e "\t-L: Make curl request the new location of the URL if original location has moved."
+echo -e "\t--http2: Commands curl to issue its requests using HTTP 2."
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "curl -o index.html study.moderndeveloper.com"
+echo "Using curl with the -o flag allows the user to save the contents of the web page at study.moderndeveloper.com to the file named index.html."
+
+# example 2
+echo "curl -L study.moderndeveloper.com"
+echo "By default, curl doesn't process redirects. This means that if a page is moved, the curl command will not be able to access its new location. Using the -L flag, the curl command can follow the HTTP Location headers and redirects to the new location where the web page is stored. "
+
+
+exit 0

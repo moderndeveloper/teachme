@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+echo "This is the git commit command."
+
+# The command's name
+echo -e 'git commit'
+
+# the command's description
+echo "Takes all of the contents that are staged and creates a new commit. A commit message is also required by the user explaining the changes. Executing Git commit will make HEAD point to the most recent commit."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "ALL OPTIONS: git commit [-a | --interactive | --patch] [-s] [-v] [-u<mode>] [--amend]
+                  [--dry-run] [(-c | -C | --fixup | --squash) <commit>]
+                  [-F <file> | -m <msg>] [--reset-author] [--allow-empty]
+                  [--allow-empty-message] [--no-verify] [-e] [--author=<author>]
+                  [--date=<date>] [--cleanup=<mode>] [--[no-]status]
+                  [-i | -o] [-S[<keyid>]] [--] [<file>...]"
+echo "SYNTAX EXAMPLE: git commit --date=<date> -m <Commit Message>"
+echo -e "\t--date: this option allows the user to specify a date for the commit."
+echo -e "\t-m: this option allows the user to add a message about the commit."
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git commit -m 'text1updates'"
+echo "[master 68aa034] text1updates"
+echo "1 files changed, 2 insertions(+), 1 deletions(-)"
+echo "commit text1updates and use -m to get commit messages"
+
+# example 2
+echo "git commit -a"
+echo "Commit a snapshot of all changes in the working directory"
+
+
+exit 0

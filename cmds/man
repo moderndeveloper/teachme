@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+echo "This is the man command."
+
+# The command's name
+echo -e 'man'
+
+# the command's description
+echo "'man' is the interface used to view the system's reference manuals. Use can retrieve the information and display it as text output on your screen."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "man <command>"
+echo -e "\tthere are no useful options to parse into the man command"
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "man ls"
+echo "This command will show the manual page for the ls program, allowing the user to see how the ls program works and how to use it."
+
+# example 2
+echo "man 5 passwd"
+echo "The manual page for the passwd command has many sections. This example will begin the man page at section 5. This is useful if the user knows which section of the manual page contains the information they seek. "
+
+
+exit 0

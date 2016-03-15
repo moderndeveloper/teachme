@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+echo "This is the pwd command."
+
+# The command's name
+echo -e 'pwd'
+
+# the command's description
+echo "Short for present working directory. As the name suggests, this command outputs the user's current working directory. This command is helpful when you need to know where you in a given path or directory."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "pwd [-L] [-P]"
+echo -e "\t-L: $PWD is the environment variable definition of the current working directory. When the -L option is used, this $PWD definition is printed to the screen."
+echo -e "\t-P: This option displays ALL the links to the present directory location. For example if we have a directory /home/projects but its full link is 
+/var/www/root/projects then when we use the `-P` flag, the full link will be displayed to the screen."
+
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "To print current working directory"
+echo "pwd" 
+echo "/Users/Neverland/documents/test"
+
+# example 2
+echo "x=$(pwd)"
+echo "The current working directory : $x"
+echo "The current working directory : /Users/Neverland/documents/test"
+
+
+exit 0

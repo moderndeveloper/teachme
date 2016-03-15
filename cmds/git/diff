@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+echo "This is the git diff command."
+
+# The command's name
+echo -e 'git diff'
+
+# the command's description
+echo "git diff shows the differences between two files in a git repository. It can be used to show differences between a file in the working directory (unstaged), the index (staged) and the moost recent commmit. It can also be used to show the differences in files between any two points/commits in your project's history."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "$ git diff [options] [<commit>] [--] [<path>…​]"
+echo -e "\tgit diff --name-only: Show only names of changed files."
+echo -e "\tgit diff --no-color:  Override configuration to turn off color settings"
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git diff develop feature/branch"
+echo "Compares the two branches develop and feature/branch."
+
+# example 2
+echo "git diff --summary"
+echo "Displays a summary of the changes including renames, copies, addition and deletion."
+
+
+exit 0

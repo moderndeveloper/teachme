@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+echo "This is the git add command."
+
+# The command's name
+echo -e 'git add'
+
+# the command's description
+echo "The git add command takes all of the content changes in the working tree and stages it to index. Before you can make a commit you must first add the files onto the index tree."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "ALL OPTIONS: git add [--verbose | -v] [--dry-run | -n] [--force | -f] [--interactive | -i] [--patch | -p]
+    [--edit | -e] [--[no-]all | --[no-]ignore-removal | [--update | -u]]
+    [--intent-to-add | -N] [--refresh] [--ignore-errors] [--ignore-missing]
+    [--] [<pathspec>…​]"
+echo "EXAMPLE OPTIONS: git add --all -v"
+echo -e "\t--all: this tell git to add all changes to the staging area."
+echo -e "\t-v: This tells git to show informational messages about all the changes being added to the staging area."
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git add test/\*.txt"
+echo "Add contents from all *.txt format files under 'test' directory "
+
+# example 2
+echo "git add -f test1.txt"
+echo "add a ignored file test1.txt."
+
+
+exit 0

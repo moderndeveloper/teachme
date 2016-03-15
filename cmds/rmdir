@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+echo "This is the rmdir command."
+
+# The command's name
+echo -e 'rmdir'
+
+# the command's description
+echo "By default the rm command does not delete directories. Instead the rmdir command is used to fulfil the role of deleting directories."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "rmdir [-p] [-v] path/to/directory"
+echo -e "\t-p: This option removes the 'directory' folder as well as its parent folders ('path' and 'to') once the 'directory' folder is empty."
+echo -e "\t-v: This option removes the 'directory' folder once it is empty and also shows a message while executing the command. The message looks something like this: removing directory, ‘/path/to/directory’ "
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "rmdir test1"
+echo "Directory test1 is removed from current path."
+
+# example 2
+echo "rmdir -p dir1/dir2/dir3"
+echo "Delete nested directories dir1/dir2/dir3"
+
+
+exit 0

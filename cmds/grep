@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+echo "This is the grep command."
+
+# The command's name
+echo -e 'grep'
+
+# the command's description
+echo "Searches a given input file for all instances of the specified matching pattern. Grep is a handy command used to search lengthy files for a given pattern."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "grep [OPTIONS] PATTERN [FILE...]"
+echo "grep [-m NUM] ['word'] file.txt"
+echo -e "\t-m NUM: This option tells the grep command to stop reading the file (file.txt) after NUM lines containing the pattern being searched for are found."
+echo -e "\t'word': This is the pattern that the grep command is searching for within file.txt."
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "$ grep -w "test" test1.txt"
+echo "Search the file test1.txt for lines containing the word "test"."
+
+# example 2
+echo "$ grep -cw "test" test1.txt"
+echo "Displays a count of how many lines in test1.txt contains "test"."
+
+
+exit 0

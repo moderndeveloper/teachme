@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+echo "This is the git rebase command."
+
+# The command's name
+echo -e 'git rebase'
+
+# the command's description
+echo "Git rebase is a command that allows an alternative method to merging two or more branches together. The main difference between git merge and rebase is, rebase, creates a cleaner project history through a linear approach. "
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "git rebase [-i | --interactive] [options] [--exec <cmd>] [--onto <newbase>]
+	[<upstream> [<branch>]]
+git rebase [-i | --interactive] [options] [--exec <cmd>] [--onto <newbase>]
+	--root [<branch>]
+git rebase --continue | --skip | --abort | --edit-todo"
+echo "git rebase -i <base>"
+echo -e "\t: This option begins an interactive rebasing session that allows the user to alter individual commits during the process."
+echo -e "\t<base>: Any kind of commit reference (an ID, a branch name, a tag, or a relative reference to HEAD) that the user would like to rebase onto. "
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git rebase -i <base>"
+echo "Rebase to current branch by using an interactive rebasing session."
+
+# example 2
+echo "git rebase --abort"
+echo "Undo the git rebase"
+
+
+exit 0

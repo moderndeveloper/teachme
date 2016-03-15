@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+echo "This is the git rm command."
+
+# The command's name
+echo -e 'git rm'
+
+# the command's description
+echo "Remove files from the working tree and from the index. This command will only remove a file from your local working directory."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "git rm [options] <file>"
+echo -e "\t-n: Perform a dry-run but don't actually delete the file"
+echo -e "\t-r: Allow recursive removal if directory is specified"
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git rm file.txt"
+echo "This command removes the file named file.txt from the index.
+# example 2
+echo "git rm Documentation/\*.txt"
+echo "This command removes all *.txt files from the index that are under the Documentation directory and any of its subdirectories."
+exit 0

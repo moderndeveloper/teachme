@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+echo "This is the git reset command."
+
+# The command's name
+echo -e 'git reset'
+
+# the command's description
+echo "The git reset command is used to reset HEAD to a specified commit. Depending on the options given, git reset is capable of manipulating all three trees of Git - HEAD, index and working. By default git reset only affects the HEAD."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "git reset [options] <commit>"
+echo -e "\t--soft: Undo the commit in HEAD but preserve all changes in the index and working tree."
+echo -e "\t--hard: Undo the commit in HEAD and clear all changes in the index and working tree."
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git reset --soft HEAD^"
+echo "This example will undo the last commit made by a user. The --soft option here ensures that the files remain untouched, only the commit is undone. A good time to use this command would be when there is a spelling error in the commit message."
+
+# example 2
+echo "git reset HEAD test.md"
+echo "This example removes test.md from the staging area."
+
+
+exit 0

@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+echo "This is the pipe command."
+
+# The command's name
+echo -e 'pipe'
+
+# the command's description
+echo "Pipe in linux is denoted by the symbol | and is used for communication between commands and processes. The pipe is similar to redirection and it allows the output of one program to be sent to another program for further processing. This pipe, or chain of two or more commands allows for the computation of some highly specilzed tasks that none of the individual programs that are a part of pipe could perform themselves."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "command 1 | command 2"
+echo -e "\tls -al | more: Create a long list of files and piping the output into the Linux more command."
+echo -e "\tlps aux | wc -l: Display how many processes are currently running on your system."
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "cat names.txt | wc -w"
+echo "takes the output of cat names.txt as input for wc -w"
+
+# example 2
+echo "ls -ll | more"
+echo "takes the output of <list all files in long format> as input for the more command."
+
+
+exit 0

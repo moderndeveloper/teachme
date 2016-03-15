@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+echo "This is the alias command."
+
+# The command's name
+echo -e 'alias'
+
+# the command's description
+echo "The alias command allows the user to create shortcut keys to commonly used commands. By creating customized shortcuts for typically long commands, users can save a lot of time and improve efficiency in the command line. You can create aliases in the .bashrc (or .zshrc if zshell user) file."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "alias [-p] [name="value"]"
+echo -e "\talias ll='ls -l': use 'll' as a shortcut for the 'ls -l'command"
+echo -e "\talias p="pwd"; l="ls -al": use 'p' as a shortcut for two commands"
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "alias ll='ls -l'"
+echo "This command will allow a user to type the characters ll and this would list all files in the directory in long format."
+
+# example 2
+echo "alias ..='cd ..'"
+echo "This alias will allow a user to type the character .. and this would change to one directory above the current one."
+
+
+exit 0

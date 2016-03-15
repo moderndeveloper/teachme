@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+echo "This is the clear command."
+
+# The command's name
+echo -e 'clear'
+
+# the command's description
+echo "the clear command clears your screen of all previous outputs giving you a clean blank screen. This command is useful when you need a clean slate or to start afresh."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "clear"
+echo -e "\tThis command has no additional options."
+
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "clear"
+echo "chenfengs-MBP:Documents Neverland$"
+echo "[It is the only line remaining]"
+
+
+exit 0

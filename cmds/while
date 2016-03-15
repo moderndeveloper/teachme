@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+echo "This is the while command."
+
+# The command's name
+echo -e 'while'
+
+# the command's description
+echo "the while loop in bash scripting continues to iterate over a loop while a condition is true. The while loop only stops when the condition is false - this means while loops can go on in an endless loop if there is no way for the condition to be met."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "while [ condition ]
+do
+   command1
+   command2
+   command3
+done"
+
+echo -e "make sure the condition will always be met to prevent an endless loop."
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "
+i="0"
+while [ $i -lt 4 ]
+do
+echo $i
+i=$[$i+1]
+done"
+
+echo "This example will print the numbers 0,1,2,3,4 to the screen."
+
+# example 2
+echo "
+i="10"
+while [ $i -gt 3 ]
+do
+echo $i
+i=$[$i-1]
+done"
+
+echo "This example will print the numbers 10,9,8,7,6,5,4 to the screen."
+
+
+exit 0
