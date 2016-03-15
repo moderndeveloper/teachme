@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+echo "This is the git branch command."
+
+# The command's name
+echo -e 'git branch'
+
+# the command's description
+echo "This command allows you to create, list or delete branches in git. Branching allows you to manage many parts of a project in one repository and merge them together. When used correctly branching makes it easy for multiple persons to work on a project in a seamless and un-intrusive way. "
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "git branch [--color[=<when>] | --no-color] [-r | -a]
+	[--list] [-v [--abbrev=<length> | --no-abbrev]]
+	[--column[=<options>] | --no-column]
+	[(--merged | --no-merged | --contains) [<commit>]] [--sort=<key>]
+	[--points-at <object>] [<pattern>…​]"
+echo "git branch [--set-upstream | --track | --no-track] [-l] [-f] <branchname> [<start-point>]"
+echo "git branch (--set-upstream-to=<upstream> | -u <upstream>) [<branchname>]"
+echo "git branch --unset-upstream [<branchname>]"
+echo "git branch (-m | -M) [<oldbranch>] <newbranch>"
+echo "git branch (-d | -D) [-r] <branchname>…​"
+echo "git branch --edit-description [<branchname>]"
+
+echo -e "\git branch -d: Delete a branch"
+echo -e "\git branch -m: Move or rename a branch"
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git branch -d experimental"
+echo "Deletes the branch named 'experimental'"
+
+# example 2
+echo "git branch --all"
+echo "List all branches from the local and remote repository"
+
+
+exit 0
