@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+echo "This is the git checkout command."
+
+# The command's name
+echo -e 'git checkout'
+
+# the command's description
+echo "git checkout is a command to update files in the working tree to match the version in the index or the specified tree. "
+
+# the command's syntax
+echo "Syntax:"
+echo "git checkout [options] <branch> or <commit>"
+echo -e "\t-b: If specified, a new branch is created and checked out if it doesn't already exist"
+echo -e "\t<branch_name>: Switches the current branch to the branch specified"
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git checkout development"
+echo "This command will switch the current branch you are working on to the branch named development (if a branch named development exists)."
+
+# example 2
+echo "git checkout -b dev"
+echo "This command will create a branch called dev and changes the current branch being worked on to the dev branch."
+
+
+exit 0
