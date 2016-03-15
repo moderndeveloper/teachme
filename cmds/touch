@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+echo "This is the touch command."
+
+# The command's name
+echo -e 'touch'
+
+# the command's description
+echo "the touch command is a commonly used command to quickly create text files. Additionally it is used to change the timestamps of a file such as last modification time or access time. "
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "touch [-d] [-a] FILE..."
+echo -e "\t-d: This option along with a date argument sets the last accessed time of the file created to the date given. It also sets this date value as the last time the file was modified."
+echo -e "\t-a: This option along with a date argument sets the last accessed time of the file created to the date given."
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "touch test1.txt"
+echo "Create a txt format file 'test1'(or change the accessed time to current)"
+
+# example 2
+echo "touch -m test2.txt"
+echo "Only change the modification time of test2.txt file to current."
+
+
+exit 0
