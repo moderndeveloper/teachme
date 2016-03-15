@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+echo "This is the ssh command."
+
+# The command's name
+echo -e 'ssh'
+
+# the command's description
+echo "SSH stands for secure shell and is a protocal used to securely log on to and access remote Linux and Unix-like servers."
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "$ ssh [-1246AaCfgKkMNnqsTtVvXxYy]"
+echo -e "\t-6: Forces ssh to use IPv6 addresses only."
+echo -e "\t-f: Requests ssh to go to background just before command execution."
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "ssh -v"
+echo "This command displays the SSH client currently running and it’s corresponding version number"
+
+# example 2
+echo "ssh imanuel@remotehost.com"
+echo "This command connects to the server at remotehost.com with the username imanuel."
+
+
+exit 0
