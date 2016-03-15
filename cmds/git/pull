@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+echo "This is the git pull command."
+
+# The command's name
+echo -e 'git pull'
+
+# the command's description
+echo "Incorporates all file changes from the upstream remote repository into the current branch. "
+
+echo "------------"
+
+# the command's syntax
+echo "Syntax:"
+echo "git pull [options] <repository>"
+echo -e "\t-commit: Automatically perform the merge and commit the result"
+echo -e "\t-e: Prompt the user with their default editor before committing to edit the auto-generated merge message."
+#   ...      etc
+
+echo "------------"
+
+# the command's usage examples
+# example 1
+echo "git pull origin master"
+echo "This command will fetch all the changes from the origin branch on the remote server and merge these changes with the master branch of the user's local copy."
+
+# example 2
+echo "git pull --edit origin master"
+echo "This command opens up an editor before executing the pull so that a descriptive message can be written about it."
+
+
+exit 0
