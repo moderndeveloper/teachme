@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+cat<<EOF
+
+Name:
+  rmdir
+
+------------------------------------------------------------------------------
+
+Description:
+  The rmdir utility removes the directory entry specified by each directory
+  argument, provided the directory is empty.
+
+  Arguments are processed in the order given. To remove both a parent directory
+  and a subdirectory of that parent, the subdirectory must be specified first so
+  the parent directory is empty when rmdir tries to remove it.
+
+------------------------------------------------------------------------------
+
+Syntax:
+  rmdir [options]... folder(s)...
+
+------------------------------------------------------------------------------
+
+Options:
+      --ignore-fail-on-non-empty
+                  Ignore each failure that is solely because the directory is
+                  non-empty.
+
+  -p, --parents   Remove explicit parent directories if being emptied
+
+      --verbose   Output a diagnostic for every directory processed
+
+      --help      Display help and exit
+
+      --version   Output version information and exit
+
+------------------------------------------------------------------------------
+
+Examples:
+  # Removes the directory mydir.
+  $ rmdir mydir
+
+EOF
+
+exit 0

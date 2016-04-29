@@ -1,0 +1,77 @@
+#!/usr/bin/env bash
+
+cat<<EOF
+
+Name:
+  find
+
+------------------------------------------------------------------------------
+
+Description:
+  Expand words, and execute commands once for each member in the resultant list,
+  with name bound to the current member.
+
+------------------------------------------------------------------------------
+
+Syntax:
+  for name [in words ...]; do commands; done
+
+  for (( expr1 ; expr2 ; expr3 )) ; do commands ; done
+
+  If 'in words' is not present, the for command executes the commands once for
+  each positional parameter that is set, as if 'in "\$@"' had been specified
+  (see Positional Parameters below.)
+
+  The second form of the for command is evaluated thus:
+
+    First, the arithmetic expression expr1 is evaluated according to shell
+    arithmetic expression rules. The arithmetic expression expr2 is then
+    evaluated repeatedly until it evaluates to zero.
+
+    Each time expr2 evaluates to a non-zero value, commands are executed and the
+    arithmetic expression expr3 is evaluated. If any expression is omitted, it
+    behaves as if it evaluates to 1.
+
+  Return Status
+    The Return Status of for will be the exit status of the last command that
+    executes, (if there are multiple expressions then the last command in list
+    .) If there are no items in the expansion of words, no commands are
+    executed, and the return status is zero. The return status is false if any
+    of the expressions is invalid.
+
+  Positional Parameters
+    These are assigned from the shell's arguments when the shell is invoked,
+    they can be reassigned using the set builtin command. Positional parameter
+    N can be referenced as \${N}, or as \$N when N consists of a single digit.
+    \$1, \$2 etc
+
+------------------------------------------------------------------------------
+
+Examples:
+  # Loop through a set of strings: for m in Apple Sony Panasonic "Hewlett
+  # Packard" Nokia
+  do
+    echo "Manufacturer is:" \$m
+  done
+
+  # or as a single line...
+  for m in Apple Sony Panasonic "Hewlett Packard" Nokia;
+    do echo "Manufacturer is:" \$m;done
+
+
+  # Loop 100 times:
+  for i in \$(seq 1 100); do echo -n "Hello World\${i} "; done
+
+
+  # Loop through the arguments passed to a function:
+  foo ()
+  {
+      for ARG in "\$@";do echo \$ARG; done
+  }
+
+  # try it
+  foo abc 123 "Hello World" 'bash rules'
+
+EOF
+
+exit 0

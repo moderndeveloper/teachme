@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+cat<<EOF
+
+Name:
+  while
+
+------------------------------------------------------------------------------
+
+Description:
+  Shell built-in functions to repetitively execute a set of actions while/until
+  conditions are evaluated TRUE.
+
+------------------------------------------------------------------------------
+
+Syntax:
+  while [ conditions ] ; do actions ; done
+
+------------------------------------------------------------------------------
+
+Examples:
+  The basic syntax:
+  #!/usr/bin/env bash
+
+  while [ condition ]
+  do
+    command1
+    command2
+    command3
+  done
+
+  This example script opens 4 terminal windows:
+  #!/bin/env bash
+
+  i="0"
+
+  while [ \$i -lt 4 ]
+  do
+    xterm &
+    i=\$[\$i+1]
+  done
+
+EOF
+
+exit 0

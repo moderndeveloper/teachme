@@ -1,0 +1,63 @@
+#!/usr/bin/env bash
+
+cat <<EOF
+
+Name:
+  cd
+
+------------------------------------------------------------------------------
+
+Description:
+  Change Directory - change the current working directory to a specific Folder.
+
+------------------------------------------------------------------------------
+
+Syntax:
+  cd [Options] [Directory]
+
+------------------------------------------------------------------------------
+
+Options:
+  -P Do not follow symbolic links
+  -L Follow symbolic links (default)
+
+If directory is given, changes the shell's working directory todirectory. If
+not, changes to HOME (shell variable).
+
+If the shell variable CDPATH exists, it is used as a search path. If directory
+begins with a slash, CDPATH is not used.
+
+If directory is '-', this will change to the previous directory location
+(equivalent to \$OLDPWD ).
+
+The return status is zero if the directory is successfully changed, non-zero
+otherwise.
+
+------------------------------------------------------------------------------
+
+Examples:
+  Move to the sybase folder
+  $ cd /usr/local/sybase
+  $ pwd
+  /usr/local/sybase
+
+  Change to another folder
+  $ cd /var/log
+  $ pwd
+  /var/log
+
+  Quickly get back
+  $ cd - 
+  $ pwd
+  /usr/local/sybase
+
+  move up one folder
+  $ cd ..
+  $ pwd
+  /usr/local/
+
+  $ cd (Back to your home folder) 
+
+EOF
+
+exit 0

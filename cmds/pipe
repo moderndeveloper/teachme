@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+cat<<EOF
+
+Name:
+  pipe
+
+------------------------------------------------------------------------------
+
+Description:
+  Redirect the output from one command as input for another.
+
+------------------------------------------------------------------------------
+
+Syntax:
+  A pipeline is a sequence of simple commands separated by '|'.
+
+  The format for a pipeline is
+
+  [time [-p]] [!] command1 [| command2 ...] The output of each command in the
+  pipeline is connected to the input of the next command. That is, each command
+  reads the previous command's output.
+
+  The reserved word time causes timing statistics to be printed for the pipeline
+  once it finishes. The statistics currently consist of elapsed (wall-clock)
+  time and user and system time consumed by the command's execution. 
+
+  The '-p' option changes the output format to that specified by POSIX.
+
+  The TIMEFORMAT variable can be set to a format string that specifies how the
+  timing information should be displayed. The use of time as a reserved word
+  permits the timing of shell builtins, shell functions, and pipelines. An
+  external time command cannot time these easily.
+
+  If the pipeline is not executed asynchronously, the shell waits for all
+    commands in the pipeline to complete.
+
+  Each command in a pipeline is executed in its own subshell. The exit status of
+  a pipeline is the exit status of the last command in the pipeline. If the
+  reserved word '!' precedes the pipeline, the exit status is the logical
+  negation of the exit status of the last command.
+
+------------------------------------------------------------------------------
+
+Examples:
+  # Returns the number of objects in the current directory
+  $ ls -1 | wc -l
+
+EOF
+
+exit 0
